@@ -126,7 +126,7 @@ The analyses employ various statistical methods including:
 
 If you use this code or data in your research, please cite:
 
-Lipo, C. and Hunt, T. (2024). The Walking Moai Hypothesis (Easter Island): Archaeological Evidence, Experimental Validation, and Response to Critics. [Journal Name], [Volume], [Pages].
+Lipo, C. and Hunt, T. (2025). The Walking Moai Hypothesis (Easter Island): Archaeological Evidence, Experimental Validation, and Response to Critics. [Journal of Archaeological Science], [TBD], [TBD].
 
 ## License
 
@@ -135,5 +135,5 @@ Lipo, C. and Hunt, T. (2024). The Walking Moai Hypothesis (Easter Island): Archa
 ## Contact
 
 For questions about this repository or the research, please contact:
-- Carl Lipo: [email]
-- Terry Hunt: [email]
+- Carl Lipo: [clipo@binghamton.edu]
+- Terry Hunt: [tlhunt@arizona.edu]
