@@ -1,0 +1,21 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# R specific files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Google Drive files
+*.gdoc
+
+# Temporary files
+*~
+*.tmp
+*.bak
+
+# Output figures (can be regenerated)
+# Uncomment the line below if you don't want to track generated figures
+# figures/
