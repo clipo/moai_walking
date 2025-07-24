@@ -22,8 +22,30 @@ The Walking Moai Hypothesis proposes that the famous Easter Island statues (moai
 
 ### Setup and Installation
 
-#### Option 1: Automatic Setup (Recommended)
-Run the setup script to install all required packages:
+#### Option 1: Using Packrat for Full Reproducibility (Recommended)
+Packrat creates a private package library for this project, ensuring exact package versions are preserved:
+
+```r
+# First time setup - initialize packrat
+source("init_packrat.R")
+
+# After packrat is initialized, for subsequent runs:
+source("setup.R")
+```
+
+This approach:
+- Creates a project-specific package library
+- Captures exact package versions in packrat.lock
+- Ensures complete reproducibility across different machines
+- Automatically installs the correct package versions
+
+To restore the environment on a new machine with packrat already initialized:
+```r
+packrat::restore()
+```
+
+#### Option 2: Standard Setup
+If you prefer not to use packrat, run the setup script:
 
 ```r
 source("setup.R")
@@ -35,14 +57,14 @@ This will:
 - Verify all packages load correctly
 - Display version information for reproducibility
 
-#### Option 2: Manual Installation
+#### Option 3: Manual Installation
 ```r
 install.packages(c("readxl", "ggplot2", "dplyr", "tidyr", "svglite", 
                    "geosphere", "purrr", "scales", "ragg"))
 ```
 
-#### Option 3: Automatic Installation When Running Scripts
-Each R script now includes automatic package checking and installation. Simply run any script and it will install missing packages automatically.
+#### Option 4: Automatic Installation When Running Scripts
+Each R script includes automatic package checking and installation. Simply run any script and it will install missing packages automatically.
 
 ## Repository Structure
 
@@ -57,8 +79,13 @@ moai_walking_paper_code/
 │   └── Figure_13.R     # Moai size vs transport distance analysis
 │
 ├── Setup & Utilities/
-│   ├── setup.R         # One-time setup script for package installation
+│   ├── init_packrat.R  # Initialize packrat for reproducibility
+│   ├── setup.R         # Setup script with packrat support
 │   └── package_loader.R # Helper function for loading packages
+│
+├── Packrat Files (if initialized)/
+│   ├── packrat/        # Packrat private library (git-ignored)
+│   └── packrat.lock    # Package version lockfile
 │
 ├── Data Files/
 │   ├── VanTilburgData.xlsx        # Van Tilburg (1986) moai measurements

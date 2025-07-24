@@ -16,6 +16,13 @@ Thumbs.db
 *.tmp
 *.bak
 
+# Packrat files
+packrat/lib*/
+packrat/src/
+# Keep packrat.lock and packrat/init.R for reproducibility
+!packrat/packrat.lock
+!packrat/init.R
+
 # Output figures (can be regenerated)
 # Uncomment the line below if you don't want to track generated figures
 # figures/

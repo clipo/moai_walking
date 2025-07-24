@@ -1,5 +1,22 @@
 # Setup script for The Walking Moai Hypothesis analysis
-# This script installs all required packages for reproducibility
+# This script checks for packrat and installs all required packages for reproducibility
+
+# Check if we're using packrat
+if (file.exists("packrat/init.R")) {
+  cat("Packrat detected. Using packrat for package management.\n")
+  source("packrat/init.R")
+  
+  # If packages are missing, restore from packrat
+  tryCatch({
+    packrat::restore(prompt = FALSE)
+    cat("Packrat packages restored successfully.\n")
+  }, error = function(e) {
+    cat("Note: Could not restore from packrat snapshot. Installing packages...\n")
+  })
+} else {
+  cat("Packrat not initialized. Run 'source(\"init_packrat.R\")' for enhanced reproducibility.\n")
+  cat("Proceeding with standard package installation...\n\n")
+}
 
 # Function to check and install packages
 install_if_missing <- function(packages) {
@@ -28,15 +45,25 @@ install_if_missing <- function(packages) {
 
 # List of required packages
 required_packages <- c(
-  "readxl",    # For reading Excel files
-  "ggplot2",   # For creating visualizations
-  "dplyr",     # For data manipulation
-  "tidyr",     # For data tidying
-  "svglite"    # For SVG output
+  "readxl",     # For reading Excel files
+  "ggplot2",    # For creating visualizations
+  "dplyr",      # For data manipulation
+  "tidyr",      # For data tidying
+  "svglite",    # For SVG output
+  "geosphere",  # For geographic calculations (Figure 3)
+  "purrr",      # For functional programming (Figure 3)
+  "scales",     # For scale transformations (Figure 5)
+  "ragg"        # For high-quality graphics (Figures 11-13)
 )
 
 # Install missing packages
 install_if_missing(required_packages)
+
+# If using packrat, take a snapshot
+if (file.exists("packrat/init.R")) {
+  cat("\nUpdating packrat snapshot...\n")
+  packrat::snapshot(prompt = FALSE)
+}
 
 # Print R version for reproducibility
 cat("\nR version information:\n")
