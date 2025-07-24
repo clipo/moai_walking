@@ -183,12 +183,70 @@ If you use this code or data in your research, please cite:
 
 Lipo, C. and Hunt, T. (2025). The Walking Moai Hypothesis (Easter Island): Archaeological Evidence, Experimental Validation, and Response to Critics. [Journal of Archaeological Science], [TBD], [TBD].
 
+## Reproducibility Notes
+
+This project uses several approaches to ensure reproducibility:
+
+1. **Packrat Integration**: Lock exact package versions for complete reproducibility
+2. **Automatic Package Installation**: Scripts install required packages if missing
+3. **Version Documentation**: The `setup.R` script displays all package versions
+4. **Self-Contained Analysis**: All data files are included in the repository
+
+## Troubleshooting
+
+If you encounter issues:
+
+1. **Package Installation Errors**: Try running `source("setup.R")` with a fresh R session
+2. **Packrat Issues**: Delete the `packrat/` folder and re-run `source("init_packrat.R")`
+3. **Missing Data Files**: Ensure all Excel files are in the main directory
+4. **Figure Generation**: Check that the `figures/` directory has write permissions
+
+## Contributing
+
+To contribute to this project:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## License
 
-[License information to be added]
+This project is licensed under the MIT License - see below for details:
+
+```
+MIT License
+
+Copyright (c) 2024 Carl Lipo and Terry Hunt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ## Contact
 
 For questions about this repository or the research, please contact:
-- Carl Lipo: [clipo@binghamton.edu]
-- Terry Hunt: [tlhunt@arizona.edu]
+- Carl Lipo: clipo@binghamton.edu
+- Terry Hunt: tlhunt@arizona.edu
+
+## Acknowledgments
+
+- Van Tilburg, J.A. (1986) for the comprehensive moai measurement database
+- The Rapa Nui (Easter Island) community for preserving their cultural heritage
+- All contributors to the Walking Moai Hypothesis research
