@@ -2,16 +2,22 @@
 # Standalone R code for Figure 13: Analysis of moai size in relation to transport distance
 # This creates a two-panel figure showing size patterns across transport phases
 
-# Load required libraries (install if needed)
-if (!require("tidyverse")) install.packages("tidyverse")
-if (!require("ggplot2")) install.packages("ggplot2")
-if (!require("ragg")) install.packages("ragg")
-if (!require("svglite")) install.packages("svglite")
-
-library(tidyverse)
-library(ggplot2)
-library(ragg)
-library(svglite)
+# Ensure reproducibility by loading required packages
+# Source the package loader or install packages if needed
+if (file.exists("package_loader.R")) {
+  source("package_loader.R")
+  load_required_packages()
+} else {
+  # Fallback: install and load packages directly
+  required_packages <- c("readxl", "ggplot2", "dplyr", "tidyr", "svglite", "tidyverse", "ragg")
+  
+  for (pkg in required_packages) {
+    if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+      install.packages(pkg, dependencies = TRUE)
+      library(pkg, character.only = TRUE)
+    }
+  }
+}
 
 # Define color palette
 moai_colors <- c(

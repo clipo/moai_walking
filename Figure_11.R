@@ -2,12 +2,22 @@
 # Standalone R code for Figure 11: Expected distribution of road moai under transport failure hypothesis
 # From: "Transport Failure Analysis of Easter Island Road Moai"
 
-# Load required libraries (install if needed)
-if (!require("ragg")) install.packages("ragg")
-if (!require("svglite")) install.packages("svglite")
-
-library(ragg)
-library(svglite)
+# Ensure reproducibility by loading required packages
+# Source the package loader or install packages if needed
+if (file.exists("package_loader.R")) {
+  source("package_loader.R")
+  load_required_packages()
+} else {
+  # Fallback: install and load packages directly
+  required_packages <- c("readxl", "ggplot2", "dplyr", "tidyr", "svglite", "ragg")
+  
+  for (pkg in required_packages) {
+    if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+      install.packages(pkg, dependencies = TRUE)
+      library(pkg, character.only = TRUE)
+    }
+  }
+}
 
 # Define color palette
 moai_colors <- c(

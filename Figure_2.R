@@ -1,9 +1,19 @@
-# Load required libraries
-library(readxl)
-library(ggplot2)
-library(dplyr)
-library(tidyr)
-library(svglite)  # For SVG output
+# Ensure reproducibility by loading required packages
+# Source the package loader or install packages if needed
+if (file.exists("package_loader.R")) {
+  source("package_loader.R")
+  load_required_packages()
+} else {
+  # Fallback: install and load packages directly
+  required_packages <- c("readxl", "ggplot2", "dplyr", "tidyr", "svglite")
+  
+  for (pkg in required_packages) {
+    if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+      install.packages(pkg, dependencies = TRUE)
+      library(pkg, character.only = TRUE)
+    }
+  }
+}
 
 # Read the Van Tilburg data
 data <- read_excel("VanTilburgData.xlsx")

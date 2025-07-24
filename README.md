@@ -9,18 +9,40 @@ The Walking Moai Hypothesis proposes that the famous Easter Island statues (moai
 ## Requirements
 
 - R (version 4.0 or higher recommended)
-- R packages:
+- R packages (automatically installed when running scripts):
   - `readxl` - For reading Excel data files
   - `ggplot2` - For creating publication-quality visualizations
   - `dplyr` - For data manipulation
   - `tidyr` - For data tidying
   - `svglite` - For generating SVG outputs
+  - Additional packages for specific analyses:
+    - `geosphere` and `purrr` (for Figure 3)
+    - `scales` (for Figure 5)
+    - `ragg` (for high-quality graphics in Figures 11-13)
 
-### Installing Required Packages
+### Setup and Installation
+
+#### Option 1: Automatic Setup (Recommended)
+Run the setup script to install all required packages:
 
 ```r
-install.packages(c("readxl", "ggplot2", "dplyr", "tidyr", "svglite"))
+source("setup.R")
 ```
+
+This will:
+- Check for missing packages
+- Install any packages that aren't already installed
+- Verify all packages load correctly
+- Display version information for reproducibility
+
+#### Option 2: Manual Installation
+```r
+install.packages(c("readxl", "ggplot2", "dplyr", "tidyr", "svglite", 
+                   "geosphere", "purrr", "scales", "ragg"))
+```
+
+#### Option 3: Automatic Installation When Running Scripts
+Each R script now includes automatic package checking and installation. Simply run any script and it will install missing packages automatically.
 
 ## Repository Structure
 
@@ -34,6 +56,10 @@ moai_walking_paper_code/
 │   ├── Figure_12.R     # Observed vs expected distribution comparison
 │   └── Figure_13.R     # Moai size vs transport distance analysis
 │
+├── Setup & Utilities/
+│   ├── setup.R         # One-time setup script for package installation
+│   └── package_loader.R # Helper function for loading packages
+│
 ├── Data Files/
 │   ├── VanTilburgData.xlsx        # Van Tilburg (1986) moai measurements
 │   ├── Road Moai Data.xlsx        # Specific road moai measurements
@@ -41,6 +67,8 @@ moai_walking_paper_code/
 │   └── all_moai_combined.csv      # Combined moai dataset
 │
 ├── figures/                       # Output directory (created automatically)
+├── README.md                      # This file
+├── CLAUDE.md                      # AI assistance documentation
 └── moai_walking_paper_code.Rproj  # R project file
 ```
 

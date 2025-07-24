@@ -2,14 +2,22 @@
 # Standalone R code for Figure 5: Relationship between moai base angle and size metric
 # This creates a scatter plot showing base angle vs size (length × width) for intact road moai
 
-# Load required libraries (install if needed)
-if (!require("ggplot2")) install.packages("ggplot2")
-if (!require("dplyr")) install.packages("dplyr")
-if (!require("scales")) install.packages("scales")
-
-library(ggplot2)
-library(dplyr)
-library(scales)
+# Ensure reproducibility by loading required packages
+# Source the package loader or install packages if needed
+if (file.exists("package_loader.R")) {
+  source("package_loader.R")
+  load_required_packages()
+} else {
+  # Fallback: install and load packages directly
+  required_packages <- c("readxl", "ggplot2", "dplyr", "tidyr", "svglite", "scales")
+  
+  for (pkg in required_packages) {
+    if (!require(pkg, character.only = TRUE, quietly = TRUE)) {
+      install.packages(pkg, dependencies = TRUE)
+      library(pkg, character.only = TRUE)
+    }
+  }
+}
 
 # Function to create the base angle vs size figure
 create_base_angle_size_figure <- function(data_file = NULL) {
