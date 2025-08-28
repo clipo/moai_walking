@@ -1,5 +1,13 @@
 # Setup script for The Walking Moai Hypothesis analysis
-# This script checks for packrat and installs all required packages for reproducibility
+# This script installs all required packages for reproducibility
+
+cat("=== MOAI WALKING HYPOTHESIS SETUP ===\n\n")
+
+# Set CRAN mirror to avoid errors
+if (is.null(getOption("repos")) || getOption("repos")["CRAN"] == "@CRAN@") {
+  options(repos = c(CRAN = "https://cloud.r-project.org"))
+  cat("Using CRAN mirror: https://cloud.r-project.org\n")
+}
 
 # Check if we're using packrat
 if (file.exists("packrat/init.R")) {
@@ -49,12 +57,12 @@ required_packages <- c(
   "ggplot2",    # For creating visualizations
   "dplyr",      # For data manipulation
   "tidyr",      # For data tidying
-  "svglite",    # For SVG output
-  "geosphere",  # For geographic calculations (Figure 3)
-  "purrr",      # For functional programming (Figure 3)
-  "scales",     # For scale transformations (Figure 5)
-  "ragg"        # For high-quality graphics (Figures 11-13)
+  "svglite"     # For SVG output
 )
+
+# Note: geosphere package is not required for the main analysis
+# If you see an error about geosphere, you may have an old version of the scripts
+# Please pull the latest version from GitHub
 
 # Install missing packages
 install_if_missing(required_packages)
@@ -75,4 +83,6 @@ for (pkg in required_packages) {
   cat(sprintf("%s: %s\n", pkg, packageVersion(pkg)))
 }
 
-cat("\nSetup complete! You can now run the figure scripts.\n")
+cat("\n=== SETUP COMPLETE ===\n")
+cat("You can now run the figure scripts from the scripts/ directory.\n")
+cat("Example: Rscript scripts/run_all_figures.R\n")
