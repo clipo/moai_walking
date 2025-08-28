@@ -1,24 +1,25 @@
 # Core dependencies for Moai Center of Mass Analysis
-# Python 3.7+ required
+# Python 3.7+ required (tested up to 3.12)
 
 # 3D mesh processing
-trimesh==4.0.10
+trimesh>=4.0.10
 # trimesh dependencies that should be explicitly installed
-rtree==1.1.0
-shapely==2.0.2
-networkx==3.2.1
-pillow==10.2.0
+rtree>=1.1.0
+shapely>=2.0.2
+networkx>=3.2.1
+pillow>=10.2.0
 
 # Numerical computing
-numpy==1.24.4
-scipy==1.11.4
+# Note: numpy 1.26+ required for Python 3.12 compatibility
+numpy>=1.26.0
+scipy>=1.11.4
 
 # Visualization
-matplotlib==3.8.2
+matplotlib>=3.8.2
 
 # Interactive 3D visualization (optional but recommended)
-plotly==5.18.0
-kaleido==0.2.1  # For static image export from plotly
+plotly>=5.18.0
+kaleido>=0.2.1  # For static image export from plotly
 
 # Additional dependencies for full functionality
 # These ensure consistent behavior across different systems
