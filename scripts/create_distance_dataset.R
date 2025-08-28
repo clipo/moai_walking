@@ -14,9 +14,10 @@ cat("=== CREATING MOAI DISTANCE DATASET ===\n\n")
 QUARRY_LAT <- -27.125175  # Geocentroid of QUARRY and QUARRY-BEDROCK moai
 QUARRY_LON <- -109.288170  # Calculated from MOAI_DATABASE_PUBLIC.xlsx
 
-cat("Quarry location (Rano Raraku):\n")
-cat(sprintf("  Latitude: %.4f\n", QUARRY_LAT))
-cat(sprintf("  Longitude: %.4f\n\n", QUARRY_LON))
+cat("Quarry location (Rano Raraku geocentroid):\n")
+cat("  Based on 318 bedrock quarry moai\n")
+cat(sprintf("  Latitude: %.6f\n", QUARRY_LAT))
+cat(sprintf("  Longitude: %.6f\n\n", QUARRY_LON))
 
 # Function to calculate distance from quarry
 calculate_distance_from_quarry <- function(lat, lon) {
