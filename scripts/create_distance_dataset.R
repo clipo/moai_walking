@@ -14,6 +14,17 @@ cat("=== CREATING MOAI DISTANCE DATASET ===\n\n")
 QUARRY_LAT <- -27.125175  # Geocentroid of QUARRY and QUARRY-BEDROCK moai
 QUARRY_LON <- -109.288170  # Calculated from MOAI_DATABASE_PUBLIC.xlsx
 
+# Helper function to get data path (works from root or scripts directory)
+get_data_path <- function(filename) {
+  if (file.exists(file.path("data", filename))) {
+    return(file.path("data", filename))
+  } else if (file.exists(file.path("../data", filename))) {
+    return(file.path("../data", filename))
+  } else {
+    stop(paste("Cannot find", filename, "- please run from project root or scripts directory"))
+  }
+}
+
 cat("Quarry location (Rano Raraku geocentroid):\n")
 cat("  Based on 318 bedrock quarry moai\n")
 cat(sprintf("  Latitude: %.6f\n", QUARRY_LAT))
@@ -36,7 +47,7 @@ calculate_distance_from_quarry <- function(lat, lon) {
 
 # Load the combined moai dataset
 cat("Loading all_moai_combined.csv...\n")
-moai_data <- read.csv("../data/all_moai_combined.csv")
+moai_data <- read.csv(get_data_path("all_moai_combined.csv"))
 cat(sprintf("Loaded %d moai records\n\n", nrow(moai_data)))
 
 # Calculate distance from quarry for each moai
@@ -77,7 +88,7 @@ road_moai_from_combined <- moai_with_distances %>%
 
 # Use ONLY the public database for consistency and completeness
 cat("\nLoading moai from MOAI_DATABASE_PUBLIC.xlsx...\n")
-public_db <- readxl::read_excel("../data/MOAI_DATABASE_PUBLIC.xlsx")
+public_db <- readxl::read_excel(get_data_path("MOAI_DATABASE_PUBLIC.xlsx"))
 
 # Get all ROAD moai from public database
 road_moai <- public_db %>%
@@ -215,7 +226,7 @@ intact_road_moai <- moai_with_distances %>%
 cat(sprintf("\nIntact road moai (1 piece): %d\n", nrow(intact_road_moai)))
 
 # Save the complete dataset with distances
-output_file <- "../data/moai_with_distances.csv"
+output_file <- get_data_path("moai_with_distances.csv")
 write.csv(moai_with_distances, output_file, row.names = FALSE)
 cat(sprintf("\n=== DATASET SAVED ===\n"))
 cat(sprintf("Saved to: %s\n", output_file))
@@ -223,7 +234,7 @@ cat(sprintf("Total records: %d\n", nrow(moai_with_distances)))
 cat(sprintf("Records with valid distances: %d\n", sum(!is.na(moai_with_distances$distance_from_quarry_km))))
 
 # Save the traditional road moai dataset
-road_output <- "../data/road_moai_distances.csv"
+road_output <- get_data_path("road_moai_distances.csv")
 write.csv(road_moai, road_output, row.names = FALSE)
 cat(sprintf("\nRoad moai dataset saved to: %s\n", road_output))
 cat(sprintf("Road moai records: %d\n", nrow(road_moai)))
@@ -276,7 +287,7 @@ for(i in 1:nrow(zones)) {
   zones$observed_pct[i] <- 100 * count / nrow(road_moai)
 }
 
-zone_output <- "../data/road_moai_zones.csv"
+zone_output <- get_data_path("road_moai_zones.csv")
 write.csv(zones, zone_output, row.names = FALSE)
 cat(sprintf("Traditional road zones saved to: %s\n", zone_output))
 
