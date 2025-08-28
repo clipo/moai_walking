@@ -184,18 +184,72 @@ cd scripts
 Rscript test_environment.R  # Checks packages and data availability
 ```
 
-## Python 3D Analysis
+## Python 3D Analysis (Figure 4)
 
-### Running the 3D Physics Analysis
+### Prerequisites
+
+- Python 3 (versions 3.7-3.11 tested)
+- pip package manager
+
+### Installation & Setup
 
 ```bash
+# Navigate to python directory
 cd python
 
-# Generate Figure 4 with both panels (3D and top-down views)
+# Install required packages
+pip install -r requirements.txt
+```
+
+Required packages:
+- `trimesh==4.0.10` - 3D mesh processing and analysis
+- `numpy==1.24.4` - Numerical computations
+- `scipy==1.11.4` - Scientific computing
+- `matplotlib==3.8.2` - Static visualization
+- `plotly==5.18.0` - Interactive 3D visualization
+
+### Generating Figure 4
+
+```bash
+# Generate static Figure 4 (publication quality)
 python moai_analyzer_final.py
 
-# Create interactive 3D visualization (opens in browser)
+# Output files created:
+# - ../figures/Figure_4_moai_analysis.svg (vector format)
+# - ../figures/Figure_4_moai_analysis_600dpi.png (600 dpi for publication)
+# - ../figures/moai_analysis_final.svg
+# - ../figures/moai_analysis_final_600dpi.png
+```
+
+The figure shows:
+- **Panel A**: 3D mesh with center of mass (red sphere) and vertical projection line
+- **Panel B**: Top-down view showing COM projection within base polygon
+
+### Interactive 3D Visualization (Optional)
+
+```bash
+# Create interactive 3D visualization
 python moai_analyzer_plotly.py
+
+# Output files:
+# - ../figures/Figure_4_moai_analysis_interactive.html
+# - ../figures/moai_analysis_interactive.html
+```
+
+Open the HTML files in a web browser to:
+- Rotate the 3D model with mouse drag
+- Zoom with scroll wheel
+- Pan with right-click drag
+- Toggle visibility of different elements
+
+### Additional Analysis Scripts
+
+```bash
+# Calculate maximum lean angles before toppling
+python calculate_lean_angle.py
+
+# Test base outline detection
+python test_base_outline.py
 ```
 
 ### 3D Analysis Key Findings
