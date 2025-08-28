@@ -25,6 +25,7 @@ Quick Setup Steps:
 
 3. GENERATE DISTANCE DATASETS (required first time only)
    Rscript scripts/create_distance_dataset.R
+   Note: This uses data/all_moai_combined.csv which is included in the repository
 
 4. GENERATE ALL FIGURES AT ONCE
    Rscript scripts/run_all_figures.R
