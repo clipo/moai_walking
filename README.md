@@ -194,7 +194,7 @@ Rscript test_environment.R  # Checks packages and data availability
 ### Installation & Setup
 
 ```bash
-# Navigate to python directory
+# Navigate to python directory from project root
 cd python
 
 # Install required packages
@@ -210,8 +210,9 @@ Required packages:
 
 ### Generating Figure 4
 
+#### Option 1: Run from python directory
 ```bash
-# Generate static Figure 4 (publication quality)
+cd python
 python moai_analyzer_final.py
 
 # Output files created:
@@ -221,6 +222,11 @@ python moai_analyzer_final.py
 # - ../figures/moai_analysis_final_600dpi.png
 ```
 
+#### Option 2: Run from project root
+```bash
+python python/moai_analyzer_final.py
+```
+
 The figure shows:
 - **Panel A**: 3D mesh with center of mass (red sphere) and vertical projection line
 - **Panel B**: Top-down view showing COM projection within base polygon
@@ -228,12 +234,16 @@ The figure shows:
 ### Interactive 3D Visualization (Optional)
 
 ```bash
-# Create interactive 3D visualization
+# From python directory:
+cd python
 python moai_analyzer_plotly.py
 
+# OR from project root:
+python python/moai_analyzer_plotly.py
+
 # Output files:
-# - ../figures/Figure_4_moai_analysis_interactive.html
-# - ../figures/moai_analysis_interactive.html
+# - figures/Figure_4_moai_analysis_interactive.html
+# - figures/moai_analysis_interactive.html
 ```
 
 Open the HTML files in a web browser to:
@@ -245,11 +255,14 @@ Open the HTML files in a web browser to:
 ### Additional Analysis Scripts
 
 ```bash
-# Calculate maximum lean angles before toppling
-python calculate_lean_angle.py
+# From python directory:
+cd python
+python calculate_lean_angle.py     # Calculate maximum lean angles
+python test_base_outline.py        # Test base outline detection
 
-# Test base outline detection
-python test_base_outline.py
+# OR from project root:
+python python/calculate_lean_angle.py
+python python/test_base_outline.py
 ```
 
 ### 3D Analysis Key Findings

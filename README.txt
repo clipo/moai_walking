@@ -55,7 +55,7 @@ PYTHON 3D ANALYSIS (FIGURE 4)
 Figure 4 shows the 3D analysis of moai center of mass and stability.
 This requires Python 3 (tested with 3.7-3.11).
 
-1. INSTALL PYTHON PACKAGES
+1. INSTALL PYTHON PACKAGES (from project root)
    cd python
    pip install -r requirements.txt
    
@@ -65,23 +65,27 @@ This requires Python 3 (tested with 3.7-3.11).
    - matplotlib (visualization)
    - plotly (interactive 3D plots)
 
-2. GENERATE FIGURE 4 - STATIC VERSION
+2. GENERATE FIGURE 4 - STATIC VERSION (stay in python directory)
    python moai_analyzer_final.py
    
    This creates:
-   - figures/Figure_4_moai_analysis.svg (vector format)
-   - figures/Figure_4_moai_analysis_600dpi.png (publication quality)
+   - ../figures/Figure_4_moai_analysis.svg (vector format)
+   - ../figures/Figure_4_moai_analysis_600dpi.png (publication quality)
    - Shows center of mass projection and base polygon
 
 3. GENERATE INTERACTIVE 3D VERSION (OPTIONAL)
    python moai_analyzer_plotly.py
    
    This creates:
-   - figures/Figure_4_moai_analysis_interactive.html
+   - ../figures/Figure_4_moai_analysis_interactive.html
    - Interactive 3D visualization you can rotate/zoom in browser
    
 4. ADDITIONAL ANALYSIS (OPTIONAL)
    python calculate_lean_angle.py     # Calculate maximum lean angles
+   
+   OR run from project root:
+   python python/moai_analyzer_final.py
+   python python/moai_analyzer_plotly.py
    
 Note: The scripts use data/SimplifiedMoai.obj (3D mesh with 5,150 vertices)
 
