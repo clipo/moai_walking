@@ -53,17 +53,22 @@ PYTHON 3D ANALYSIS (FIGURE 4)
 ================================================================================
 
 Figure 4 shows the 3D analysis of moai center of mass and stability.
-This requires Python 3 (tested with 3.7-3.11).
+This requires Python 3 (tested with 3.7-3.12).
 
 1. INSTALL PYTHON PACKAGES (from project root)
    cd python
    pip install -r requirements.txt
    
-   Required packages:
-   - trimesh (3D mesh processing)
-   - numpy (numerical computations)
-   - matplotlib (visualization)
-   - plotly (interactive 3D plots)
+   Required packages (minimum versions for compatibility):
+   - trimesh>=4.0.10 (3D mesh processing)
+   - numpy>=1.26.0 (numerical computations - v1.26+ required for Python 3.12)
+   - scipy>=1.11.4 (scientific computing)
+   - matplotlib>=3.8.2 (visualization)
+   - plotly>=5.18.0 (interactive 3D plots)
+   
+   PYTHON 3.12 COMPATIBILITY NOTE: If you encounter installation errors
+   with Python 3.12+, ensure pip is updated: pip install --upgrade pip
+   The requirements use >= for broader compatibility instead of pinned versions.
 
 2. GENERATE FIGURE 4 - STATIC VERSION (stay in python directory)
    python moai_analyzer_final.py
@@ -129,10 +134,14 @@ PROBLEM: "File not found" errors when running figures
 SOLUTION: Generate the distance datasets first
    Rscript scripts/create_distance_dataset.R
 
-PROBLEM: Python ImportError
-SOLUTION: Install Python packages
+PROBLEM: Python ImportError or pip install errors
+SOLUTION: Install Python packages with compatible versions
    cd python
    pip install -r requirements.txt
+   
+   For Python 3.12+: If you see "AttributeError: module 'pkgutil' has no 
+   attribute 'ImpImporter'", the requirements.txt has been updated to use
+   numpy>=1.26.0 which fixes this. Update pip first: pip install --upgrade pip
 
 PROBLEM: Figures look different from paper
 SOLUTION: Check R and package versions

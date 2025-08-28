@@ -51,13 +51,15 @@ python moai_analyzer_plotly.py      # Create interactive 3D visualization
   - `gridExtra` - Arranging multiple plots (optional)
 
 ### For Python 3D Analysis
-- **Python** 3.7 or higher
+- **Python** 3.7 or higher (tested with 3.7-3.12)
 - **Required Python packages**:
-  - `numpy` - Numerical computations
-  - `trimesh` - 3D mesh processing
-  - `matplotlib` - Static visualizations
-  - `plotly` - Interactive visualizations
-  - `scipy` - Scientific computing (ConvexHull)
+  - `numpy>=1.26.0` - Numerical computations (1.26+ required for Python 3.12)
+  - `trimesh>=4.0.10` - 3D mesh processing
+  - `matplotlib>=3.8.2` - Static visualizations
+  - `plotly>=5.18.0` - Interactive visualizations
+  - `scipy>=1.11.4` - Scientific computing (ConvexHull)
+
+**Important Python 3.12 Note**: If using Python 3.12+, the requirements.txt uses minimum version specifications (>=) rather than pinned versions to ensure compatibility. Python 3.12 requires numpy 1.26 or higher due to removed deprecated features in Python's pkgutil module.
 
 ## Repository Structure
 
@@ -201,12 +203,14 @@ cd python
 pip install -r requirements.txt
 ```
 
-Required packages:
-- `trimesh==4.0.10` - 3D mesh processing and analysis
-- `numpy==1.24.4` - Numerical computations
-- `scipy==1.11.4` - Scientific computing
-- `matplotlib==3.8.2` - Static visualization
-- `plotly==5.18.0` - Interactive 3D visualization
+Required packages (minimum versions for compatibility):
+- `trimesh>=4.0.10` - 3D mesh processing and analysis
+- `numpy>=1.26.0` - Numerical computations (Python 3.12 requires 1.26+)
+- `scipy>=1.11.4` - Scientific computing
+- `matplotlib>=3.8.2` - Static visualization
+- `plotly>=5.18.0` - Interactive 3D visualization
+
+**Troubleshooting**: If you encounter installation errors with Python 3.12+, ensure pip is updated: `pip install --upgrade pip`
 
 ### Generating Figure 4
 
