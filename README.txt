@@ -128,10 +128,17 @@ Primary datasets:
 - VanTilburgData.xlsx: Van Tilburg (1986) moai measurements
 - MOAI_DATABASE_PUBLIC.xlsx: Comprehensive moai database
 - SimplifiedMoai.obj: 3D mesh model (5,150 vertices)
+- Road Moai Data.xlsx: Road moai with GPS coordinates and base angles
+- all_moai_combined.csv: Merged dataset with all moai measurements
 
 Generated datasets (created by create_distance_dataset.R):
-- moai_with_distances.csv: All moai with calculated distances
+- moai_with_distances.csv: All moai with calculated distances from quarry
 - road_moai_distances.csv: Road moai subset with distances
+- road_moai_zones.csv: Distance zone analysis for transport failure model
+
+Note: All distances are calculated from the geocentroid of 318 bedrock 
+quarry moai (-27.125175°, -109.288170°), representing the actual center 
+of quarrying activity at Rano Raraku.
 
 ================================================================================
 CITATION
