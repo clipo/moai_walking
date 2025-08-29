@@ -72,6 +72,7 @@ moai_walking/
 │   ├── Figure_11.R        # Transport failure hypothesis model
 │   ├── Figure_12.R        # Observed distribution using real data
 │   ├── Figure_13.R        # Size vs distance analysis
+│   ├── Figure_S1.R        # Supplemental: Ceremonial vs transport failure testing
 │   ├── create_distance_dataset.R # Generate distance measurements
 │   ├── test_environment.R # Test R environment setup
 │   ├── run_all_figures.R # Run all analyses sequentially
@@ -177,6 +178,9 @@ Rscript Figure_12.R
 
 # Figure 13: Size vs transport distance analysis
 Rscript Figure_13.R
+
+# Figure S1 (Supplemental): Ceremonial vs transport failure hypothesis testing
+Rscript Figure_S1.R  # Generates Figure S1 and Table S1
 ```
 
 ### Test Your Environment
@@ -295,6 +299,8 @@ The 3D analysis confirms that moai were designed with inherent stability for upr
 | **Figure 11** | Transport failure hypothesis model | Expected concentration near quarry under failure hypothesis |
 | **Figure 12** | Observed road moai distribution | 41.7% within 2km of quarry (35/84 moai) shows transport challenges |
 | **Figure 13** | Moai size vs transport distance | No correlation between size and distance - size wasn't limiting factor |
+| **Figure S1** | Hypothesis testing (supplemental) | 4-panel comparison of ceremonial vs transport failure hypotheses |
+| **Table S1** | Statistical test results (supplemental) | All 6 tests support transport failure, 0 support ceremonial placement |
 
 ### Python 3D Analysis Outputs
 

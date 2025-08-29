@@ -39,14 +39,15 @@ if (!file.exists("../data/moai_with_distances.csv")) {
                                   "Creating Distance Datasets")
 }
 
-# Run all figure scripts
+# Run all figure scripts (including supplemental)
 figures <- list(
   Figure_2 = "Figure_2.R",
   Figure_3 = "Figure_3.R", 
   Figure_5 = "Figure_5.R",
   Figure_11 = "Figure_11.R",
   Figure_12 = "Figure_12.R",
-  Figure_13 = "Figure_13.R"
+  Figure_13 = "Figure_13.R",
+  Figure_S1 = "Figure_S1.R"  # Supplemental: Hypothesis testing
 )
 
 for (fig_name in names(figures)) {
@@ -85,7 +86,9 @@ expected_outputs <- c(
   "Figure_5_intact_road_moai.png",
   "Figure_11_transport_failure_expectation.png",
   "Figure_12_distribution_analysis.png",
-  "Figure_13_size_analysis.png"
+  "Figure_13_size_distance_analysis.png",
+  "Figure_S1_hypothesis_tests.png",
+  "Table_S1_hypothesis_test_results.csv"
 )
 
 cat("\nChecking for expected output files in ../figures/:\n")

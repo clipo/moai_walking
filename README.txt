@@ -27,7 +27,7 @@ Quick Setup Steps:
    Rscript scripts/create_distance_dataset.R
    Note: This uses data/all_moai_combined.csv which is included in the repository
 
-4. GENERATE ALL FIGURES AT ONCE
+4. GENERATE ALL FIGURES AT ONCE (INCLUDING SUPPLEMENTAL)
    Rscript scripts/run_all_figures.R
 
 That's it! All figures will be in the figures/ directory.
@@ -47,6 +47,7 @@ From the scripts directory:
    Rscript Figure_11.R   # Transport failure model
    Rscript Figure_12.R   # Observed distribution analysis
    Rscript Figure_13.R   # Size vs transport distance
+   Rscript Figure_S1.R   # Supplemental: Hypothesis testing (Figure S1 & Table S1)
 
 ================================================================================
 PYTHON 3D ANALYSIS (FIGURE 4)
