@@ -18,7 +18,6 @@ Thumbs.db
 
 # Packrat files
 packrat/lib*/
-packrat/src/
 # Keep packrat.lock and packrat/init.R for reproducibility
 !packrat/packrat.lock
 !packrat/init.R
