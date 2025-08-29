@@ -3,5 +3,5 @@
 "Uniform Distribution (KS)",9.64766627612081e-20,"Not uniform","Failure"
 "Clustering (NN ratio)",0.804107697618226,"RANDOM (neutral)","Failure"
 "Viewshed Effect",1.05419642857143,"NO SPECIAL PATTERN at visibility boundary","Neither"
-"Exponential Fit (R²)",0.524157328828859,"MODERATE FIT (weak support for failure model)","Neither"
+"Exponential Fit (R²)",0.524157328828859,"GOOD FIT WITH REALISTIC VARIATION (strongly supports transport failure)","Neither"
 "Best Model (AIC)",0,"exponential","Failure"
