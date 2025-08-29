@@ -446,14 +446,14 @@ results_summary <- data.frame(
                      nn_pattern, viewshed_pattern,
                      ifelse(is.na(r_squared), "NA", exponential_fit), 
                      best_model),
-  Supports = c(
-    ifelse(cv_spacing < 0.5, "Ceremonial", "Failure"),  # High CV supports failure
-    ifelse(ks_uniform$p.value > 0.05, "Ceremonial", "Failure"),  # Non-uniform supports failure
-    ifelse(clustering_ratio < 0.8, "Ceremonial", "Failure"),  # Random/neutral still consistent with failure
-    ifelse(window_density > 1.5 * overall_density, "Ceremonial", "Failure"),  # No viewshed effect supports failure
-    ifelse(!is.na(r_squared) && r_squared > 0.4 && r_squared < 0.8, "Failure", 
-           ifelse(!is.na(r_squared) && r_squared >= 0.25, "Failure", "Neither")),  # Moderate R² supports failure
-    ifelse(best_model == "exponential", "Failure", "Ceremonial")  # Exponential model supports failure
+  Hypothesis_Supported = c(
+    ifelse(cv_spacing < 0.5, "Ceremonial Placement", "Transport Failure"),  # High CV supports failure
+    ifelse(ks_uniform$p.value > 0.05, "Ceremonial Placement", "Transport Failure"),  # Non-uniform supports failure
+    ifelse(clustering_ratio < 0.8, "Ceremonial Placement", "Transport Failure"),  # Random/neutral still consistent with failure
+    ifelse(window_density > 1.5 * overall_density, "Ceremonial Placement", "Transport Failure"),  # No viewshed effect supports failure
+    ifelse(!is.na(r_squared) && r_squared > 0.4 && r_squared < 0.8, "Transport Failure", 
+           ifelse(!is.na(r_squared) && r_squared >= 0.25, "Transport Failure", "Neither")),  # Moderate R² supports failure
+    ifelse(best_model == "exponential", "Transport Failure", "Ceremonial Placement")  # Exponential model supports failure
   )
 )
 
