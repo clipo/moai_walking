@@ -1,11 +1,12 @@
 #!/usr/bin/env Rscript
-# Test Ceremonial Placement Hypothesis vs Transport Failure Model
-# This script tests alternative hypotheses for road moai distribution
+# Figure S1 and Table S1: Test of Ceremonial Placement vs Transport Failure Hypotheses
+# Supplemental analysis testing alternative explanations for road moai distribution
 
 library(dplyr)
 library(ggplot2)
 
-cat("=== TESTING CEREMONIAL PLACEMENT HYPOTHESIS ===\n\n")
+cat("=== SUPPLEMENTAL ANALYSIS: HYPOTHESIS TESTING ===\n\n")
+cat("Figure S1 and Table S1: Testing ceremonial placement vs transport failure\n")
 cat("This analysis tests whether road moai placement follows ceremonial patterns\n")
 cat("rather than transport failure patterns.\n\n")
 
@@ -378,8 +379,8 @@ cat(sprintf("\nModel preference by AIC weight: %s (%.1f%% support)\n",
 # =============================================================================
 cat("\n=== GENERATING VISUALIZATION ===\n")
 
-# Create a 4-panel figure showing the different tests
-png("../figures/ceremonial_hypothesis_tests.png", 
+# Create Figure S2: 4-panel figure showing the different tests
+png("../figures/Figure_S2_hypothesis_tests.png", 
     width = 12, height = 10, units = "in", res = 300)
 
 par(mfrow = c(2, 2), mar = c(5, 4, 4, 2))
@@ -430,9 +431,9 @@ text(1:3 * 1.2 - 0.5, aic_weights * 100 + 5,
 
 dev.off()
 
-cat("Visualization saved as: ../figures/ceremonial_hypothesis_tests.png\n")
+cat("Visualization saved as: ../figures/Figure_S2_hypothesis_tests.png\n")
 
-# Save results to CSV for reference
+# Save Table S1: Results summary for supplemental information
 results_summary <- data.frame(
   Test = c("Regular Spacing (CV)", "Uniform Distribution (KS)", 
            "Clustering (NN ratio)", "Viewshed Effect",
@@ -455,7 +456,10 @@ results_summary <- data.frame(
   )
 )
 
-write.csv(results_summary, "../figures/ceremonial_hypothesis_results.csv", row.names = FALSE)
-cat("\nResults summary saved as: ../figures/ceremonial_hypothesis_results.csv\n")
+write.csv(results_summary, "../figures/Table_S1_hypothesis_test_results.csv", row.names = FALSE)
+cat("\nTable S1 saved as: ../figures/Table_S1_hypothesis_test_results.csv\n")
 
-cat("\n=== ANALYSIS COMPLETE ===\n")
+cat("\n=== SUPPLEMENTAL ANALYSIS COMPLETE ===\n")
+cat("Generated outputs:\n")
+cat("  - Figure S2: Four-panel visualization of hypothesis tests\n")
+cat("  - Table S1: Statistical test results summary\n")
