@@ -257,11 +257,12 @@ if (cv_spacing < 0.5 || ks_uniform$p.value > 0.05) {
 }
 
 # Evaluate clustering
-if (n_peaks > 1 || clustering_ratio < 0.8) {
+# Note: Multiple peaks in density doesn't mean ceremonial if NN ratio shows random pattern
+if (n_peaks > 1 && clustering_ratio < 0.8) {
   cat("  ✓ Clustering at specific locations detected\n")
   ceremonial_support <- ceremonial_support + 1
 } else {
-  cat("  ✗ No significant clustering pattern\n")
+  cat("  ✗ No significant clustering pattern (NN ratio = %.2f)\n", clustering_ratio)
 }
 
 # Evaluate viewshed
