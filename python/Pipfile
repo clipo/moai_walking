@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+trimesh = "==4.0.10"
+rtree = "==1.1.0"
+shapely = "==2.0.2"
+networkx = "==3.2.1"
+Pillow = "==10.2.0"
+numpy = "==1.24.4"
+scipy = "==1.11.4"
+matplotlib = "==3.8.2"
+plotly = "==5.18.0"
+kaleido = "==0.2.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+main = "python moai_analyzer_final.py"
+interactive = "python moai_analyzer_plotly.py"
+lean = "python calculate_lean_angle.py"
+test_base = "python test_base_outline.py"

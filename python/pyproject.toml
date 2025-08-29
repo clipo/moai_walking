@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "moai-walking-analysis"
+version = "1.0.0"
+description = "3D physics analysis for the Walking Moai Hypothesis"
+authors = ["Carl Lipo <clipo@binghamton.edu>", "Terry Hunt <tlhunt@arizona.edu>"]
+readme = "README.md"
+packages = [{include = "*.py"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.13"
+trimesh = "4.0.10"
+rtree = "1.1.0"
+shapely = "2.0.2"
+networkx = "3.2.1"
+Pillow = "10.2.0"
+numpy = "1.24.4"
+scipy = "1.11.4"
+matplotlib = "3.8.2"
+plotly = "5.18.0"
+kaleido = "0.2.1"
+setuptools = ">=65.5.0"
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.scripts]
+moai-analyze = "moai_analyzer_final:main"
+moai-interactive = "moai_analyzer_plotly:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Repository" = "https://github.com/[username]/moai_walking"
+"Paper" = "https://doi.org/[forthcoming]"

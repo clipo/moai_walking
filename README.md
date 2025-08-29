@@ -48,7 +48,7 @@ python moai_analyzer_plotly.py      # Create interactive 3D visualization
   - `dplyr` - Data manipulation
   - `tidyr` - Data tidying
   - `svglite` - Generating SVG outputs
-  - `gridExtra` - Arranging multiple plots (optional)
+  - `cowplot` - Combining plots (used in Figure 6)
 
 ### For Python 3D Analysis
 - **Python** 3.7 or higher (tested with 3.7-3.12)
@@ -69,6 +69,7 @@ moai_walking/
 │   ├── Figure_2.R         # Base-to-shoulder width ratio comparison
 │   ├── Figure_3.R         # Center of mass distribution for road moai
 │   ├── Figure_5.R         # Base angle vs size (intact road moai only)
+│   ├── Figure_6.R         # Elevation and slope profiles of moai roads
 │   ├── Figure_11.R        # Transport failure hypothesis model
 │   ├── Figure_12.R        # Observed distribution using real data
 │   ├── Figure_13.R        # Size vs distance analysis
@@ -95,6 +96,8 @@ moai_walking/
 │   ├── MOAI_DATABASE_PUBLIC.xlsx  # Comprehensive moai database
 │   ├── all_moai_combined.csv      # Merged dataset with all moai measurements
 │   ├── SimplifiedMoai.obj          # 3D mesh model (5,150 vertices)
+│   ├── moai_road_slope_from_raraku.xlsx  # Slope data: Rano Raraku to South Coast road
+│   ├── southcoast_road_only_slope.xlsx   # Slope data: South Coast road segment
 │   ├── moai_with_distances.csv*   # Generated: moai with distances from geocentroid
 │   ├── road_moai_distances.csv*   # Generated: road moai subset (84 records)
 │   └── road_moai_zones.csv*       # Generated: distance zone analysis
@@ -199,6 +202,8 @@ Rscript test_environment.R  # Checks packages and data availability
 
 ### Installation & Setup
 
+#### Quick Start (Standard Installation)
+
 ```bash
 # Navigate to python directory from project root
 cd python
@@ -207,14 +212,51 @@ cd python
 pip install -r requirements.txt
 ```
 
-Required packages (minimum versions for compatibility):
-- `trimesh>=4.0.10` - 3D mesh processing and analysis
-- `numpy>=1.26.0` - Numerical computations (Python 3.12 requires 1.26+)
-- `scipy>=1.11.4` - Scientific computing
-- `matplotlib>=3.8.2` - Static visualization
-- `plotly>=5.18.0` - Interactive 3D visualization
+#### Reproducible Setup (Like R's packrat)
 
-**Troubleshooting**: If you encounter installation errors with Python 3.12+, ensure pip is updated: `pip install --upgrade pip`
+For exact reproducibility across machines, we provide multiple options:
+
+**Option 1: Automated Setup Script (Recommended)**
+```bash
+cd python
+python setup_python.py          # Creates venv and installs locked versions
+source activate_moai.sh         # Linux/Mac
+activate_moai.bat               # Windows
+```
+
+**Option 2: Manual with Locked Versions**
+```bash
+cd python
+python -m venv venv
+source venv/bin/activate        # Linux/Mac (or venv\Scripts\activate on Windows)
+pip install -r requirements-lock.txt
+```
+
+**Option 3: Using Conda**
+```bash
+cd python
+conda env create -f environment.yml
+conda activate hotuiti
+```
+
+**Option 4: Using Pipenv**
+```bash
+cd python
+pip install pipenv
+pipenv install
+pipenv run python moai_analyzer_final.py
+```
+
+See `python/PYTHON_REPRODUCIBILITY.md` for detailed instructions on all methods.
+
+Required packages with locked versions:
+- `trimesh==4.0.10` - 3D mesh processing and analysis
+- `numpy==1.24.4` - Numerical computations (1.26+ for Python 3.12)
+- `scipy==1.11.4` - Scientific computing
+- `matplotlib==3.8.2` - Static visualization
+- `plotly==5.18.0` - Interactive 3D visualization
+
+**Note**: Use `requirements-lock.txt` for exact reproducibility or `requirements.txt` for minimum compatible versions.
 
 ### Generating Figure 4
 
@@ -371,8 +413,19 @@ This project follows clean R coding practices:
 
 ## Reproducibility Notes
 
+### R Environment
 - **R Version**: Tested with R 4.4.0
+- **Package Management**: Packrat for exact reproducibility
 - **Package Versions**: See `packrat.lock` for exact versions used
+- **Setup**: Run `source("init_packrat.R")` or `packrat::restore()`
+
+### Python Environment
+- **Python Version**: 3.10.13 recommended (compatible with 3.7-3.12)
+- **Package Management**: Multiple options provided (similar to packrat)
+- **Package Versions**: See `python/requirements-lock.txt` for exact versions
+- **Setup**: Run `python python/setup_python.py` for automated setup
+
+### General
 - **Random Seed**: Set to 42 where applicable for reproducible results
 - **Distance Calculations**: Using Euclidean approximation suitable for Easter Island's small area
 - **Quarry Location**: Rano Raraku geocentroid at -27.125175°, -109.288170°

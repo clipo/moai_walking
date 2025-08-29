@@ -57,7 +57,8 @@ required_packages <- c(
   "ggplot2",    # For creating visualizations
   "dplyr",      # For data manipulation
   "tidyr",      # For data tidying
-  "svglite"     # For SVG output
+  "svglite",    # For SVG output
+  "cowplot"     # For combining plots (used in Figure 6)
 )
 
 # Note: geosphere package is not required for the main analysis

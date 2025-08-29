@@ -44,6 +44,7 @@ figures <- list(
   Figure_2 = "Figure_2.R",
   Figure_3 = "Figure_3.R", 
   Figure_5 = "Figure_5.R",
+  Figure_6 = "Figure_6.R",  # Slope profiles
   Figure_11 = "Figure_11.R",
   Figure_12 = "Figure_12.R",
   Figure_13 = "Figure_13.R",
@@ -84,6 +85,7 @@ expected_outputs <- c(
   "Figure_2_moai_ratio_comparison.png",
   "Figure_3_com_distribution.png",
   "Figure_5_intact_road_moai.png",
+  "Figure_6_slope_profiles.png",
   "Figure_11_transport_failure_expectation.png",
   "Figure_12_distribution_analysis.png",
   "Figure_13_size_distance_analysis.png",

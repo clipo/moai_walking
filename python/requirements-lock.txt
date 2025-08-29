@@ -1,0 +1,48 @@
+# Locked package versions for reproducibility
+# Generated: 2025-08-29
+# Python version: 3.10.13 (recommended), compatible with 3.7-3.12
+# 
+# This file contains exact package versions for complete reproducibility
+# Similar to packrat.lock for R, this ensures identical environments
+#
+# To use this file:
+#   pip install -r requirements-lock.txt
+#
+# To generate a new lock file with current versions:
+#   pip freeze > requirements-lock.txt
+
+# Core 3D mesh processing
+trimesh==4.0.10
+rtree==1.1.0
+shapely==2.0.2
+networkx==3.2.1
+Pillow==10.2.0
+
+# Numerical computing  
+numpy==1.24.4
+scipy==1.11.4
+
+# Visualization
+matplotlib==3.8.2
+cycler==0.12.1
+fonttools==4.47.2
+kiwisolver==1.4.5
+packaging==23.2
+pyparsing==3.1.1
+python-dateutil==2.8.2
+six==1.16.0
+
+# Interactive 3D visualization
+plotly==5.18.0
+tenacity==8.2.3
+
+# Image export for plotly
+kaleido==0.2.1
+
+# Build and setup tools
+setuptools==65.5.0
+
+# Additional dependencies (transitive)
+contourpy==1.2.0
+importlib-resources==6.1.1
+zipp==3.17.0

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  moai-3d-analysis:
+    build: .
+    container_name: moai-3d-analysis
+    volumes:
+      # Mount the data directory to access SimplifiedMoai.obj
+      - ../data:/data:ro
+      # Mount figures directory for output files
+      - ../figures:/figures
+      # Mount current directory for development (optional)
+      # - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - MPLBACKEND=Agg
+    # Default runs moai_analyzer_final.py
+    # Override to run different scripts:
+    # command: python moai_analyzer_plotly.py
+    # command: python calculate_lean_angle.py
