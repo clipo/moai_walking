@@ -94,27 +94,9 @@ cat(sprintf("R² = %.3f\n", summary(lm_model)$r.squared))
 # Create the two-panel figure
 par(mfrow = c(1, 2), mar = c(5, 4, 3, 2))
 
-# Panel A: Box plots by transport phase
-boxplot(total_length_cm ~ transport_phase, data = complete_moai,
-        main = "A. Size by Transport Phase (All Moai)",
-        xlab = "Transport Phase",
-        ylab = "Total Length (cm)",
-        col = c("#e74c3c", "#3498db", "#2ecc71"),
-        las = 1,
-        outline = TRUE)
-
-# Add sample sizes
-phase_counts <- table(complete_moai$transport_phase)
-mtext(side = 1, at = 1:3, text = paste0("n=", phase_counts), 
-      line = 2.5, cex = 0.8)
-
-# Add median values
-medians <- tapply(complete_moai$total_length_cm, complete_moai$transport_phase, median)
-points(1:3, medians, pch = 18, cex = 2, col = "black")
-
-# Panel B: Scatter plot with regression
+# Panel A: Scatter plot with regression
 plot(complete_moai$distance_from_quarry_km, complete_moai$total_length_cm,
-     main = "B. Size vs Distance Regression",
+     main = "A. Size vs Distance Regression",
      xlab = "Distance from Quarry (km)",
      ylab = "Total Length (cm)",
      pch = 19,
@@ -144,6 +126,25 @@ text(max(complete_moai$distance_from_quarry_km) * 0.7,
              cor_test$estimate, cor_test$p.value, nrow(complete_moai)),
      pos = 4, cex = 0.9)
 
+# Panel B: Box plots by transport phase
+phase_counts <- table(complete_moai$transport_phase)
+medians <- tapply(complete_moai$total_length_cm, complete_moai$transport_phase, median)
+
+boxplot(total_length_cm ~ transport_phase, data = complete_moai,
+        main = "B. Size by Transport Phase (All Moai)",
+        xlab = "Transport Phase",
+        ylab = "Total Length (cm)",
+        col = c("#e74c3c", "#3498db", "#2ecc71"),
+        las = 1,
+        outline = TRUE)
+
+# Add sample sizes
+mtext(side = 1, at = 1:3, text = paste0("n=", phase_counts), 
+      line = 2.5, cex = 0.8)
+
+# Add median values
+points(1:3, medians, pch = 18, cex = 2, col = "black")
+
 # Save the figure
 if (!dir.exists("../figures")) {
   dir.create("../figures")
@@ -156,20 +157,8 @@ png("../figures/Figure_13_size_distance_analysis.png",
 par(mfrow = c(1, 2), mar = c(5, 4, 3, 2))
 
 # Recreate Panel A for PNG
-boxplot(total_length_cm ~ transport_phase, data = complete_moai,
-        main = "A. Size by Transport Phase (All Moai)",
-        xlab = "Transport Phase",
-        ylab = "Total Length (cm)",
-        col = c("#e74c3c", "#3498db", "#2ecc71"),
-        las = 1,
-        outline = TRUE)
-mtext(side = 1, at = 1:3, text = paste0("n=", phase_counts), 
-      line = 2.5, cex = 0.8)
-points(1:3, medians, pch = 18, cex = 2, col = "black")
-
-# Recreate Panel B for PNG
 plot(complete_moai$distance_from_quarry_km, complete_moai$total_length_cm,
-     main = "B. Size vs Distance Regression",
+     main = "A. Size vs Distance Regression",
      xlab = "Distance from Quarry (km)",
      ylab = "Total Length (cm)",
      pch = 19,
@@ -187,6 +176,18 @@ text(max(complete_moai$distance_from_quarry_km) * 0.7,
      sprintf("r = %.3f\np = %.4f\nn = %d", 
              cor_test$estimate, cor_test$p.value, nrow(complete_moai)),
      pos = 4, cex = 0.9)
+
+# Recreate Panel B for PNG (now box plots)
+boxplot(total_length_cm ~ transport_phase, data = complete_moai,
+        main = "B. Size by Transport Phase (All Moai)",
+        xlab = "Transport Phase",
+        ylab = "Total Length (cm)",
+        col = c("#e74c3c", "#3498db", "#2ecc71"),
+        las = 1,
+        outline = TRUE)
+mtext(side = 1, at = 1:3, text = paste0("n=", phase_counts), 
+      line = 2.5, cex = 0.8)
+points(1:3, medians, pch = 18, cex = 2, col = "black")
 dev.off()
 
 # Low resolution preview PNG (150 dpi)
@@ -195,8 +196,8 @@ png("../figures/Figure_13_size_distance_analysis_preview.png",
 par(mfrow = c(1, 2), mar = c(5, 4, 3, 2))
 
 # Recreate Panel A for preview PNG
-boxplot(total_length_cm ~ transport_phase, data = complete_moai,
-        main = "A. Size by Transport Phase (All Moai)",
+plot(complete_moai$distance_from_quarry_km, complete_moai$total_length_cm,
+     main = "A. Size vs Distance Regression",
         xlab = "Transport Phase",
         ylab = "Total Length (cm)",
         col = c("#e74c3c", "#3498db", "#2ecc71"),
@@ -209,31 +210,22 @@ points(1:3, medians, pch = 18, cex = 2, col = "black")
 # Recreate Panel B for preview PNG
 plot(complete_moai$distance_from_quarry_km, complete_moai$total_length_cm,
      main = "B. Size vs Distance Regression",
-     xlab = "Distance from Quarry (km)",
-     ylab = "Total Length (cm)",
-     pch = 19,
-     col = rgb(0.2, 0.2, 0.2, 0.6),
-     las = 1,
-     xlim = c(0, max(complete_moai$distance_from_quarry_km) * 1.1))
-polygon(c(pred_data$distance_from_quarry_km, rev(pred_data$distance_from_quarry_km)),
-        c(pred[,"lwr"], rev(pred[,"upr"])),
-        col = rgb(0.5, 0.5, 0.5, 0.2),
-        border = NA)
-lines(pred_data$distance_from_quarry_km, pred[,"fit"], 
-      col = "red", lwd = 2)
-text(max(complete_moai$distance_from_quarry_km) * 0.7, 
-     max(complete_moai$total_length_cm) * 0.95,
-     sprintf("r = %.3f\np = %.4f\nn = %d", 
-             cor_test$estimate, cor_test$p.value, nrow(complete_moai)),
-     pos = 4, cex = 0.9)
+        xlab = "Transport Phase",
+        ylab = "Total Length (cm)",
+        col = c("#e74c3c", "#3498db", "#2ecc71"),
+        las = 1,
+        outline = TRUE)
+mtext(side = 1, at = 1:3, text = paste0("n=", phase_counts), 
+      line = 2.5, cex = 0.8)
+points(1:3, medians, pch = 18, cex = 2, col = "black")
 dev.off()
 
 pdf("../figures/Figure_13_size_distance_analysis.pdf", width = 10, height = 5)
 par(mfrow = c(1, 2), mar = c(5, 4, 3, 2))
 
 # Repeat Panel A for PDF
-boxplot(total_length_cm ~ transport_phase, data = complete_moai,
-        main = "A. Size by Transport Phase (All Moai)",
+plot(complete_moai$distance_from_quarry_km, complete_moai$total_length_cm,
+     main = "A. Size vs Distance Regression",
         xlab = "Transport Phase",
         ylab = "Total Length (cm)",
         col = c("#e74c3c", "#3498db", "#2ecc71"),
@@ -246,23 +238,14 @@ points(1:3, medians, pch = 18, cex = 2, col = "black")
 # Repeat Panel B for PDF
 plot(complete_moai$distance_from_quarry_km, complete_moai$total_length_cm,
      main = "B. Size vs Distance Regression",
-     xlab = "Distance from Quarry (km)",
-     ylab = "Total Length (cm)",
-     pch = 19,
-     col = rgb(0.2, 0.2, 0.2, 0.6),
-     las = 1,
-     xlim = c(0, max(complete_moai$distance_from_quarry_km) * 1.1))
-polygon(c(pred_data$distance_from_quarry_km, rev(pred_data$distance_from_quarry_km)),
-        c(pred[,"lwr"], rev(pred[,"upr"])),
-        col = rgb(0.5, 0.5, 0.5, 0.2),
-        border = NA)
-lines(pred_data$distance_from_quarry_km, pred[,"fit"], 
-      col = "red", lwd = 2)
-text(max(complete_moai$distance_from_quarry_km) * 0.7, 
-     max(complete_moai$total_length_cm) * 0.95,
-     sprintf("r = %.3f\np = %.4f\nn = %d", 
-             cor_test$estimate, cor_test$p.value, nrow(complete_moai)),
-     pos = 4, cex = 0.9)
+        xlab = "Transport Phase",
+        ylab = "Total Length (cm)",
+        col = c("#e74c3c", "#3498db", "#2ecc71"),
+        las = 1,
+        outline = TRUE)
+mtext(side = 1, at = 1:3, text = paste0("n=", phase_counts), 
+      line = 2.5, cex = 0.8)
+points(1:3, medians, pch = 18, cex = 2, col = "black")
 dev.off()
 
 # Save statistics
