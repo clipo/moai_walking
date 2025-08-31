@@ -1,0 +1,11 @@
+ROAD MOAI ORIENTATION ANALYSIS RESULTS
+=======================================
+
+Chi-square test: X² = 12.388, df = 4, p = 0.0147
+Fisher's exact test: p = 0.0032
+Effect size (Cramér's V): 0.349 (medium association)
+
+Key pattern: Face-down moai 54.8% downhill, Face-up moai 84.2% uphill
+
+Conclusion: Moai orientation relative to slope is NOT random.
+The pattern supports mechanical failure during transport.

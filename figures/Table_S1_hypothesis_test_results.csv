@@ -5,5 +5,4 @@
 "Distance Effects","Viewshed Boundary Effect","1.054","Ratio > 1.5 (peak at boundary)","Ratio ≈ 1.0 (no effect)","No special pattern","Transport Failure"
 "Distance Effects","Overdispersion (Var/Mean)","8.97","Low (< 1.5)","High (> 3.0)","High variance","Transport Failure"
 "Model Fitting","Exponential Fit (R²)","0.524","Poor fit","R² = 0.4-0.7","Moderate fit with variation","Transport Failure"
-"Model Fitting","Stochastic Variation","Present","Minimal","High variance","High stochastic variation","Transport Failure"
 "Model Selection","Best Model (AIC, 6 models)","Exponential","Linear/Uniform","Exponential","Exponential (100% AIC weight)","Transport Failure"

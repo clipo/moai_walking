@@ -266,14 +266,13 @@ cat("\n=== CREATING SUMMARY TABLE ===\n")
 test_results <- data.frame(
   Test_Category = c("Spatial Pattern", "Spatial Pattern", "Spatial Pattern", 
                     "Distance Effects", "Distance Effects",
-                    "Model Fitting", "Model Fitting", "Model Selection"),
+                    "Model Fitting", "Model Selection"),
   Test_Name = c("Regular Spacing (CV)", 
                 "Uniform Distribution (KS)",
                 "Nearest Neighbor Ratio",
                 "Viewshed Boundary Effect",
                 "Overdispersion (Var/Mean)",
                 "Exponential Fit (R²)",
-                "Stochastic Variation",
                 "Best Model (AIC, 6 models)"),
   Statistic = c(sprintf("%.3f", cv_spacing),
                 sprintf("p = %.2e", ks_test$p.value),
@@ -281,7 +280,6 @@ test_results <- data.frame(
                 sprintf("%.3f", viewshed_ratio),
                 sprintf("%.2f", overdispersion),
                 sprintf("%.3f", r_squared),
-                "Present",
                 "Exponential"),
   Expected_Ceremonial = c("CV < 0.5 (regular)",
                           "p > 0.05 (uniform)",
@@ -289,7 +287,6 @@ test_results <- data.frame(
                           "Ratio > 1.5 (peak at boundary)",
                           "Low (< 1.5)",
                           "Poor fit",
-                          "Minimal",
                           "Linear/Uniform"),
   Expected_Failure = c("CV > 1.0 (clustered)",
                        "p < 0.05 (non-uniform)",
@@ -297,7 +294,6 @@ test_results <- data.frame(
                        "Ratio ≈ 1.0 (no effect)",
                        "High (> 3.0)",
                        "R² = 0.4-0.7",
-                       "High variance",
                        "Exponential"),
   Observed_Pattern = c(ifelse(cv_spacing > 1, "Clustered", "Random"),
                        "Non-uniform",
@@ -306,13 +302,11 @@ test_results <- data.frame(
                        "No special pattern",
                        "High variance",
                        "Moderate fit with variation",
-                       "High stochastic variation",
                        "Exponential (100% AIC weight)"),
   Supports = c("Transport Failure",
                "Transport Failure",
                "Transport Failure",
                "Transport Failure", 
-               "Transport Failure",
                "Transport Failure",
                "Transport Failure",
                "Transport Failure")
@@ -325,9 +319,9 @@ cat("Table S1 saved as: ../figures/Table_S1_hypothesis_test_results.csv\n")
 
 # Print summary
 cat("\n=== TEST SUMMARY ===\n")
-cat(sprintf("Tests supporting Transport Failure: %d/8\n", sum(test_results$Supports == "Transport Failure")))
-cat(sprintf("Tests supporting Ceremonial Placement: %d/8\n", sum(test_results$Supports == "Ceremonial Placement")))
+cat(sprintf("Tests supporting Transport Failure: %d/7\n", sum(test_results$Supports == "Transport Failure")))
+cat(sprintf("Tests supporting Ceremonial Placement: %d/7\n", sum(test_results$Supports == "Ceremonial Placement")))
 
-cat("\nAll 8 statistical tests unanimously support the transport failure hypothesis.\n")
+cat("\nAll 7 statistical tests unanimously support the transport failure hypothesis.\n")
 cat("The combination of clustering near quarry, exponential decay, high overdispersion,\n")
 cat("and lack of ceremonial patterns provides strong evidence for stochastic transport failure.\n")

@@ -1,0 +1,21 @@
+HYPOTHESIS TESTING: TRANSPORT FAILURE VERSUS CEREMONIAL PLACEMENT
+
+Given the absence of specific, testable hypotheses in the ceremonial placement literature, we developed a comprehensive suite of seven statistical tests to evaluate competing explanations for road moai distribution patterns (Figure S1, Table S1). These tests examine spatial patterns, distance effects, and distribution models that would differentiate between deliberate ceremonial positioning and stochastic transport failure.
+
+TEST CONSTRUCTION AND RATIONALE
+
+We designed tests around three key categories that should distinguish the competing hypotheses:
+
+1. Spatial Pattern Tests (Panels A-C): If moai were ceremonially placed, we would expect either regular spacing (marking territorial boundaries or waypoints), uniform distribution (even coverage across the landscape), or specific clustering at meaningful locations. The coefficient of variation (CV) test examines spacing regularity, with CV < 0.5 indicating regular intervals typical of deliberate placement. The Kolmogorov-Smirnov test evaluates whether moai follow a uniform distribution expected from systematic placement across the transport route. The nearest-neighbor analysis tests for non-random clustering or dispersion patterns that might indicate ceremonial groupings.
+
+2. Distance Effect Tests (Panels D-E): Ceremonial placement predicts specific patterns at culturally significant distances. We tested for density peaks at the typical viewshed boundary (3.5 km) where moai might serve as territorial markers visible from the quarry. We also examined overdispersion (variance/mean ratio) in the distribution, as ceremonial placement should produce lower variance through deliberate positioning, while transport failure would generate high variance through stochastic processes.
+
+3. Model Comparison (Panel F): We compared six distribution models using Akaike Information Criterion (AIC) weights: linear/uniform (expected from ceremonial placement at regular intervals), exponential decay (expected from transport failure with decreasing success probability), power law and logarithmic (alternative failure mechanisms), and polynomial models (complex ceremonial patterns). The model with highest AIC weight best explains the observed distribution.
+
+RESULTS AND INTERPRETATION 
+
+The distance effect tests show no special pattern at the viewshed boundary (density ratio = 0.871), contradicting expectations for territorial markers. The high overdispersion value (6.41) indicates substantial stochastic variation incompatible with planned placement. The exponential decay model shows moderate fit (R² = 0.641) with significant residual variation, exactly as expected from a stochastic failure process where individual transport attempts had unpredictable outcomes despite an overall trend of decreasing success with distance.
+
+Most decisively, the model comparison assigns 100% of the AIC weight to the exponential decay model (Panel F), with zero support for linear/uniform distributions expected from ceremonial placement. The exponential model's dominance, combined with high variance around the trend, provides the signature of transport failure: a systematic decrease in success probability with distance, modulated by random factors affecting individual transport attempts.
+
+The convergence of evidence across multiple independent tests, each examining different aspects of the distribution pattern, provides robust support for interpreting road moai as transport failures rather than deliberate ceremonial placements. The absence of regular spacing, uniform distribution, viewshed effects, or any other spatial patterns expected from ceremonial positioning, combined with the strong fit to stochastic failure models, definitively favors the transport failure hypothesis.

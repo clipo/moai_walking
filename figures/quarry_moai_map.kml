@@ -1,0 +1,5425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>Moai Near Rano Raraku Quarry</name>
+  <description>All moai within 2km of quarry center, categorized by location type</description>
+  
+  <!-- Styles for different moai types -->
+  <Style id="roadStyle">
+    <IconStyle>
+      <color>ff0000ff</color>
+      <scale>1.2</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  
+  <Style id="quarryNotBedrockStyle">
+    <IconStyle>
+      <color>ff00ff00</color>
+      <scale>1.2</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  
+  <Style id="quarryStyle">
+    <IconStyle>
+      <color>ff00ffff</color>
+      <scale>1.0</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  
+  <Style id="quarryBedrockStyle">
+    <IconStyle>
+      <color>ff808080</color>
+      <scale>1.0</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  
+  <Style id="otherStyle">
+    <IconStyle>
+      <color>ffff00ff</color>
+      <scale>0.8</scale>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/kml/shapes/star.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  
+  <!-- Quarry center marker -->
+  <Placemark>
+    <name>Rano Raraku Quarry Center</name>
+    <description>Approximate center of quarry</description>
+    <Point>
+      <coordinates>-109.2767,-27.1247,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <!-- Folders for each moai type -->
+  <Folder>
+    <name>AHU (65 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 721 (87m)</name>
+      <description><![CDATA[OBJECTID: 721
+Distance from quarry: 87 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125426, -109.276367]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27636700,-27.12542600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 578 (87m)</name>
+      <description><![CDATA[OBJECTID: 578
+Distance from quarry: 87 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125431, -109.276376]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27637600,-27.12543100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 36 (87m)</name>
+      <description><![CDATA[OBJECTID: 36
+Distance from quarry: 87 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125437, -109.276387]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27638700,-27.12543700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 392 (88m)</name>
+      <description><![CDATA[OBJECTID: 392
+Distance from quarry: 88 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125441, -109.276387]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27638700,-27.12544100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 577 (89m)</name>
+      <description><![CDATA[OBJECTID: 577
+Distance from quarry: 89 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125456, -109.276397]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27639700,-27.12545600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 729 (89m)</name>
+      <description><![CDATA[OBJECTID: 729
+Distance from quarry: 89 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125440, -109.276348]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27634800,-27.12544000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 576 (90m)</name>
+      <description><![CDATA[OBJECTID: 576
+Distance from quarry: 90 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125453, -109.276374]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27637400,-27.12545300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 34 (90m)</name>
+      <description><![CDATA[OBJECTID: 34
+Distance from quarry: 90 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125461, -109.276390]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27639000,-27.12546100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 728 (90m)</name>
+      <description><![CDATA[OBJECTID: 728
+Distance from quarry: 90 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125450, -109.276344]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27634400,-27.12545000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 357 (91m)</name>
+      <description><![CDATA[OBJECTID: 357
+Distance from quarry: 91 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125468, -109.276385]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27638500,-27.12546800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 393 (91m)</name>
+      <description><![CDATA[OBJECTID: 393
+Distance from quarry: 91 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125465, -109.276363]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27636300,-27.12546500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 140 (91m)</name>
+      <description><![CDATA[OBJECTID: 140
+Distance from quarry: 91 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125463, -109.276354]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27635400,-27.12546300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 394 (93m)</name>
+      <description><![CDATA[OBJECTID: 394
+Distance from quarry: 93 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125474, -109.276353]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27635300,-27.12547400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 727 (93m)</name>
+      <description><![CDATA[OBJECTID: 727
+Distance from quarry: 93 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125479, -109.276348]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27634800,-27.12547900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 429 (94m)</name>
+      <description><![CDATA[OBJECTID: 429
+Distance from quarry: 94 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125547, -109.276637]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27663700,-27.12554700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 574 (98m)</name>
+      <description><![CDATA[OBJECTID: 574
+Distance from quarry: 98 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125585, -109.276657]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27665700,-27.12558500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 609 (100m)</name>
+      <description><![CDATA[OBJECTID: 609
+Distance from quarry: 100 m
+Total length: n/a cm
+Location: AHU TONGARIKI
+Coordinates: -27.125602, -109.276654]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27665400,-27.12560200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 550 (101m)</name>
+      <description><![CDATA[OBJECTID: 550
+Distance from quarry: 101 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125606, -109.276686]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27668600,-27.12560600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 549 (105m)</name>
+      <description><![CDATA[OBJECTID: 549
+Distance from quarry: 105 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125648, -109.276706]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27670600,-27.12564800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 573 (110m)</name>
+      <description><![CDATA[OBJECTID: 573
+Distance from quarry: 110 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125693, -109.276714]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27671400,-27.12569300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 572 (112m)</name>
+      <description><![CDATA[OBJECTID: 572
+Distance from quarry: 112 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125710, -109.276751]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27675100,-27.12571000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 571 (115m)</name>
+      <description><![CDATA[OBJECTID: 571
+Distance from quarry: 115 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125738, -109.276773]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27677300,-27.12573800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 330 (119m)</name>
+      <description><![CDATA[OBJECTID: 330
+Distance from quarry: 119 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125772, -109.276807]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27680700,-27.12577200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 223 (124m)</name>
+      <description><![CDATA[OBJECTID: 223
+Distance from quarry: 124 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125810, -109.276813]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27681300,-27.12581000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 222 (128m)</name>
+      <description><![CDATA[OBJECTID: 222
+Distance from quarry: 128 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125846, -109.276841]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27684100,-27.12584600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 221 (133m)</name>
+      <description><![CDATA[OBJECTID: 221
+Distance from quarry: 133 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125891, -109.276865]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27686500,-27.12589100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 575 (134m)</name>
+      <description><![CDATA[OBJECTID: 575
+Distance from quarry: 134 m
+Total length: 810 cm
+Location: AHU TONGARIKI
+Coordinates: -27.125382, -109.277815]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27781500,-27.12538200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 220 (137m)</name>
+      <description><![CDATA[OBJECTID: 220
+Distance from quarry: 137 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125926, -109.276898]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27689800,-27.12592600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 447 (143m)</name>
+      <description><![CDATA[OBJECTID: 447
+Distance from quarry: 143 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125969, -109.276922]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27692200,-27.12596900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 446 (149m)</name>
+      <description><![CDATA[OBJECTID: 446
+Distance from quarry: 149 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126018, -109.276958]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27695800,-27.12601800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 445 (152m)</name>
+      <description><![CDATA[OBJECTID: 445
+Distance from quarry: 152 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126050, -109.276982]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27698200,-27.12605000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 890 (206m)</name>
+      <description><![CDATA[OBJECTID: 890
+Distance from quarry: 206 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126361, -109.277636]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27763600,-27.12636100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 141 (206m)</name>
+      <description><![CDATA[OBJECTID: 141
+Distance from quarry: 206 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126356, -109.277650]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27765000,-27.12635600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 685 (207m)</name>
+      <description><![CDATA[OBJECTID: 685
+Distance from quarry: 207 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126372, -109.277637]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27763700,-27.12637200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 891 (208m)</name>
+      <description><![CDATA[OBJECTID: 891
+Distance from quarry: 208 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126380, -109.277623]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27762300,-27.12638000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 528 (209m)</name>
+      <description><![CDATA[OBJECTID: 528
+Distance from quarry: 209 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126367, -109.277682]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27768200,-27.12636700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 808 (209m)</name>
+      <description><![CDATA[OBJECTID: 808
+Distance from quarry: 209 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126392, -109.277637]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27763700,-27.12639200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 658 (210m)</name>
+      <description><![CDATA[OBJECTID: 658
+Distance from quarry: 210 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126389, -109.277658]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27765800,-27.12638900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 657 (210m)</name>
+      <description><![CDATA[OBJECTID: 657
+Distance from quarry: 210 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126394, -109.277652]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27765200,-27.12639400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 656 (211m)</name>
+      <description><![CDATA[OBJECTID: 656
+Distance from quarry: 211 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126398, -109.277651]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27765100,-27.12639800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 655 (211m)</name>
+      <description><![CDATA[OBJECTID: 655
+Distance from quarry: 211 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126407, -109.277635]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27763500,-27.12640700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 529 (211m)</name>
+      <description><![CDATA[OBJECTID: 529
+Distance from quarry: 211 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126397, -109.277670]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27767000,-27.12639700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 382 (212m)</name>
+      <description><![CDATA[OBJECTID: 382
+Distance from quarry: 212 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126404, -109.277667]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27766700,-27.12640400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 530 (212m)</name>
+      <description><![CDATA[OBJECTID: 530
+Distance from quarry: 212 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126410, -109.277663]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27766300,-27.12641000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 383 (213m)</name>
+      <description><![CDATA[OBJECTID: 383
+Distance from quarry: 213 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125098, -109.278801]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27880100,-27.12509800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 384 (233m)</name>
+      <description><![CDATA[OBJECTID: 384
+Distance from quarry: 233 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.125521, -109.278865]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27886500,-27.12552100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 430 (256m)</name>
+      <description><![CDATA[OBJECTID: 430
+Distance from quarry: 256 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126692, -109.278010]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27801000,-27.12669200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 811 (597m)</name>
+      <description><![CDATA[OBJECTID: 811
+Distance from quarry: 597 m
+Total length: Missing cm
+Location: TE PA HAHA TEA
+Coordinates: -27.122152, -109.271390]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27139000,-27.12215200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 812 (603m)</name>
+      <description><![CDATA[OBJECTID: 812
+Distance from quarry: 603 m
+Total length: 389 cm
+Location: TE PA HAHA TEA
+Coordinates: -27.122069, -109.271369]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27136900,-27.12206900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 726 (829m)</name>
+      <description><![CDATA[OBJECTID: 726
+Distance from quarry: 829 m
+Total length: Missing cm
+Location: MATA UURI
+Coordinates: -27.132034, -109.278303]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27830300,-27.13203400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 443 (842m)</name>
+      <description><![CDATA[OBJECTID: 443
+Distance from quarry: 842 m
+Total length: 216 cm
+Location: MATA UURI
+Coordinates: -27.132139, -109.278356]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27835600,-27.13213900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 444 (855m)</name>
+      <description><![CDATA[OBJECTID: 444
+Distance from quarry: 855 m
+Total length: 274 cm
+Location: MATA UURI
+Coordinates: -27.132254, -109.278367]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27836700,-27.13225400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 675 (1533m)</name>
+      <description><![CDATA[OBJECTID: 675
+Distance from quarry: 1533 m
+Total length: 355 cm
+Location: RANO RARAKU
+Coordinates: -27.124103, -109.292170]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29217000,-27.12410300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 676 (1599m)</name>
+      <description><![CDATA[OBJECTID: 676
+Distance from quarry: 1599 m
+Total length: 442 cm
+Location: RANO RARAKU
+Coordinates: -27.124429, -109.292847]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29284700,-27.12442900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 408 (1620m)</name>
+      <description><![CDATA[OBJECTID: 408
+Distance from quarry: 1620 m
+Total length: Missing cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138109, -109.283162]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28316200,-27.13810900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 409 (1621m)</name>
+      <description><![CDATA[OBJECTID: 409
+Distance from quarry: 1621 m
+Total length: Missing cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138137, -109.283111]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28311100,-27.13813700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 423 (1625m)</name>
+      <description><![CDATA[OBJECTID: 423
+Distance from quarry: 1625 m
+Total length: Missing cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138162, -109.283153]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28315300,-27.13816200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 608 (1625m)</name>
+      <description><![CDATA[OBJECTID: 608
+Distance from quarry: 1625 m
+Total length: 471 cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138184, -109.283104]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28310400,-27.13818400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 410 (1628m)</name>
+      <description><![CDATA[OBJECTID: 410
+Distance from quarry: 1628 m
+Total length: Missing cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138128, -109.283313]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28331300,-27.13812800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 607 (1631m)</name>
+      <description><![CDATA[OBJECTID: 607
+Distance from quarry: 1631 m
+Total length: 553 cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138218, -109.283157]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28315700,-27.13821800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 606 (1634m)</name>
+      <description><![CDATA[OBJECTID: 606
+Distance from quarry: 1634 m
+Total length: 565 cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138220, -109.283221]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28322100,-27.13822000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 407 (1636m)</name>
+      <description><![CDATA[OBJECTID: 407
+Distance from quarry: 1636 m
+Total length: Missing cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138208, -109.283308]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28330800,-27.13820800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 797 (1649m)</name>
+      <description><![CDATA[OBJECTID: 797
+Distance from quarry: 1649 m
+Total length: 392 cm
+Location: AHU ONE MAKIHI
+Coordinates: -27.138329, -109.283324]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28332400,-27.13832900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 674 (1712m)</name>
+      <description><![CDATA[OBJECTID: 674
+Distance from quarry: 1712 m
+Total length: 561 cm
+Location: RANO RARAKU
+Coordinates: -27.125165, -109.293984]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29398400,-27.12516500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 561 (1977m)</name>
+      <description><![CDATA[OBJECTID: 561
+Distance from quarry: 1977 m
+Total length: 547 cm
+Location: MOAI TUU-TAHI
+Coordinates: -27.137488, -109.290601]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29060100,-27.13748800,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>ISOLATED (5 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 527 (210m)</name>
+      <description><![CDATA[OBJECTID: 527
+Distance from quarry: 210 m
+Total length: Missing cm
+Location: AHU TONGARIKI
+Coordinates: -27.126380, -109.277670]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27767000,-27.12638000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 809 (342m)</name>
+      <description><![CDATA[OBJECTID: 809
+Distance from quarry: 342 m
+Total length: Missing cm
+Location: PARANGIA
+Coordinates: -27.123531, -109.273503]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27350300,-27.12353100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 810 (370m)</name>
+      <description><![CDATA[OBJECTID: 810
+Distance from quarry: 370 m
+Total length: 484 cm
+Location: PARANGIA
+Coordinates: -27.123357, -109.273281]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27328100,-27.12335700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 385 (386m)</name>
+      <description><![CDATA[OBJECTID: 385
+Distance from quarry: 386 m
+Total length: Missing cm
+Location: PARANGIA
+Coordinates: -27.123463, -109.273056]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27305600,-27.12346300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 386 (413m)</name>
+      <description><![CDATA[OBJECTID: 386
+Distance from quarry: 413 m
+Total length: Missing cm
+Location: PARANGIA
+Coordinates: -27.123428, -109.272777]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.27277700,-27.12342800,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>QUARRY (314 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 678 (756m)</name>
+      <description><![CDATA[OBJECTID: 678
+Distance from quarry: 756 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.121984, -109.283698]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28369800,-27.12198400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 508 (805m)</name>
+      <description><![CDATA[OBJECTID: 508
+Distance from quarry: 805 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.122453, -109.284427]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28442700,-27.12245300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 777 (815m)</name>
+      <description><![CDATA[OBJECTID: 777
+Distance from quarry: 815 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.122753, -109.284635]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28463500,-27.12275300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 713 (883m)</name>
+      <description><![CDATA[OBJECTID: 713
+Distance from quarry: 883 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123793, -109.285557]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28555700,-27.12379300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 714 (884m)</name>
+      <description><![CDATA[OBJECTID: 714
+Distance from quarry: 884 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123830, -109.285577]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28557700,-27.12383000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 712 (900m)</name>
+      <description><![CDATA[OBJECTID: 712
+Distance from quarry: 900 m
+Total length: 342 cm
+Location: RANO RARAKU
+Coordinates: -27.123818, -109.285738]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28573800,-27.12381800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 752 (914m)</name>
+      <description><![CDATA[OBJECTID: 752
+Distance from quarry: 914 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124701, -109.285937]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28593700,-27.12470100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 753 (928m)</name>
+      <description><![CDATA[OBJECTID: 753
+Distance from quarry: 928 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124657, -109.286078]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28607800,-27.12465700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 717 (933m)</name>
+      <description><![CDATA[OBJECTID: 717
+Distance from quarry: 933 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124640, -109.286119]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28611900,-27.12464000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 756 (940m)</name>
+      <description><![CDATA[OBJECTID: 756
+Distance from quarry: 940 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124948, -109.286195]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28619500,-27.12494800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 755 (941m)</name>
+      <description><![CDATA[OBJECTID: 755
+Distance from quarry: 941 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124930, -109.286205]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28620500,-27.12493000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 754 (942m)</name>
+      <description><![CDATA[OBJECTID: 754
+Distance from quarry: 942 m
+Total length: 253 cm
+Location: RANO RARAKU
+Coordinates: -27.124704, -109.286219]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28621900,-27.12470400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 715 (975m)</name>
+      <description><![CDATA[OBJECTID: 715
+Distance from quarry: 975 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123959, -109.286513]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28651300,-27.12395900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 417 (976m)</name>
+      <description><![CDATA[OBJECTID: 417
+Distance from quarry: 976 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126457, -109.286364]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28636400,-27.12645700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 716 (980m)</name>
+      <description><![CDATA[OBJECTID: 716
+Distance from quarry: 980 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124086, -109.286571]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28657100,-27.12408600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 791 (983m)</name>
+      <description><![CDATA[OBJECTID: 791
+Distance from quarry: 983 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123173, -109.286484]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28648400,-27.12317300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 718 (986m)</name>
+      <description><![CDATA[OBJECTID: 718
+Distance from quarry: 986 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124496, -109.286658]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28665800,-27.12449600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 792 (987m)</name>
+      <description><![CDATA[OBJECTID: 792
+Distance from quarry: 987 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123608, -109.286599]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28659900,-27.12360800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 623 (996m)</name>
+      <description><![CDATA[OBJECTID: 623
+Distance from quarry: 996 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125636, -109.286704]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28670400,-27.12563600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 789 (996m)</name>
+      <description><![CDATA[OBJECTID: 789
+Distance from quarry: 996 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123310, -109.286644]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28664400,-27.12331000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 787 (997m)</name>
+      <description><![CDATA[OBJECTID: 787
+Distance from quarry: 997 m
+Total length: 488 cm
+Location: RANO RARAKU
+Coordinates: -27.123562, -109.286686]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28668600,-27.12356200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 786 (997m)</name>
+      <description><![CDATA[OBJECTID: 786
+Distance from quarry: 997 m
+Total length: 311 cm
+Location: RANO RARAKU
+Coordinates: -27.123574, -109.286689]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28668900,-27.12357400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 783 (997m)</name>
+      <description><![CDATA[OBJECTID: 783
+Distance from quarry: 997 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123772, -109.286717]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28671700,-27.12377200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 788 (998m)</name>
+      <description><![CDATA[OBJECTID: 788
+Distance from quarry: 998 m
+Total length: 749 cm
+Location: RANO RARAKU
+Coordinates: -27.123383, -109.286673]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28667300,-27.12338300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 785 (998m)</name>
+      <description><![CDATA[OBJECTID: 785
+Distance from quarry: 998 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123672, -109.286719]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28671900,-27.12367200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 784 (1002m)</name>
+      <description><![CDATA[OBJECTID: 784
+Distance from quarry: 1002 m
+Total length: 498 cm
+Location: RANO RARAKU
+Coordinates: -27.123799, -109.286767]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28676700,-27.12379900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 782 (1002m)</name>
+      <description><![CDATA[OBJECTID: 782
+Distance from quarry: 1002 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123872, -109.286776]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28677600,-27.12387200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 781 (1008m)</name>
+      <description><![CDATA[OBJECTID: 781
+Distance from quarry: 1008 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123918, -109.286846]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28684600,-27.12391800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 456 (1010m)</name>
+      <description><![CDATA[OBJECTID: 456
+Distance from quarry: 1010 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124180, -109.286886]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28688600,-27.12418000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 780 (1010m)</name>
+      <description><![CDATA[OBJECTID: 780
+Distance from quarry: 1010 m
+Total length: 541 cm
+Location: RANO RARAKU
+Coordinates: -27.123990, -109.286875]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28687500,-27.12399000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 532 (1011m)</name>
+      <description><![CDATA[OBJECTID: 532
+Distance from quarry: 1011 m
+Total length: 502 cm
+Location: RANO RARAKU
+Coordinates: -27.123550, -109.286827]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28682700,-27.12355000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 624 (1012m)</name>
+      <description><![CDATA[OBJECTID: 624
+Distance from quarry: 1012 m
+Total length: 332 cm
+Location: RANO RARAKU
+Coordinates: -27.126209, -109.286781]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28678100,-27.12620900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 306 (1014m)</name>
+      <description><![CDATA[OBJECTID: 306
+Distance from quarry: 1014 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124108, -109.286924]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28692400,-27.12410800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 458 (1015m)</name>
+      <description><![CDATA[OBJECTID: 458
+Distance from quarry: 1015 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124081, -109.286925]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28692500,-27.12408100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 455 (1016m)</name>
+      <description><![CDATA[OBJECTID: 455
+Distance from quarry: 1016 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124164, -109.286945]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28694500,-27.12416400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 454 (1020m)</name>
+      <description><![CDATA[OBJECTID: 454
+Distance from quarry: 1020 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124191, -109.286988]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28698800,-27.12419100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 457 (1022m)</name>
+      <description><![CDATA[OBJECTID: 457
+Distance from quarry: 1022 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124139, -109.287004]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28700400,-27.12413900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 531 (1022m)</name>
+      <description><![CDATA[OBJECTID: 531
+Distance from quarry: 1022 m
+Total length: 520 cm
+Location: RANO RARAKU
+Coordinates: -27.123847, -109.286979]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28697900,-27.12384700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 308 (1022m)</name>
+      <description><![CDATA[OBJECTID: 308
+Distance from quarry: 1022 m
+Total length: 285 cm
+Location: RANO RARAKU
+Coordinates: -27.124019, -109.286996]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28699600,-27.12401900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 326 (1024m)</name>
+      <description><![CDATA[OBJECTID: 326
+Distance from quarry: 1024 m
+Total length: 453 cm
+Location: RANO RARAKU
+Coordinates: -27.124290, -109.287032]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28703200,-27.12429000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 706 (1025m)</name>
+      <description><![CDATA[OBJECTID: 706
+Distance from quarry: 1025 m
+Total length: 262 cm
+Location: RANO RARAKU
+Coordinates: -27.123793, -109.287000]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28700000,-27.12379300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 322 (1026m)</name>
+      <description><![CDATA[OBJECTID: 322
+Distance from quarry: 1026 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124538, -109.287057]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28705700,-27.12453800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 307 (1027m)</name>
+      <description><![CDATA[OBJECTID: 307
+Distance from quarry: 1027 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124028, -109.287046]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28704600,-27.12402800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 325 (1027m)</name>
+      <description><![CDATA[OBJECTID: 325
+Distance from quarry: 1027 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124146, -109.287055]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28705500,-27.12414600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 705 (1030m)</name>
+      <description><![CDATA[OBJECTID: 705
+Distance from quarry: 1030 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123758, -109.287050]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28705000,-27.12375800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 803 (1031m)</name>
+      <description><![CDATA[OBJECTID: 803
+Distance from quarry: 1031 m
+Total length: 471 cm
+Location: RANO RARAKU
+Coordinates: -27.123875, -109.287069]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28706900,-27.12387500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 796 (1031m)</name>
+      <description><![CDATA[OBJECTID: 796
+Distance from quarry: 1031 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.120913, -109.286206]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28620600,-27.12091300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 814 (1031m)</name>
+      <description><![CDATA[OBJECTID: 814
+Distance from quarry: 1031 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124456, -109.287108]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28710800,-27.12445600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 324 (1031m)</name>
+      <description><![CDATA[OBJECTID: 324
+Distance from quarry: 1031 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124155, -109.287095]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28709500,-27.12415500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 806 (1031m)</name>
+      <description><![CDATA[OBJECTID: 806
+Distance from quarry: 1031 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124559, -109.287112]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28711200,-27.12455900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 323 (1031m)</name>
+      <description><![CDATA[OBJECTID: 323
+Distance from quarry: 1031 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124417, -109.287111]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28711100,-27.12441700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 704 (1032m)</name>
+      <description><![CDATA[OBJECTID: 704
+Distance from quarry: 1032 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123695, -109.287062]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28706200,-27.12369500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 805 (1033m)</name>
+      <description><![CDATA[OBJECTID: 805
+Distance from quarry: 1033 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123179, -109.286989]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28698900,-27.12317900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 816 (1033m)</name>
+      <description><![CDATA[OBJECTID: 816
+Distance from quarry: 1033 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124400, -109.287133]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28713300,-27.12440000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 741 (1034m)</name>
+      <description><![CDATA[OBJECTID: 741
+Distance from quarry: 1034 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126599, -109.286926]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28692600,-27.12659900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 815 (1035m)</name>
+      <description><![CDATA[OBJECTID: 815
+Distance from quarry: 1035 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124432, -109.287146]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28714600,-27.12443200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 707 (1035m)</name>
+      <description><![CDATA[OBJECTID: 707
+Distance from quarry: 1035 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123243, -109.287028]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28702800,-27.12324300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 615 (1035m)</name>
+      <description><![CDATA[OBJECTID: 615
+Distance from quarry: 1035 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126509, -109.286958]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28695800,-27.12650900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 793 (1035m)</name>
+      <description><![CDATA[OBJECTID: 793
+Distance from quarry: 1035 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124217, -109.287144]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28714400,-27.12421700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 804 (1036m)</name>
+      <description><![CDATA[OBJECTID: 804
+Distance from quarry: 1036 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123170, -109.287019]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28701900,-27.12317000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 794 (1036m)</name>
+      <description><![CDATA[OBJECTID: 794
+Distance from quarry: 1036 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124336, -109.287153]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28715300,-27.12433600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 300 (1036m)</name>
+      <description><![CDATA[OBJECTID: 300
+Distance from quarry: 1036 m
+Total length: 704 cm
+Location: RANO RARAKU
+Coordinates: -27.124564, -109.287161]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28716100,-27.12456400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 625 (1037m)</name>
+      <description><![CDATA[OBJECTID: 625
+Distance from quarry: 1037 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126758, -109.286913]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28691300,-27.12675800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 742 (1039m)</name>
+      <description><![CDATA[OBJECTID: 742
+Distance from quarry: 1039 m
+Total length: 453 cm
+Location: RANO RARAKU
+Coordinates: -27.126618, -109.286977]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28697700,-27.12661800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 776 (1040m)</name>
+      <description><![CDATA[OBJECTID: 776
+Distance from quarry: 1040 m
+Total length: 346 cm
+Location: RANO RARAKU
+Coordinates: -27.126699, -109.286965]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28696500,-27.12669900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 299 (1041m)</name>
+      <description><![CDATA[OBJECTID: 299
+Distance from quarry: 1041 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124537, -109.287209]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28720900,-27.12453700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 807 (1041m)</name>
+      <description><![CDATA[OBJECTID: 807
+Distance from quarry: 1041 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124625, -109.287214]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28721400,-27.12462500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 802 (1042m)</name>
+      <description><![CDATA[OBJECTID: 802
+Distance from quarry: 1042 m
+Total length: 357 cm
+Location: RANO RARAKU
+Coordinates: -27.123895, -109.287190]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28719000,-27.12389500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 637 (1043m)</name>
+      <description><![CDATA[OBJECTID: 637
+Distance from quarry: 1043 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125988, -109.287138]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28713800,-27.12598800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 801 (1045m)</name>
+      <description><![CDATA[OBJECTID: 801
+Distance from quarry: 1045 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123940, -109.287219]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28721900,-27.12394000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 775 (1048m)</name>
+      <description><![CDATA[OBJECTID: 775
+Distance from quarry: 1048 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124680, -109.287281]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28728100,-27.12468000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 636 (1049m)</name>
+      <description><![CDATA[OBJECTID: 636
+Distance from quarry: 1049 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126088, -109.287176]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28717600,-27.12608800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 901 (1049m)</name>
+      <description><![CDATA[OBJECTID: 901
+Distance from quarry: 1049 m
+Total length: 722 cm
+Location: RANO RARAKU
+Coordinates: -27.126169, -109.287165]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28716500,-27.12616900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 616 (1050m)</name>
+      <description><![CDATA[OBJECTID: 616
+Distance from quarry: 1050 m
+Total length: 459 cm
+Location: RANO RARAKU
+Coordinates: -27.126466, -109.287120]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28712000,-27.12646600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 298 (1051m)</name>
+      <description><![CDATA[OBJECTID: 298
+Distance from quarry: 1051 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124615, -109.287311]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28731100,-27.12461500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 800 (1051m)</name>
+      <description><![CDATA[OBJECTID: 800
+Distance from quarry: 1051 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124176, -109.287296]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28729600,-27.12417600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 617 (1051m)</name>
+      <description><![CDATA[OBJECTID: 617
+Distance from quarry: 1051 m
+Total length: 409 cm
+Location: RANO RARAKU
+Coordinates: -27.126457, -109.287130]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28713000,-27.12645700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 899 (1051m)</name>
+      <description><![CDATA[OBJECTID: 899
+Distance from quarry: 1051 m
+Total length: 1017 cm
+Location: RANO RARAKU
+Coordinates: -27.126204, -109.287185]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28718500,-27.12620400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 593 (1052m)</name>
+      <description><![CDATA[OBJECTID: 593
+Distance from quarry: 1052 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125389, -109.287296]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28729600,-27.12538900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 798 (1052m)</name>
+      <description><![CDATA[OBJECTID: 798
+Distance from quarry: 1052 m
+Total length: 700 cm
+Location: RANO RARAKU
+Coordinates: -27.124375, -109.287324]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28732400,-27.12437500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 771 (1053m)</name>
+      <description><![CDATA[OBJECTID: 771
+Distance from quarry: 1053 m
+Total length: 885 cm
+Location: RANO RARAKU
+Coordinates: -27.124689, -109.287334]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28733400,-27.12468900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 902 (1053m)</name>
+      <description><![CDATA[OBJECTID: 902
+Distance from quarry: 1053 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126138, -109.287213]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28721300,-27.12613800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 898 (1053m)</name>
+      <description><![CDATA[OBJECTID: 898
+Distance from quarry: 1053 m
+Total length: 1096 cm
+Location: RANO RARAKU
+Coordinates: -27.126235, -109.287199]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28719900,-27.12623500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 592 (1054m)</name>
+      <description><![CDATA[OBJECTID: 592
+Distance from quarry: 1054 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125476, -109.287313]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28731300,-27.12547600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 594 (1054m)</name>
+      <description><![CDATA[OBJECTID: 594
+Distance from quarry: 1054 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125377, -109.287324]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28732400,-27.12537700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 651 (1057m)</name>
+      <description><![CDATA[OBJECTID: 651
+Distance from quarry: 1057 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126121, -109.287257]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28725700,-27.12612100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 900 (1057m)</name>
+      <description><![CDATA[OBJECTID: 900
+Distance from quarry: 1057 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126197, -109.287245]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28724500,-27.12619700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 297 (1057m)</name>
+      <description><![CDATA[OBJECTID: 297
+Distance from quarry: 1057 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124651, -109.287379]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28737900,-27.12465100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 296 (1057m)</name>
+      <description><![CDATA[OBJECTID: 296
+Distance from quarry: 1057 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124607, -109.287379]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28737900,-27.12460700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 799 (1058m)</name>
+      <description><![CDATA[OBJECTID: 799
+Distance from quarry: 1058 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124177, -109.287367]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28736700,-27.12417700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 896 (1058m)</name>
+      <description><![CDATA[OBJECTID: 896
+Distance from quarry: 1058 m
+Total length: 904 cm
+Location: RANO RARAKU
+Coordinates: -27.126291, -109.287236]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28723600,-27.12629100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 294 (1059m)</name>
+      <description><![CDATA[OBJECTID: 294
+Distance from quarry: 1059 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124637, -109.287393]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28739300,-27.12463700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 773 (1059m)</name>
+      <description><![CDATA[OBJECTID: 773
+Distance from quarry: 1059 m
+Total length: 741 cm
+Location: RANO RARAKU
+Coordinates: -27.124704, -109.287402]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28740200,-27.12470400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 774 (1060m)</name>
+      <description><![CDATA[OBJECTID: 774
+Distance from quarry: 1060 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124751, -109.287406]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28740600,-27.12475100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 893 (1060m)</name>
+      <description><![CDATA[OBJECTID: 893
+Distance from quarry: 1060 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126323, -109.287253]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28725300,-27.12632300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 595 (1060m)</name>
+      <description><![CDATA[OBJECTID: 595
+Distance from quarry: 1060 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125397, -109.287383]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28738300,-27.12539700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 897 (1062m)</name>
+      <description><![CDATA[OBJECTID: 897
+Distance from quarry: 1062 m
+Total length: 211 cm
+Location: RANO RARAKU
+Coordinates: -27.126245, -109.287282]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28728200,-27.12624500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 779 (1062m)</name>
+      <description><![CDATA[OBJECTID: 779
+Distance from quarry: 1062 m
+Total length: 488 cm
+Location: RANO RARAKU
+Coordinates: -27.124614, -109.287426]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28742600,-27.12461400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 618 (1062m)</name>
+      <description><![CDATA[OBJECTID: 618
+Distance from quarry: 1062 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126387, -109.287263]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28726300,-27.12638700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 295 (1062m)</name>
+      <description><![CDATA[OBJECTID: 295
+Distance from quarry: 1062 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124653, -109.287431]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28743100,-27.12465300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 305 (1064m)</name>
+      <description><![CDATA[OBJECTID: 305
+Distance from quarry: 1064 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124331, -109.287435]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28743500,-27.12433100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 772 (1064m)</name>
+      <description><![CDATA[OBJECTID: 772
+Distance from quarry: 1064 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124721, -109.287452]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28745200,-27.12472100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 652 (1065m)</name>
+      <description><![CDATA[OBJECTID: 652
+Distance from quarry: 1065 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126114, -109.287339]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28733900,-27.12611400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 601 (1065m)</name>
+      <description><![CDATA[OBJECTID: 601
+Distance from quarry: 1065 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125381, -109.287431]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28743100,-27.12538100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 778 (1066m)</name>
+      <description><![CDATA[OBJECTID: 778
+Distance from quarry: 1066 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124618, -109.287465]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28746500,-27.12461800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 591 (1067m)</name>
+      <description><![CDATA[OBJECTID: 591
+Distance from quarry: 1067 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125586, -109.287436]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28743600,-27.12558600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 662 (1068m)</name>
+      <description><![CDATA[OBJECTID: 662
+Distance from quarry: 1068 m
+Total length: 234 cm
+Location: RANO RARAKU
+Coordinates: -27.125568, -109.287447]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28744700,-27.12556800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 795 (1069m)</name>
+      <description><![CDATA[OBJECTID: 795
+Distance from quarry: 1069 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123844, -109.287453]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28745300,-27.12384400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 507 (1069m)</name>
+      <description><![CDATA[OBJECTID: 507
+Distance from quarry: 1069 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124708, -109.287499]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28749900,-27.12470800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 770 (1069m)</name>
+      <description><![CDATA[OBJECTID: 770
+Distance from quarry: 1069 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124774, -109.287499]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28749900,-27.12477400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 790 (1069m)</name>
+      <description><![CDATA[OBJECTID: 790
+Distance from quarry: 1069 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124414, -109.287497]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28749700,-27.12441400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 758 (1070m)</name>
+      <description><![CDATA[OBJECTID: 758
+Distance from quarry: 1070 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124783, -109.287507]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28750700,-27.12478300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 895 (1070m)</name>
+      <description><![CDATA[OBJECTID: 895
+Distance from quarry: 1070 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126325, -109.287354]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28735400,-27.12632500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 311 (1070m)</name>
+      <description><![CDATA[OBJECTID: 311
+Distance from quarry: 1070 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124651, -109.287509]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28750900,-27.12465100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 653 (1071m)</name>
+      <description><![CDATA[OBJECTID: 653
+Distance from quarry: 1071 m
+Total length: 716 cm
+Location: RANO RARAKU
+Coordinates: -27.126013, -109.287419]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28741900,-27.12601300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 720 (1072m)</name>
+      <description><![CDATA[OBJECTID: 720
+Distance from quarry: 1072 m
+Total length: 633 cm
+Location: RANO RARAKU
+Coordinates: -27.124666, -109.287531]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28753100,-27.12466600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 892 (1072m)</name>
+      <description><![CDATA[OBJECTID: 892
+Distance from quarry: 1072 m
+Total length: 1026 cm
+Location: RANO RARAKU
+Coordinates: -27.126343, -109.287374]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28737400,-27.12634300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 654 (1073m)</name>
+      <description><![CDATA[OBJECTID: 654
+Distance from quarry: 1073 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126041, -109.287435]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28743500,-27.12604100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 894 (1074m)</name>
+      <description><![CDATA[OBJECTID: 894
+Distance from quarry: 1074 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126289, -109.287405]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28740500,-27.12628900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 719 (1075m)</name>
+      <description><![CDATA[OBJECTID: 719
+Distance from quarry: 1075 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124657, -109.287561]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28756100,-27.12465700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 757 (1076m)</name>
+      <description><![CDATA[OBJECTID: 757
+Distance from quarry: 1076 m
+Total length: 621 cm
+Location: RANO RARAKU
+Coordinates: -27.124703, -109.287571]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28757100,-27.12470300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 304 (1076m)</name>
+      <description><![CDATA[OBJECTID: 304
+Distance from quarry: 1076 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124215, -109.287558]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28755800,-27.12421500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 301 (1076m)</name>
+      <description><![CDATA[OBJECTID: 301
+Distance from quarry: 1076 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124604, -109.287572]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28757200,-27.12460400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 631 (1077m)</name>
+      <description><![CDATA[OBJECTID: 631
+Distance from quarry: 1077 m
+Total length: 368 cm
+Location: RANO RARAKU
+Coordinates: -27.126082, -109.287469]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28746900,-27.12608200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 588 (1078m)</name>
+      <description><![CDATA[OBJECTID: 588
+Distance from quarry: 1078 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125866, -109.287512]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28751200,-27.12586600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 587 (1079m)</name>
+      <description><![CDATA[OBJECTID: 587
+Distance from quarry: 1079 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125897, -109.287513]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28751300,-27.12589700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 168 (1079m)</name>
+      <description><![CDATA[OBJECTID: 168
+Distance from quarry: 1079 m
+Total length: 815 cm
+Location: RANO RARAKU
+Coordinates: -27.124486, -109.287594]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28759400,-27.12448600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 589 (1081m)</name>
+      <description><![CDATA[OBJECTID: 589
+Distance from quarry: 1081 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125811, -109.287545]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28754500,-27.12581100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 664 (1082m)</name>
+      <description><![CDATA[OBJECTID: 664
+Distance from quarry: 1082 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126119, -109.287509]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28750900,-27.12611900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 302 (1082m)</name>
+      <description><![CDATA[OBJECTID: 302
+Distance from quarry: 1082 m
+Total length: 638 cm
+Location: RANO RARAKU
+Coordinates: -27.124523, -109.287624]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28762400,-27.12452300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 605 (1082m)</name>
+      <description><![CDATA[OBJECTID: 605
+Distance from quarry: 1082 m
+Total length: 357 cm
+Location: RANO RARAKU
+Coordinates: -27.125389, -109.287601]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28760100,-27.12538900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 586 (1082m)</name>
+      <description><![CDATA[OBJECTID: 586
+Distance from quarry: 1082 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125944, -109.287540]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28754000,-27.12594400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 303 (1082m)</name>
+      <description><![CDATA[OBJECTID: 303
+Distance from quarry: 1082 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124243, -109.287618]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28761800,-27.12424300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 590 (1085m)</name>
+      <description><![CDATA[OBJECTID: 590
+Distance from quarry: 1085 m
+Total length: 655 cm
+Location: RANO RARAKU
+Coordinates: -27.125815, -109.287583]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28758300,-27.12581500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 136 (1085m)</name>
+      <description><![CDATA[OBJECTID: 136
+Distance from quarry: 1085 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124297, -109.287648]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28764800,-27.12429700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 604 (1085m)</name>
+      <description><![CDATA[OBJECTID: 604
+Distance from quarry: 1085 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125868, -109.287581]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28758100,-27.12586800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 603 (1085m)</name>
+      <description><![CDATA[OBJECTID: 603
+Distance from quarry: 1085 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125757, -109.287599]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28759900,-27.12575700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 135 (1088m)</name>
+      <description><![CDATA[OBJECTID: 135
+Distance from quarry: 1088 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124388, -109.287686]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28768600,-27.12438800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 602 (1088m)</name>
+      <description><![CDATA[OBJECTID: 602
+Distance from quarry: 1088 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125471, -109.287660]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28766000,-27.12547100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 629 (1091m)</name>
+      <description><![CDATA[OBJECTID: 629
+Distance from quarry: 1091 m
+Total length: 463 cm
+Location: RANO RARAKU
+Coordinates: -27.125363, -109.287692]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28769200,-27.12536300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 585 (1092m)</name>
+      <description><![CDATA[OBJECTID: 585
+Distance from quarry: 1092 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126056, -109.287628]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28762800,-27.12605600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 584 (1093m)</name>
+      <description><![CDATA[OBJECTID: 584
+Distance from quarry: 1093 m
+Total length: 2068 cm
+Location: RANO RARAKU
+Coordinates: -27.126154, -109.287619]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28761900,-27.12615400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 134 (1094m)</name>
+      <description><![CDATA[OBJECTID: 134
+Distance from quarry: 1094 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124398, -109.287747]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28774700,-27.12439800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 169 (1095m)</name>
+      <description><![CDATA[OBJECTID: 169
+Distance from quarry: 1095 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124416, -109.287757]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28775700,-27.12441600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 659 (1096m)</name>
+      <description><![CDATA[OBJECTID: 659
+Distance from quarry: 1096 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126087, -109.287657]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28765700,-27.12608700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 438 (1096m)</name>
+      <description><![CDATA[OBJECTID: 438
+Distance from quarry: 1096 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126753, -109.287531]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28753100,-27.12675300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 415 (1097m)</name>
+      <description><![CDATA[OBJECTID: 415
+Distance from quarry: 1097 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.127273, -109.287397]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28739700,-27.12727300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 630 (1098m)</name>
+      <description><![CDATA[OBJECTID: 630
+Distance from quarry: 1098 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125274, -109.287774]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28777400,-27.12527400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 506 (1099m)</name>
+      <description><![CDATA[OBJECTID: 506
+Distance from quarry: 1099 m
+Total length: 288 cm
+Location: RANO RARAKU
+Coordinates: -27.125355, -109.287773]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28777300,-27.12535500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 416 (1102m)</name>
+      <description><![CDATA[OBJECTID: 416
+Distance from quarry: 1102 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.127216, -109.287469]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28746900,-27.12721600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 661 (1109m)</name>
+      <description><![CDATA[OBJECTID: 661
+Distance from quarry: 1109 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125990, -109.287809]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28780900,-27.12599000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 660 (1110m)</name>
+      <description><![CDATA[OBJECTID: 660
+Distance from quarry: 1110 m
+Total length: 713 cm
+Location: RANO RARAKU
+Coordinates: -27.126082, -109.287809]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28780900,-27.12608200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 489 (1111m)</name>
+      <description><![CDATA[OBJECTID: 489
+Distance from quarry: 1111 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126041, -109.287823]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28782300,-27.12604100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 692 (1112m)</name>
+      <description><![CDATA[OBJECTID: 692
+Distance from quarry: 1112 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.124620, -109.287927]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28792700,-27.12462000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 627 (1113m)</name>
+      <description><![CDATA[OBJECTID: 627
+Distance from quarry: 1113 m
+Total length: 480 cm
+Location: RANO RARAKU
+Coordinates: -27.126429, -109.287776]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28777600,-27.12642900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 626 (1114m)</name>
+      <description><![CDATA[OBJECTID: 626
+Distance from quarry: 1114 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126465, -109.287776]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28777600,-27.12646500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 497 (1115m)</name>
+      <description><![CDATA[OBJECTID: 497
+Distance from quarry: 1115 m
+Total length: 809 cm
+Location: RANO RARAKU
+Coordinates: -27.126063, -109.287860]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28786000,-27.12606300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 500 (1116m)</name>
+      <description><![CDATA[OBJECTID: 500
+Distance from quarry: 1116 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125987, -109.287880]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28788000,-27.12598700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 498 (1116m)</name>
+      <description><![CDATA[OBJECTID: 498
+Distance from quarry: 1116 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126083, -109.287868]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28786800,-27.12608300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 499 (1119m)</name>
+      <description><![CDATA[OBJECTID: 499
+Distance from quarry: 1119 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126051, -109.287902]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28790200,-27.12605100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 398 (1120m)</name>
+      <description><![CDATA[OBJECTID: 398
+Distance from quarry: 1120 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126538, -109.287825]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28782500,-27.12653800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 501 (1122m)</name>
+      <description><![CDATA[OBJECTID: 501
+Distance from quarry: 1122 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126005, -109.287936]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28793600,-27.12600500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 828 (1126m)</name>
+      <description><![CDATA[OBJECTID: 828
+Distance from quarry: 1126 m
+Total length: 869 cm
+Location: RANO RARAKU
+Coordinates: -27.125899, -109.287993]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28799300,-27.12589900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 823 (1128m)</name>
+      <description><![CDATA[OBJECTID: 823
+Distance from quarry: 1128 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125926, -109.288010]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28801000,-27.12592600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 817 (1129m)</name>
+      <description><![CDATA[OBJECTID: 817
+Distance from quarry: 1129 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126026, -109.288005]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28800500,-27.12602600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 818 (1130m)</name>
+      <description><![CDATA[OBJECTID: 818
+Distance from quarry: 1130 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126017, -109.288015]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28801500,-27.12601700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 825 (1131m)</name>
+      <description><![CDATA[OBJECTID: 825
+Distance from quarry: 1131 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125827, -109.288055]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28805500,-27.12582700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 751 (1132m)</name>
+      <description><![CDATA[OBJECTID: 751
+Distance from quarry: 1132 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.128089, -109.287484]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28748400,-27.12808900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 824 (1133m)</name>
+      <description><![CDATA[OBJECTID: 824
+Distance from quarry: 1133 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125936, -109.288059]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28805900,-27.12593600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 827 (1135m)</name>
+      <description><![CDATA[OBJECTID: 827
+Distance from quarry: 1135 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125883, -109.288086]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28808600,-27.12588300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 485 (1135m)</name>
+      <description><![CDATA[OBJECTID: 485
+Distance from quarry: 1135 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124801, -109.288167]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28816700,-27.12480100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 822 (1136m)</name>
+      <description><![CDATA[OBJECTID: 822
+Distance from quarry: 1136 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125988, -109.288080]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28808000,-27.12598800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 826 (1136m)</name>
+      <description><![CDATA[OBJECTID: 826
+Distance from quarry: 1136 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125908, -109.288098]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28809800,-27.12590800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 514 (1137m)</name>
+      <description><![CDATA[OBJECTID: 514
+Distance from quarry: 1137 m
+Total length: 704 cm
+Location: RANO RARAKU
+Coordinates: -27.126684, -109.287964]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28796400,-27.12668400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 487 (1137m)</name>
+      <description><![CDATA[OBJECTID: 487
+Distance from quarry: 1137 m
+Total length: 318 cm
+Location: RANO RARAKU
+Coordinates: -27.124710, -109.288186]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28818600,-27.12471000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 488 (1139m)</name>
+      <description><![CDATA[OBJECTID: 488
+Distance from quarry: 1139 m
+Total length: 360 cm
+Location: RANO RARAKU
+Coordinates: -27.124765, -109.288205]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28820500,-27.12476500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 834 (1140m)</name>
+      <description><![CDATA[OBJECTID: 834
+Distance from quarry: 1140 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125704, -109.288158]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28815800,-27.12570400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 829 (1140m)</name>
+      <description><![CDATA[OBJECTID: 829
+Distance from quarry: 1140 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125950, -109.288128]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28812800,-27.12595000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 833 (1141m)</name>
+      <description><![CDATA[OBJECTID: 833
+Distance from quarry: 1141 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125792, -109.288157]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28815700,-27.12579200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 744 (1141m)</name>
+      <description><![CDATA[OBJECTID: 744
+Distance from quarry: 1141 m
+Total length: 312 cm
+Location: RANO RARAKU
+Coordinates: -27.124629, -109.288228]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28822800,-27.12462900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 513 (1142m)</name>
+      <description><![CDATA[OBJECTID: 513
+Distance from quarry: 1142 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126730, -109.288004]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28800400,-27.12673000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 509 (1144m)</name>
+      <description><![CDATA[OBJECTID: 509
+Distance from quarry: 1144 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126496, -109.288078]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28807800,-27.12649600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 486 (1145m)</name>
+      <description><![CDATA[OBJECTID: 486
+Distance from quarry: 1145 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124703, -109.288262]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28826200,-27.12470300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 484 (1146m)</name>
+      <description><![CDATA[OBJECTID: 484
+Distance from quarry: 1146 m
+Total length: 552 cm
+Location: RANO RARAKU
+Coordinates: -27.124777, -109.288279]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28827900,-27.12477700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 832 (1147m)</name>
+      <description><![CDATA[OBJECTID: 832
+Distance from quarry: 1147 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125972, -109.288193]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28819300,-27.12597200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 512 (1147m)</name>
+      <description><![CDATA[OBJECTID: 512
+Distance from quarry: 1147 m
+Total length: 841 cm
+Location: RANO RARAKU
+Coordinates: -27.126658, -109.288076]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28807600,-27.12665800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 831 (1148m)</name>
+      <description><![CDATA[OBJECTID: 831
+Distance from quarry: 1148 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125992, -109.288205]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28820500,-27.12599200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 113 (1148m)</name>
+      <description><![CDATA[OBJECTID: 113
+Distance from quarry: 1148 m
+Total length: 601 cm
+Location: RANO RARAKU
+Coordinates: -27.125746, -109.288237]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28823700,-27.12574600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 511 (1149m)</name>
+      <description><![CDATA[OBJECTID: 511
+Distance from quarry: 1149 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126542, -109.288118]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28811800,-27.12654200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 679 (1149m)</name>
+      <description><![CDATA[OBJECTID: 679
+Distance from quarry: 1149 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126974, -109.288020]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28802000,-27.12697400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 835 (1149m)</name>
+      <description><![CDATA[OBJECTID: 835
+Distance from quarry: 1149 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125658, -109.288260]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28826000,-27.12565800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 469 (1151m)</name>
+      <description><![CDATA[OBJECTID: 469
+Distance from quarry: 1151 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124774, -109.288322]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28832200,-27.12477400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 114 (1151m)</name>
+      <description><![CDATA[OBJECTID: 114
+Distance from quarry: 1151 m
+Total length: 591 cm
+Location: RANO RARAKU
+Coordinates: -27.125717, -109.288268]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28826800,-27.12571700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 116 (1152m)</name>
+      <description><![CDATA[OBJECTID: 116
+Distance from quarry: 1152 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125743, -109.288281]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28828100,-27.12574300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 310 (1153m)</name>
+      <description><![CDATA[OBJECTID: 310
+Distance from quarry: 1153 m
+Total length: 493 cm
+Location: RANO RARAKU
+Coordinates: -27.125241, -109.288328]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28832800,-27.12524100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 118 (1154m)</name>
+      <description><![CDATA[OBJECTID: 118
+Distance from quarry: 1154 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125843, -109.288284]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28828400,-27.12584300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 117 (1154m)</name>
+      <description><![CDATA[OBJECTID: 117
+Distance from quarry: 1154 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125779, -109.288298]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28829800,-27.12577900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 830 (1154m)</name>
+      <description><![CDATA[OBJECTID: 830
+Distance from quarry: 1154 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125992, -109.288271]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28827100,-27.12599200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 510 (1156m)</name>
+      <description><![CDATA[OBJECTID: 510
+Distance from quarry: 1156 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126551, -109.288188]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28818800,-27.12655100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 115 (1156m)</name>
+      <description><![CDATA[OBJECTID: 115
+Distance from quarry: 1156 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125703, -109.288326]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28832600,-27.12570300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 467 (1157m)</name>
+      <description><![CDATA[OBJECTID: 467
+Distance from quarry: 1157 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124875, -109.288385]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28838500,-27.12487500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 468 (1158m)</name>
+      <description><![CDATA[OBJECTID: 468
+Distance from quarry: 1158 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124767, -109.288392]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28839200,-27.12476700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 548 (1159m)</name>
+      <description><![CDATA[OBJECTID: 548
+Distance from quarry: 1159 m
+Total length: 851 cm
+Location: RANO RARAKU
+Coordinates: -27.124808, -109.288404]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28840400,-27.12480800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 119 (1161m)</name>
+      <description><![CDATA[OBJECTID: 119
+Distance from quarry: 1161 m
+Total length: 939 cm
+Location: RANO RARAKU
+Coordinates: -27.125781, -109.288364]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28836400,-27.12578100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 632 (1162m)</name>
+      <description><![CDATA[OBJECTID: 632
+Distance from quarry: 1162 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126741, -109.288216]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28821600,-27.12674100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 475 (1168m)</name>
+      <description><![CDATA[OBJECTID: 475
+Distance from quarry: 1168 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126265, -109.288364]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28836400,-27.12626500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 633 (1170m)</name>
+      <description><![CDATA[OBJECTID: 633
+Distance from quarry: 1170 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126661, -109.288308]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28830800,-27.12666100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 466 (1170m)</name>
+      <description><![CDATA[OBJECTID: 466
+Distance from quarry: 1170 m
+Total length: 564 cm
+Location: RANO RARAKU
+Coordinates: -27.124824, -109.288520]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28852000,-27.12482400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 453 (1172m)</name>
+      <description><![CDATA[OBJECTID: 453
+Distance from quarry: 1172 m
+Total length: 203 cm
+Location: RANO RARAKU
+Coordinates: -27.124741, -109.288534]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28853400,-27.12474100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 476 (1172m)</name>
+      <description><![CDATA[OBJECTID: 476
+Distance from quarry: 1172 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126256, -109.288405]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28840500,-27.12625600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 120 (1177m)</name>
+      <description><![CDATA[OBJECTID: 120
+Distance from quarry: 1177 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125689, -109.288534]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28853400,-27.12568900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 474 (1177m)</name>
+      <description><![CDATA[OBJECTID: 474
+Distance from quarry: 1177 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126347, -109.288443]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28844300,-27.12634700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 465 (1178m)</name>
+      <description><![CDATA[OBJECTID: 465
+Distance from quarry: 1178 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124968, -109.288596]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28859600,-27.12496800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 121 (1178m)</name>
+      <description><![CDATA[OBJECTID: 121
+Distance from quarry: 1178 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125706, -109.288549]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28854900,-27.12570600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 663 (1179m)</name>
+      <description><![CDATA[OBJECTID: 663
+Distance from quarry: 1179 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124975, -109.288604]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28860400,-27.12497500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 743 (1179m)</name>
+      <description><![CDATA[OBJECTID: 743
+Distance from quarry: 1179 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125374, -109.288589]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28858900,-27.12537400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 122 (1179m)</name>
+      <description><![CDATA[OBJECTID: 122
+Distance from quarry: 1179 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125718, -109.288559]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28855900,-27.12571800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 905 (1182m)</name>
+      <description><![CDATA[OBJECTID: 905
+Distance from quarry: 1182 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.127189, -109.288313]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28831300,-27.12718900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 504 (1183m)</name>
+      <description><![CDATA[OBJECTID: 504
+Distance from quarry: 1183 m
+Total length: 206 cm
+Location: RANO RARAKU
+Coordinates: -27.124896, -109.288647]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28864700,-27.12489600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 505 (1183m)</name>
+      <description><![CDATA[OBJECTID: 505
+Distance from quarry: 1183 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124914, -109.288647]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28864700,-27.12491400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 684 (1184m)</name>
+      <description><![CDATA[OBJECTID: 684
+Distance from quarry: 1184 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124782, -109.288662]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28866200,-27.12478200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 477 (1184m)</name>
+      <description><![CDATA[OBJECTID: 477
+Distance from quarry: 1184 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126321, -109.288525]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28852500,-27.12632100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 406 (1185m)</name>
+      <description><![CDATA[OBJECTID: 406
+Distance from quarry: 1185 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124671, -109.288669]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28866900,-27.12467100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 904 (1186m)</name>
+      <description><![CDATA[OBJECTID: 904
+Distance from quarry: 1186 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.127260, -109.288327]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28832700,-27.12726000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 503 (1186m)</name>
+      <description><![CDATA[OBJECTID: 503
+Distance from quarry: 1186 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124879, -109.288678]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28867800,-27.12487900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 312 (1186m)</name>
+      <description><![CDATA[OBJECTID: 312
+Distance from quarry: 1186 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125579, -109.288643]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28864300,-27.12557900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 125 (1189m)</name>
+      <description><![CDATA[OBJECTID: 125
+Distance from quarry: 1189 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125682, -109.288655]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28865500,-27.12568200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 478 (1189m)</name>
+      <description><![CDATA[OBJECTID: 478
+Distance from quarry: 1189 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126303, -109.288575]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28857500,-27.12630300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 452 (1189m)</name>
+      <description><![CDATA[OBJECTID: 452
+Distance from quarry: 1189 m
+Total length: 715 cm
+Location: RANO RARAKU
+Coordinates: -27.124715, -109.288713]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28871300,-27.12471500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 124 (1190m)</name>
+      <description><![CDATA[OBJECTID: 124
+Distance from quarry: 1190 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125729, -109.288661]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28866100,-27.12572900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 634 (1190m)</name>
+      <description><![CDATA[OBJECTID: 634
+Distance from quarry: 1190 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126475, -109.288553]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28855300,-27.12647500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 903 (1191m)</name>
+      <description><![CDATA[OBJECTID: 903
+Distance from quarry: 1191 m
+Total length: 811 cm
+Location: RANO RARAKU
+Coordinates: -27.127462, -109.288325]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28832500,-27.12746200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 451 (1192m)</name>
+      <description><![CDATA[OBJECTID: 451
+Distance from quarry: 1192 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124696, -109.288744]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28874400,-27.12469600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 123 (1194m)</name>
+      <description><![CDATA[OBJECTID: 123
+Distance from quarry: 1194 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125736, -109.288705]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28870500,-27.12573600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 313 (1194m)</name>
+      <description><![CDATA[OBJECTID: 313
+Distance from quarry: 1194 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125563, -109.288723]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28872300,-27.12556300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 709 (1195m)</name>
+      <description><![CDATA[OBJECTID: 709
+Distance from quarry: 1195 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124680, -109.288767]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28876700,-27.12468000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 708 (1196m)</name>
+      <description><![CDATA[OBJECTID: 708
+Distance from quarry: 1196 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124653, -109.288782]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28878200,-27.12465300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 703 (1200m)</name>
+      <description><![CDATA[OBJECTID: 703
+Distance from quarry: 1200 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124643, -109.288826]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28882600,-27.12464300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 464 (1201m)</name>
+      <description><![CDATA[OBJECTID: 464
+Distance from quarry: 1201 m
+Total length: 496 cm
+Location: RANO RARAKU
+Coordinates: -27.127697, -109.288354]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28835400,-27.12769700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 315 (1202m)</name>
+      <description><![CDATA[OBJECTID: 315
+Distance from quarry: 1202 m
+Total length: 724 cm
+Location: RANO RARAKU
+Coordinates: -27.125618, -109.288794]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28879400,-27.12561800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 314 (1202m)</name>
+      <description><![CDATA[OBJECTID: 314
+Distance from quarry: 1202 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125591, -109.288799]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28879900,-27.12559100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 127 (1203m)</name>
+      <description><![CDATA[OBJECTID: 127
+Distance from quarry: 1203 m
+Total length: 790 cm
+Location: RANO RARAKU
+Coordinates: -27.125522, -109.288819]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28881900,-27.12552200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 129 (1206m)</name>
+      <description><![CDATA[OBJECTID: 129
+Distance from quarry: 1206 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125494, -109.288854]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28885400,-27.12549400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 293 (1207m)</name>
+      <description><![CDATA[OBJECTID: 293
+Distance from quarry: 1207 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125621, -109.288850]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28885000,-27.12562100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 320 (1208m)</name>
+      <description><![CDATA[OBJECTID: 320
+Distance from quarry: 1208 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125695, -109.288848]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28884800,-27.12569500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 683 (1208m)</name>
+      <description><![CDATA[OBJECTID: 683
+Distance from quarry: 1208 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124906, -109.288900]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28890000,-27.12490600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 749 (1208m)</name>
+      <description><![CDATA[OBJECTID: 749
+Distance from quarry: 1208 m
+Total length: 348 cm
+Location: RANO RARAKU
+Coordinates: -27.124650, -109.288904]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28890400,-27.12465000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 318 (1209m)</name>
+      <description><![CDATA[OBJECTID: 318
+Distance from quarry: 1209 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125736, -109.288856]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28885600,-27.12573600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 128 (1209m)</name>
+      <description><![CDATA[OBJECTID: 128
+Distance from quarry: 1209 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125570, -109.288877]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28887700,-27.12557000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 319 (1210m)</name>
+      <description><![CDATA[OBJECTID: 319
+Distance from quarry: 1210 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125703, -109.288868]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28886800,-27.12570300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 291 (1210m)</name>
+      <description><![CDATA[OBJECTID: 291
+Distance from quarry: 1210 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125673, -109.288875]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28887500,-27.12567300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 682 (1210m)</name>
+      <description><![CDATA[OBJECTID: 682
+Distance from quarry: 1210 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124718, -109.288927]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28892700,-27.12471800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 292 (1212m)</name>
+      <description><![CDATA[OBJECTID: 292
+Distance from quarry: 1212 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125652, -109.288898]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28889800,-27.12565200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 413 (1213m)</name>
+      <description><![CDATA[OBJECTID: 413
+Distance from quarry: 1213 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126270, -109.288828]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28882800,-27.12627000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 321 (1214m)</name>
+      <description><![CDATA[OBJECTID: 321
+Distance from quarry: 1214 m
+Total length: 944 cm
+Location: RANO RARAKU
+Coordinates: -27.125634, -109.288920]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28892000,-27.12563400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 126 (1214m)</name>
+      <description><![CDATA[OBJECTID: 126
+Distance from quarry: 1214 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125602, -109.288924]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28892400,-27.12560200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 130 (1215m)</name>
+      <description><![CDATA[OBJECTID: 130
+Distance from quarry: 1215 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125576, -109.288935]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28893500,-27.12557600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 765 (1216m)</name>
+      <description><![CDATA[OBJECTID: 765
+Distance from quarry: 1216 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125706, -109.288931]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28893100,-27.12570600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 761 (1218m)</name>
+      <description><![CDATA[OBJECTID: 761
+Distance from quarry: 1218 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125598, -109.288965]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28896500,-27.12559800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 764 (1219m)</name>
+      <description><![CDATA[OBJECTID: 764
+Distance from quarry: 1219 m
+Total length: 538 cm
+Location: RANO RARAKU
+Coordinates: -27.125651, -109.288967]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28896700,-27.12565100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 759 (1219m)</name>
+      <description><![CDATA[OBJECTID: 759
+Distance from quarry: 1219 m
+Total length: 814 cm
+Location: RANO RARAKU
+Coordinates: -27.125558, -109.288978]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28897800,-27.12555800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 317 (1221m)</name>
+      <description><![CDATA[OBJECTID: 317
+Distance from quarry: 1221 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125759, -109.288974]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28897400,-27.12575900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 748 (1222m)</name>
+      <description><![CDATA[OBJECTID: 748
+Distance from quarry: 1222 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124679, -109.289040]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28904000,-27.12467900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 316 (1222m)</name>
+      <description><![CDATA[OBJECTID: 316
+Distance from quarry: 1222 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125783, -109.288985]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28898500,-27.12578300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 760 (1223m)</name>
+      <description><![CDATA[OBJECTID: 760
+Distance from quarry: 1223 m
+Total length: 546 cm
+Location: RANO RARAKU
+Coordinates: -27.125573, -109.289012]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28901200,-27.12557300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 405 (1224m)</name>
+      <description><![CDATA[OBJECTID: 405
+Distance from quarry: 1224 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124643, -109.289060]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28906000,-27.12464300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 747 (1224m)</name>
+      <description><![CDATA[OBJECTID: 747
+Distance from quarry: 1224 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124585, -109.289065]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28906500,-27.12458500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 681 (1226m)</name>
+      <description><![CDATA[OBJECTID: 681
+Distance from quarry: 1226 m
+Total length: 329 cm
+Location: RANO RARAKU
+Coordinates: -27.124772, -109.289083]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28908300,-27.12477200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 762 (1226m)</name>
+      <description><![CDATA[OBJECTID: 762
+Distance from quarry: 1226 m
+Total length: 992 cm
+Location: RANO RARAKU
+Coordinates: -27.125589, -109.289045]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28904500,-27.12558900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 473 (1227m)</name>
+      <description><![CDATA[OBJECTID: 473
+Distance from quarry: 1227 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124556, -109.289089]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28908900,-27.12455600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 763 (1229m)</name>
+      <description><![CDATA[OBJECTID: 763
+Distance from quarry: 1229 m
+Total length: 544 cm
+Location: RANO RARAKU
+Coordinates: -27.125623, -109.289069]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28906900,-27.12562300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 414 (1231m)</name>
+      <description><![CDATA[OBJECTID: 414
+Distance from quarry: 1231 m
+Total length: 696 cm
+Location: RANO RARAKU
+Coordinates: -27.126534, -109.288965]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28896500,-27.12653400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 328 (1231m)</name>
+      <description><![CDATA[OBJECTID: 328
+Distance from quarry: 1231 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125549, -109.289101]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28910100,-27.12554900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 768 (1233m)</name>
+      <description><![CDATA[OBJECTID: 768
+Distance from quarry: 1233 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125598, -109.289109]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28910900,-27.12559800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 515 (1234m)</name>
+      <description><![CDATA[OBJECTID: 515
+Distance from quarry: 1234 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125400, -109.289137]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28913700,-27.12540000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 769 (1234m)</name>
+      <description><![CDATA[OBJECTID: 769
+Distance from quarry: 1234 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125556, -109.289132]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28913200,-27.12555600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 766 (1235m)</name>
+      <description><![CDATA[OBJECTID: 766
+Distance from quarry: 1235 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125628, -109.289129]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28912900,-27.12562800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 690 (1236m)</name>
+      <description><![CDATA[OBJECTID: 690
+Distance from quarry: 1236 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125456, -109.289151]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28915100,-27.12545600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 691 (1238m)</name>
+      <description><![CDATA[OBJECTID: 691
+Distance from quarry: 1238 m
+Total length: 595 cm
+Location: RANO RARAKU
+Coordinates: -27.125395, -109.289178]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28917800,-27.12539500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 327 (1238m)</name>
+      <description><![CDATA[OBJECTID: 327
+Distance from quarry: 1238 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125576, -109.289167]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28916700,-27.12557600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 767 (1238m)</name>
+      <description><![CDATA[OBJECTID: 767
+Distance from quarry: 1238 m
+Total length: 628 cm
+Location: RANO RARAKU
+Coordinates: -27.125612, -109.289164]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28916400,-27.12561200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 131 (1239m)</name>
+      <description><![CDATA[OBJECTID: 131
+Distance from quarry: 1239 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125557, -109.289183]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28918300,-27.12555700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 516 (1242m)</name>
+      <description><![CDATA[OBJECTID: 516
+Distance from quarry: 1242 m
+Total length: 310 cm
+Location: RANO RARAKU
+Coordinates: -27.125291, -109.289226]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28922600,-27.12529100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 562 (1243m)</name>
+      <description><![CDATA[OBJECTID: 562
+Distance from quarry: 1243 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.124544, -109.289252]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28925200,-27.12454400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 680 (1243m)</name>
+      <description><![CDATA[OBJECTID: 680
+Distance from quarry: 1243 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124804, -109.289254]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28925400,-27.12480400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 563 (1244m)</name>
+      <description><![CDATA[OBJECTID: 563
+Distance from quarry: 1244 m
+Total length: 437 cm
+Location: RANO RARAKU
+Coordinates: -27.124585, -109.289262]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28926200,-27.12458500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 329 (1244m)</name>
+      <description><![CDATA[OBJECTID: 329
+Distance from quarry: 1244 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125515, -109.289233]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28923300,-27.12551500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 402 (1245m)</name>
+      <description><![CDATA[OBJECTID: 402
+Distance from quarry: 1245 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124527, -109.289272]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28927200,-27.12452700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 746 (1248m)</name>
+      <description><![CDATA[OBJECTID: 746
+Distance from quarry: 1248 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124583, -109.289303]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28930300,-27.12458300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 390 (1248m)</name>
+      <description><![CDATA[OBJECTID: 390
+Distance from quarry: 1248 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124550, -109.289309]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28930900,-27.12455000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 745 (1252m)</name>
+      <description><![CDATA[OBJECTID: 745
+Distance from quarry: 1252 m
+Total length: 522 cm
+Location: RANO RARAKU
+Coordinates: -27.124567, -109.289342]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28934200,-27.12456700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 906 (1258m)</name>
+      <description><![CDATA[OBJECTID: 906
+Distance from quarry: 1258 m
+Total length: 558 cm
+Location: RANO RARAKU
+Coordinates: -27.127464, -109.289022]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28902200,-27.12746400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 628 (1259m)</name>
+      <description><![CDATA[OBJECTID: 628
+Distance from quarry: 1259 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125744, -109.289361]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28936100,-27.12574400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 517 (1261m)</name>
+      <description><![CDATA[OBJECTID: 517
+Distance from quarry: 1261 m
+Total length: 335 cm
+Location: RANO RARAKU
+Coordinates: -27.125294, -109.289415]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28941500,-27.12529400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 309 (1261m)</name>
+      <description><![CDATA[OBJECTID: 309
+Distance from quarry: 1261 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125709, -109.289391]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28939100,-27.12570900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 600 (1266m)</name>
+      <description><![CDATA[OBJECTID: 600
+Distance from quarry: 1266 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125481, -109.289457]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28945700,-27.12548100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 599 (1271m)</name>
+      <description><![CDATA[OBJECTID: 599
+Distance from quarry: 1271 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125474, -109.289505]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28950500,-27.12547400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 518 (1271m)</name>
+      <description><![CDATA[OBJECTID: 518
+Distance from quarry: 1271 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125408, -109.289513]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28951300,-27.12540800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 907 (1283m)</name>
+      <description><![CDATA[OBJECTID: 907
+Distance from quarry: 1283 m
+Total length: 612 cm
+Location: RANO RARAKU
+Coordinates: -27.127330, -109.289321]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28932100,-27.12733000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 480 (1292m)</name>
+      <description><![CDATA[OBJECTID: 480
+Distance from quarry: 1292 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125685, -109.289704]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28970400,-27.12568500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 479 (1295m)</name>
+      <description><![CDATA[OBJECTID: 479
+Distance from quarry: 1295 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125695, -109.289735]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28973500,-27.12569500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 871 (1327m)</name>
+      <description><![CDATA[OBJECTID: 871
+Distance from quarry: 1327 m
+Total length: 721 cm
+Location: RANO RARAKU
+Coordinates: -27.127040, -109.289847]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28984700,-27.12704000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 481 (1331m)</name>
+      <description><![CDATA[OBJECTID: 481
+Distance from quarry: 1331 m
+Total length: 727 cm
+Location: RANO RARAKU
+Coordinates: -27.126241, -109.290031]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29003100,-27.12624100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 482 (1333m)</name>
+      <description><![CDATA[OBJECTID: 482
+Distance from quarry: 1333 m
+Total length: 816 cm
+Location: RANO RARAKU
+Coordinates: -27.126536, -109.290009]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29000900,-27.12653600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 483 (1335m)</name>
+      <description><![CDATA[OBJECTID: 483
+Distance from quarry: 1335 m
+Total length: 714 cm
+Location: RANO RARAKU
+Coordinates: -27.126847, -109.289965]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28996500,-27.12684700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 872 (1337m)</name>
+      <description><![CDATA[OBJECTID: 872
+Distance from quarry: 1337 m
+Total length: 860 cm
+Location: RANO RARAKU
+Coordinates: -27.127078, -109.289938]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28993800,-27.12707800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 710 (1339m)</name>
+      <description><![CDATA[OBJECTID: 710
+Distance from quarry: 1339 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123669, -109.290179]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29017900,-27.12366900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 873 (1390m)</name>
+      <description><![CDATA[OBJECTID: 873
+Distance from quarry: 1390 m
+Total length: 805 cm
+Location: RANO RARAKU
+Coordinates: -27.127885, -109.290281]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29028100,-27.12788500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 472 (1417m)</name>
+      <description><![CDATA[OBJECTID: 472
+Distance from quarry: 1417 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.123236, -109.290922]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29092200,-27.12323600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 471 (1430m)</name>
+      <description><![CDATA[OBJECTID: 471
+Distance from quarry: 1430 m
+Total length: 657 cm
+Location: RANO RARAKU
+Coordinates: -27.123301, -109.291062]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29106200,-27.12330100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 470 (1480m)</name>
+      <description><![CDATA[OBJECTID: 470
+Distance from quarry: 1480 m
+Total length: 436 cm
+Location: RANO RARAKU
+Coordinates: -27.123280, -109.291567]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29156700,-27.12328000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 874 (1493m)</name>
+      <description><![CDATA[OBJECTID: 874
+Distance from quarry: 1493 m
+Total length: 595 cm
+Location: RANO RARAKU
+Coordinates: -27.127035, -109.291548]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29154800,-27.12703500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 908 (1498m)</name>
+      <description><![CDATA[OBJECTID: 908
+Distance from quarry: 1498 m
+Total length: 547 cm
+Location: RANO RARAKU
+Coordinates: -27.127692, -109.291457]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29145700,-27.12769200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 750 (1532m)</name>
+      <description><![CDATA[OBJECTID: 750
+Distance from quarry: 1532 m
+Total length: 572 cm
+Location: RANO RARAKU
+Coordinates: -27.121522, -109.291761]]></description>
+      <styleUrl>#quarryStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29176100,-27.12152200,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>QUARRY NOT BEDROCK (44 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 437 (1055m)</name>
+      <description><![CDATA[OBJECTID: 437
+Distance from quarry: 1055 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126719, -109.287116]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28711600,-27.12671900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 219 (1076m)</name>
+      <description><![CDATA[OBJECTID: 219
+Distance from quarry: 1076 m
+Total length: 1005 cm
+Location: RANO RARAKU
+Coordinates: -27.127234, -109.287194]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28719400,-27.12723400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 441 (1082m)</name>
+      <description><![CDATA[OBJECTID: 441
+Distance from quarry: 1082 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126633, -109.287408]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28740800,-27.12663300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 440 (1086m)</name>
+      <description><![CDATA[OBJECTID: 440
+Distance from quarry: 1086 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126715, -109.287431]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28743100,-27.12671500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 439 (1090m)</name>
+      <description><![CDATA[OBJECTID: 439
+Distance from quarry: 1090 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126703, -109.287483]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28748300,-27.12670300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 442 (1091m)</name>
+      <description><![CDATA[OBJECTID: 442
+Distance from quarry: 1091 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126592, -109.287517]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28751700,-27.12659200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 565 (1096m)</name>
+      <description><![CDATA[OBJECTID: 565
+Distance from quarry: 1096 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.126607, -109.287562]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28756200,-27.12660700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 566 (1098m)</name>
+      <description><![CDATA[OBJECTID: 566
+Distance from quarry: 1098 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.126526, -109.287603]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28760300,-27.12652600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 567 (1099m)</name>
+      <description><![CDATA[OBJECTID: 567
+Distance from quarry: 1099 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.126517, -109.287614]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28761400,-27.12651700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 568 (1111m)</name>
+      <description><![CDATA[OBJECTID: 568
+Distance from quarry: 1111 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.126564, -109.287724]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28772400,-27.12656400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 397 (1120m)</name>
+      <description><![CDATA[OBJECTID: 397
+Distance from quarry: 1120 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126484, -109.287836]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28783600,-27.12648400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 839 (1122m)</name>
+      <description><![CDATA[OBJECTID: 839
+Distance from quarry: 1122 m
+Total length: 794 cm
+Location: RANO RARAKU
+Coordinates: -27.126745, -109.287802]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28780200,-27.12674500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 399 (1127m)</name>
+      <description><![CDATA[OBJECTID: 399
+Distance from quarry: 1127 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126575, -109.287885]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28788500,-27.12657500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 400 (1127m)</name>
+      <description><![CDATA[OBJECTID: 400
+Distance from quarry: 1127 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126548, -109.287896]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28789600,-27.12654800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 35 (1133m)</name>
+      <description><![CDATA[OBJECTID: 35
+Distance from quarry: 1133 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.124620, -109.288141]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28814100,-27.12462000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 343 (1160m)</name>
+      <description><![CDATA[OBJECTID: 343
+Distance from quarry: 1160 m
+Total length: 962 cm
+Location: RANO RARAKU
+Coordinates: -27.127116, -109.288099]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28809900,-27.12711600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 401 (1171m)</name>
+      <description><![CDATA[OBJECTID: 401
+Distance from quarry: 1171 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126812, -109.288293]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28829300,-27.12681200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 360 (1173m)</name>
+      <description><![CDATA[OBJECTID: 360
+Distance from quarry: 1173 m
+Total length: 272 cm
+Location: RANO RARAKU
+Coordinates: -27.124687, -109.288549]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28854900,-27.12468700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 388 (1197m)</name>
+      <description><![CDATA[OBJECTID: 388
+Distance from quarry: 1197 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124600, -109.288793]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28879300,-27.12460000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 362 (1202m)</name>
+      <description><![CDATA[OBJECTID: 362
+Distance from quarry: 1202 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124583, -109.288844]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28884400,-27.12458300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 361 (1209m)</name>
+      <description><![CDATA[OBJECTID: 361
+Distance from quarry: 1209 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124602, -109.288914]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28891400,-27.12460200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 432 (1218m)</name>
+      <description><![CDATA[OBJECTID: 432
+Distance from quarry: 1218 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126460, -109.288845]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28884500,-27.12646000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 431 (1219m)</name>
+      <description><![CDATA[OBJECTID: 431
+Distance from quarry: 1219 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126415, -109.288866]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28886600,-27.12641500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 435 (1224m)</name>
+      <description><![CDATA[OBJECTID: 435
+Distance from quarry: 1224 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124500, -109.289063]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28906300,-27.12450000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 404 (1229m)</name>
+      <description><![CDATA[OBJECTID: 404
+Distance from quarry: 1229 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124604, -109.289117]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28911700,-27.12460400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 564 (1235m)</name>
+      <description><![CDATA[OBJECTID: 564
+Distance from quarry: 1235 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.124547, -109.289171]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28917100,-27.12454700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 403 (1241m)</name>
+      <description><![CDATA[OBJECTID: 403
+Distance from quarry: 1241 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124580, -109.289237]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28923700,-27.12458000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 433 (1243m)</name>
+      <description><![CDATA[OBJECTID: 433
+Distance from quarry: 1243 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126409, -109.289108]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28910800,-27.12640900,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 344 (1247m)</name>
+      <description><![CDATA[OBJECTID: 344
+Distance from quarry: 1247 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126230, -109.289182]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28918200,-27.12623000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 389 (1251m)</name>
+      <description><![CDATA[OBJECTID: 389
+Distance from quarry: 1251 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124597, -109.289335]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28933500,-27.12459700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 434 (1254m)</name>
+      <description><![CDATA[OBJECTID: 434
+Distance from quarry: 1254 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126393, -109.289220]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28922000,-27.12639300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 345 (1256m)</name>
+      <description><![CDATA[OBJECTID: 345
+Distance from quarry: 1256 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126186, -109.289273]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28927300,-27.12618600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 346 (1258m)</name>
+      <description><![CDATA[OBJECTID: 346
+Distance from quarry: 1258 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126204, -109.289293]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28929300,-27.12620400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 724 (1259m)</name>
+      <description><![CDATA[OBJECTID: 724
+Distance from quarry: 1259 m
+Total length: 318 cm
+Location: RANO RARAKU
+Coordinates: -27.125898, -109.289348]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28934800,-27.12589800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 436 (1264m)</name>
+      <description><![CDATA[OBJECTID: 436
+Distance from quarry: 1264 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125976, -109.289385]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28938500,-27.12597600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 699 (1265m)</name>
+      <description><![CDATA[OBJECTID: 699
+Distance from quarry: 1265 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124518, -109.289478]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28947800,-27.12451800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 667 (1267m)</name>
+      <description><![CDATA[OBJECTID: 667
+Distance from quarry: 1267 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.125935, -109.289418]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28941800,-27.12593500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 422 (1267m)</name>
+      <description><![CDATA[OBJECTID: 422
+Distance from quarry: 1267 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.124498, -109.289498]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28949800,-27.12449800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 347 (1273m)</name>
+      <description><![CDATA[OBJECTID: 347
+Distance from quarry: 1273 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.126107, -109.289466]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28946600,-27.12610700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 387 (1277m)</name>
+      <description><![CDATA[OBJECTID: 387
+Distance from quarry: 1277 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125927, -109.289529]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28952900,-27.12592700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 698 (1282m)</name>
+      <description><![CDATA[OBJECTID: 698
+Distance from quarry: 1282 m
+Total length: 438 cm
+Location: RANO RARAKU
+Coordinates: -27.125873, -109.289581]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28958100,-27.12587300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 697 (1296m)</name>
+      <description><![CDATA[OBJECTID: 697
+Distance from quarry: 1296 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.125902, -109.289721]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28972100,-27.12590200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 359 (1443m)</name>
+      <description><![CDATA[OBJECTID: 359
+Distance from quarry: 1443 m
+Total length: 734 cm
+Location: RANO RARAKU
+Coordinates: -27.125748, -109.291227]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29122700,-27.12574800,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 358 (1446m)</name>
+      <description><![CDATA[OBJECTID: 358
+Distance from quarry: 1446 m
+Total length: 1129 cm
+Location: RANO RARAKU
+Coordinates: -27.125659, -109.291268]]></description>
+      <styleUrl>#quarryNotBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29126800,-27.12565900,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>QUARRY-BEDROCK (3 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 738 (1172m)</name>
+      <description><![CDATA[OBJECTID: 738
+Distance from quarry: 1172 m
+Total length: Missing cm
+Location: RANO RARAKU
+Coordinates: -27.124772, -109.288534]]></description>
+      <styleUrl>#quarryBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28853400,-27.12477200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 725 (1227m)</name>
+      <description><![CDATA[OBJECTID: 725
+Distance from quarry: 1227 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124601, -109.289092]]></description>
+      <styleUrl>#quarryBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28909200,-27.12460100,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 700 (1264m)</name>
+      <description><![CDATA[OBJECTID: 700
+Distance from quarry: 1264 m
+Total length: n/a cm
+Location: RANO RARAKU
+Coordinates: -27.124563, -109.289469]]></description>
+      <styleUrl>#quarryBedrockStyle</styleUrl>
+      <Point>
+        <coordinates>-109.28946900,-27.12456300,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>ROAD (12 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 677 (1409m)</name>
+      <description><![CDATA[OBJECTID: 677
+Distance from quarry: 1409 m
+Total length: 783 cm
+Location: ROAD MOAI
+Coordinates: -27.128024, -109.290433]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29043300,-27.12802400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 448 (1417m)</name>
+      <description><![CDATA[OBJECTID: 448
+Distance from quarry: 1417 m
+Total length: 644 cm
+Location: ROAD MOAI
+Coordinates: -27.128334, -109.290423]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29042300,-27.12833400,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 524 (1444m)</name>
+      <description><![CDATA[OBJECTID: 524
+Distance from quarry: 1444 m
+Total length: Missing cm
+Location: ROAD MOAI
+Coordinates: -27.128517, -109.290643]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29064300,-27.12851700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 449 (1466m)</name>
+      <description><![CDATA[OBJECTID: 449
+Distance from quarry: 1466 m
+Total length: 576 cm
+Location: ROAD MOAI
+Coordinates: -27.128527, -109.290878]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29087800,-27.12852700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 450 (1527m)</name>
+      <description><![CDATA[OBJECTID: 450
+Distance from quarry: 1527 m
+Total length: 525 cm
+Location: ROAD MOAI
+Coordinates: -27.128903, -109.291392]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29139200,-27.12890300,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 553 (1743m)</name>
+      <description><![CDATA[OBJECTID: 553
+Distance from quarry: 1743 m
+Total length: 857 cm
+Location: ROAD MOAI
+Coordinates: -27.129956, -109.293289]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29328900,-27.12995600,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 554 (1757m)</name>
+      <description><![CDATA[OBJECTID: 554
+Distance from quarry: 1757 m
+Total length: 573 cm
+Location: ROAD MOAI
+Coordinates: -27.129977, -109.293430]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29343000,-27.12997700,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 555 (1762m)</name>
+      <description><![CDATA[OBJECTID: 555
+Distance from quarry: 1762 m
+Total length: 788 cm
+Location: ROAD MOAI
+Coordinates: -27.129920, -109.293513]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29351300,-27.12992000,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 558 (1838m)</name>
+      <description><![CDATA[OBJECTID: 558
+Distance from quarry: 1838 m
+Total length: 488 cm
+Location: ROAD MOAI
+Coordinates: -27.121012, -109.294795]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29479500,-27.12101200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 133 (1858m)</name>
+      <description><![CDATA[OBJECTID: 133
+Distance from quarry: 1858 m
+Total length: 801 cm
+Location: ROAD MOAI
+Coordinates: -27.130385, -109.294356]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29435600,-27.13038500,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 556 (1869m)</name>
+      <description><![CDATA[OBJECTID: 556
+Distance from quarry: 1869 m
+Total length: 773 cm
+Location: ROAD MOAI
+Coordinates: -27.130392, -109.294467]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29446700,-27.13039200,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ID 557 (1875m)</name>
+      <description><![CDATA[OBJECTID: 557
+Distance from quarry: 1875 m
+Total length: 496 cm
+Location: ROAD MOAI
+Coordinates: -27.130432, -109.294519]]></description>
+      <styleUrl>#roadStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29451900,-27.13043200,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>MUSEUM (1 moai)</name>
+    <open>1</open>
+    <Placemark>
+      <name>ID 522 (1838m)</name>
+      <description><![CDATA[OBJECTID: 522
+Distance from quarry: 1838 m
+Total length: Missing cm
+Location: ENGLERT MUSEUM
+Coordinates: -27.121012, -109.294795]]></description>
+      <styleUrl>#otherStyle</styleUrl>
+      <Point>
+        <coordinates>-109.29479500,-27.12101200,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
