@@ -9,19 +9,21 @@ The Walking Moai Hypothesis proposes that the famous Easter Island statues (moai
 1. **Statistical Analyses (R)**: Examining physical characteristics and spatial distribution of moai found along ancient roads
 2. **3D Physics Analysis (Python)**: Calculating center of mass and stability characteristics of moai using 3D mesh analysis
 
-### Recent Updates (August 2024)
+### Recent Updates (January 2025)
+- ✅ Added Table 1: Orientation analysis of road moai
+- ✅ Updated Figure S1: Comprehensive 6-panel hypothesis testing visualization
+- ✅ Added Table S1: Statistical test results for hypothesis comparison
+- ✅ Archived alternative analysis scripts for reproducibility
+- ✅ Enhanced documentation and project structure
 - ✅ Integrated 33 additional road moai IDs (total: 84)
 - ✅ Corrected quarry center to geocentroid (-27.125175°, -109.288170°)
-- ✅ Updated Figure 12 & 13 with expanded dataset
-- ✅ Added KML export for Google Earth visualization
-- ✅ Python scripts now use Figure_4_ naming convention
 
 ## Quick Start
 
 ### R Statistical Analysis
 ```bash
 # Clone the repository
-git clone https://github.com/[username]/moai_walking.git
+git clone https://github.com/clipo/moai_walking.git
 cd moai_walking
 
 # Generate all R figures
@@ -73,7 +75,8 @@ moai_walking/
 │   ├── Figure_11.R        # Transport failure hypothesis model
 │   ├── Figure_12.R        # Observed distribution using real data
 │   ├── Figure_13.R        # Size vs distance analysis
-│   ├── Figure_S1.R        # Supplemental: Ceremonial vs transport failure testing
+│   ├── Figure_S1.R        # Supplemental: 6-panel comprehensive hypothesis testing
+│   ├── Table_1_moai_orientation_analysis.R # Table 1: Road moai orientation analysis
 │   ├── create_distance_dataset.R # Generate distance measurements
 │   ├── test_environment.R # Test R environment setup
 │   ├── run_all_figures.R # Run all analyses sequentially
@@ -98,6 +101,7 @@ moai_walking/
 │   ├── SimplifiedMoai.obj          # 3D mesh model (5,150 vertices)
 │   ├── moai_road_slope_from_raraku.xlsx  # Slope data: Rano Raraku to South Coast road
 │   ├── southcoast_road_only_slope.xlsx   # Slope data: South Coast road segment
+│   ├── Table_1_road_moai_orientation.xlsx # Road moai orientation data
 │   ├── moai_with_distances.csv*   # Generated: moai with distances from geocentroid
 │   ├── road_moai_distances.csv*   # Generated: road moai subset (84 records)
 │   └── road_moai_zones.csv*       # Generated: distance zone analysis
@@ -106,7 +110,10 @@ moai_walking/
 │   └── [Generated figures in .svg, .png, .pdf, .html formats]
 │
 ├── docs/                  # Documentation
-│   └── Walking Moai Hypothesis.docx  # Research paper draft
+│   ├── Walking Moai Hypothesis.docx         # Research paper draft
+│   ├── Walking Moai Hypothesis-Revised-V2.docx # Revised version
+│   ├── Figure_S1_Table_S1_explanation.txt   # Supplemental figure/table explanation
+│   └── Figure_S1_Table_S1_explanation-2.txt # Additional notes
 │
 ├── CLAUDE.md             # Project guidelines for AI assistance
 ├── R_STYLE_GUIDE.md      # R coding style guide
@@ -341,8 +348,9 @@ The 3D analysis confirms that moai were designed with inherent stability for upr
 | **Figure 11** | Transport failure hypothesis model | Expected concentration near quarry under failure hypothesis |
 | **Figure 12** | Observed road moai distribution | 41.7% within 2km of quarry (35/84 moai) shows transport challenges |
 | **Figure 13** | Moai size vs transport distance | No correlation between size and distance - size wasn't limiting factor |
-| **Figure S1** | Hypothesis testing (supplemental) | 4-panel comparison of ceremonial vs transport failure hypotheses |
+| **Figure S1** | Hypothesis testing (supplemental) | 6-panel comprehensive comparison of ceremonial vs transport failure hypotheses |
 | **Table S1** | Statistical test results (supplemental) | All 6 tests support transport failure, 0 support ceremonial placement |
+| **Table 1** | Road moai orientation analysis | Analysis of moai orientations relative to roads and transport paths |
 
 ### Python 3D Analysis Outputs
 

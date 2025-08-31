@@ -47,7 +47,8 @@ From the scripts directory:
    Rscript Figure_11.R   # Transport failure model
    Rscript Figure_12.R   # Observed distribution analysis
    Rscript Figure_13.R   # Size vs transport distance
-   Rscript Figure_S1.R   # Supplemental: Hypothesis testing (Figure S1 & Table S1)
+   Rscript Figure_S1.R   # Supplemental: 6-panel hypothesis testing (Figure S1 & Table S1)
+   Rscript Table_1_moai_orientation_analysis.R  # Table 1: Road moai orientations
 
 ================================================================================
 PYTHON 3D ANALYSIS (FIGURE 4)
@@ -167,6 +168,7 @@ Primary datasets:
 - SimplifiedMoai.obj: 3D mesh model (5,150 vertices)
 - Road Moai Data.xlsx: Road moai with GPS coordinates and base angles
 - all_moai_combined.csv: Merged dataset with all moai measurements
+- Table_1_road_moai_orientation.xlsx: Road moai orientation data
 
 Generated datasets (created by create_distance_dataset.R):
 - moai_with_distances.csv: All moai with calculated distances from quarry
@@ -182,7 +184,10 @@ CITATION
 ================================================================================
 
 If you use this code in your research, please cite:
-[Citation information will be added upon publication]
+
+Lipo, C. and Hunt, T. (2025). The Walking Moai Hypothesis (Easter Island): 
+Archaeological Evidence, Experimental Validation, and Response to Critics.
+Journal of Archaeological Science (in preparation).
 
 ================================================================================
 LICENSE
@@ -196,6 +201,7 @@ CONTACT
 
 For questions or issues:
 - Open an issue on GitHub: https://github.com/clipo/moai_walking/issues
-- Contact: [Author contact information]
+- Carl Lipo: clipo@binghamton.edu
+- Terry Hunt: tlhunt@arizona.edu
 
 ================================================================================

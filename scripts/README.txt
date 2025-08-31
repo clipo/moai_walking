@@ -22,6 +22,8 @@ To generate individual figures:
     Rscript Figure_11.R   # Transport failure hypothesis model
     Rscript Figure_12.R   # Observed distribution with real data
     Rscript Figure_13.R   # Size vs transport distance analysis
+    Rscript Figure_S1.R   # Supplemental: 6-panel hypothesis testing
+    Rscript Table_1_moai_orientation_analysis.R  # Table 1: Road moai orientations
 
 --------------------------------------------------------------------------------
 PREREQUISITES
@@ -96,6 +98,17 @@ Figure_13.R
   - Tests if larger moai traveled shorter distances
   - Key finding: No correlation - size wasn't limiting
 
+Figure_S1.R
+  - Supplemental figure with 6-panel comprehensive analysis
+  - Compares ceremonial vs transport failure hypotheses
+  - Generates both Figure S1 and Table S1 results
+  - Key finding: All tests support transport failure hypothesis
+
+Table_1_moai_orientation_analysis.R
+  - Analyzes orientation of road moai relative to transport paths
+  - Tests if moai faces align with road directions
+  - Key finding: Moai orientations consistent with transport positions
+
 --------------------------------------------------------------------------------
 SUPPORT SCRIPTS
 --------------------------------------------------------------------------------
@@ -138,6 +151,7 @@ Required files:
 - Road Moai Data.xlsx         (road moai with coordinates)
 - MOAI_DATABASE_PUBLIC.xlsx   (comprehensive database)
 - all_moai_combined.csv       (merged dataset)
+- Table_1_road_moai_orientation.xlsx (road moai orientation data)
 
 Generated files (created by create_distance_dataset.R):
 - moai_with_distances.csv
@@ -165,8 +179,20 @@ Package installation fails:
 ARCHIVED SCRIPTS
 --------------------------------------------------------------------------------
 
-The archive/ subdirectory contains older versions and alternative analyses.
-These are kept for reference but should not be used for final figures.
+The archive/ subdirectory contains:
+- Older versions of figure scripts
+- Alternative analysis approaches
+- Development versions for testing
+- Previous implementations before optimization
+These are kept for reproducibility but should not be used for final figures.
+
+Key archived scripts:
+- Figure_2_alternative_analyses.R - Alternative statistical approaches
+- Figure_2_clean.R, Figure_2_diagnostic.R - Development versions
+- Figure_3_diagnostic.R, Figure_3_fixed.R - Debugging versions
+- Figure_5_*.R - Multiple iterations of base angle analysis
+- Figure_12.R, Figure_13.R, Figure_13_old.R - Previous versions
+- init_packrat_enhanced.R - Enhanced packrat initialization
 
 --------------------------------------------------------------------------------
 NOTES
