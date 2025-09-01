@@ -16,11 +16,24 @@ Thumbs.db
 *.tmp
 *.bak
 
-# Packrat files
+# Packrat files (legacy)
 packrat/lib*/
 # Keep packrat.lock and packrat/init.R for reproducibility
 !packrat/packrat.lock
 !packrat/init.R
+
+# renv files
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+# Keep renv.lock and activation script for reproducibility
+!renv/.gitignore
+!renv/activate.R
+!renv/settings.json
 
 # Output figures (can be regenerated)
 # Uncomment the line below if you don't want to track generated figures

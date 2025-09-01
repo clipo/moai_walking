@@ -153,10 +153,17 @@ SOLUTION: Check R and package versions
 REPRODUCIBILITY
 ================================================================================
 
-For enhanced reproducibility using packrat (optional):
-   Rscript init_packrat.R
+For enhanced reproducibility using renv (recommended):
+   Rscript scripts/init_renv.R
    
-This creates a project-specific package library ensuring consistent versions.
+renv is the modern successor to packrat with better performance and features:
+- Faster package installation
+- Shared global cache saves disk space  
+- Better RStudio integration
+- Active development (packrat is in maintenance mode)
+
+Legacy option using packrat:
+   Rscript scripts/init_packrat.R
 
 ================================================================================
 DATA SOURCES

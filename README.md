@@ -80,7 +80,8 @@ moai_walking/
 │   ├── create_distance_dataset.R # Generate distance measurements
 │   ├── test_environment.R # Test R environment setup
 │   ├── run_all_figures.R # Run all analyses sequentially
-│   ├── init_packrat.R    # Initialize packrat (optional)
+│   ├── init_renv.R       # Initialize renv (recommended for reproducibility)
+│   ├── init_packrat.R    # Initialize packrat (legacy, renv is preferred)
 │   ├── setup.R            # Setup script with package installation
 │   ├── package_loader.R   # Helper function for loading packages
 │   └── archive/           # Older/alternative versions of scripts
@@ -133,22 +134,37 @@ moai_walking/
 source("scripts/setup.R")  # Installs all required packages
 ```
 
-### Option 2: Using Packrat for Full Reproducibility
+### Option 2: Using renv for Full Reproducibility (Recommended)
 
-Packrat creates a private package library ensuring exact package versions:
+renv is the modern successor to packrat, providing better performance and features:
 
 ```r
-# Initialize packrat (first time only)
-source("init_packrat.R")
+# Initialize renv (first time only)
+source("scripts/init_renv.R")
 
 # Restore packages on a new machine
-packrat::restore()
+renv::restore()
 
 # Update snapshot after installing new packages
-packrat::snapshot()
+renv::snapshot()
 ```
 
-Note: Packrat is optional but recommended for exact reproducibility.
+**Why renv over packrat?**
+- Faster package installation and restoration
+- Shared global cache saves disk space
+- Better RStudio integration
+- Active development (packrat is in maintenance mode)
+- Can manage both R and Python dependencies
+
+### Option 2b: Using Packrat (Legacy)
+
+Packrat is still available but renv is recommended:
+
+```r
+# Initialize packrat (legacy option)
+source("scripts/init_packrat.R")
+packrat::restore()
+```
 
 ### Option 3: Manual Package Installation
 
@@ -423,9 +439,9 @@ This project follows clean R coding practices:
 
 ### R Environment
 - **R Version**: Tested with R 4.4.0
-- **Package Management**: Packrat for exact reproducibility
-- **Package Versions**: See `packrat.lock` for exact versions used
-- **Setup**: Run `source("init_packrat.R")` or `packrat::restore()`
+- **Package Management**: renv (recommended) or packrat (legacy)
+- **Package Versions**: See `renv.lock` or `packrat.lock` for exact versions
+- **Setup**: Run `source("scripts/init_renv.R")` or `renv::restore()`
 
 ### Python Environment
 - **Python Version**: 3.10.13 recommended (compatible with 3.7-3.12)
