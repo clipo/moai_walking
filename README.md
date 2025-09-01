@@ -10,9 +10,12 @@ The Walking Moai Hypothesis proposes that the famous Easter Island statues (moai
 2. **3D Physics Analysis (Python)**: Calculating center of mass and stability characteristics of moai using 3D mesh analysis
 
 ### Recent Updates (January 2025)
+- ✅ **Implemented renv** for modern R package management (replacing packrat)
+- ✅ Added comprehensive data documentation (DATA_DOCUMENTATION.md)
 - ✅ Added Table 1: Orientation analysis of road moai
 - ✅ Updated Figure S1: Comprehensive 6-panel hypothesis testing visualization
 - ✅ Added Table S1: Statistical test results for hypothesis comparison
+- ✅ Cleaned up docs directory - now contains only PDF manuscripts
 - ✅ Archived alternative analysis scripts for reproducibility
 - ✅ Enhanced documentation and project structure
 - ✅ Integrated 33 additional road moai IDs (total: 84)
@@ -80,7 +83,8 @@ moai_walking/
 │   ├── create_distance_dataset.R # Generate distance measurements
 │   ├── test_environment.R # Test R environment setup
 │   ├── run_all_figures.R # Run all analyses sequentially
-│   ├── init_renv.R       # Initialize renv (recommended for reproducibility)
+│   ├── init_renv.R       # Initialize renv (for new setups)
+│   ├── setup_renv.R      # Simple renv setup script
 │   ├── init_packrat.R    # Initialize packrat (legacy, renv is preferred)
 │   ├── setup.R            # Setup script with package installation
 │   ├── package_loader.R   # Helper function for loading packages
@@ -95,9 +99,10 @@ moai_walking/
 │   └── archive_old_versions/       # Development/test scripts
 │
 ├── data/                  # Input data files
+│   ├── DATA_DOCUMENTATION.md      # Complete documentation of all data files
 │   ├── VanTilburgData.xlsx        # Van Tilburg (1986) moai measurements
 │   ├── Road Moai Data.xlsx        # Road moai with GPS coordinates and base angles
-│   ├── MOAI_DATABASE_PUBLIC.xlsx  # Comprehensive moai database
+│   ├── MOAI_DATABASE_PUBLIC.xlsx  # Schumacher (2013) geospatial database
 │   ├── all_moai_combined.csv      # Merged dataset with all moai measurements
 │   ├── SimplifiedMoai.obj          # 3D mesh model (5,150 vertices)
 │   ├── moai_road_slope_from_raraku.xlsx  # Slope data: Rano Raraku to South Coast road
@@ -111,65 +116,63 @@ moai_walking/
 │   └── [Generated figures in .svg, .png, .pdf, .html formats]
 │
 ├── docs/                  # Documentation
-│   ├── Walking Moai Hypothesis.docx         # Research paper draft
-│   ├── Walking Moai Hypothesis-Revised-V2.docx # Revised version
-│   ├── Figure_S1_Table_S1_explanation.txt   # Supplemental figure/table explanation
-│   └── Figure_S1_Table_S1_explanation-2.txt # Additional notes
+│   ├── Walking Moai Hypothesis-Revised-V2.pdf  # Main manuscript (PDF)
+│   └── Supplemental Information.pdf            # Supplemental materials
 │
-├── CLAUDE.md             # Project guidelines for AI assistance
-├── R_STYLE_GUIDE.md      # R coding style guide
-├── VERIFICATION_REPORT.md # Testing and verification results
-├── LICENSE               # MIT License
-└── README.md             # This file
+├── renv/                 # renv package management
+│   ├── activate.R        # Auto-activation script
+│   ├── settings.json     # Project settings
+│   └── library/          # Project-specific package library (git-ignored)
+├── renv.lock            # Package versions snapshot (3000+ lines)
+├── .Rprofile            # Auto-activates renv when opening project
+├── CLAUDE.md            # Project guidelines for AI assistance
+├── LICENSE              # MIT License
+└── README.md            # This file
 
 * Generated files (created by create_distance_dataset.R)
 ```
 
 ## Installation & Setup
 
-### Option 1: Standard Installation (Recommended for most users)
+### Option 1: Using renv for Full Reproducibility (Recommended)
+
+✅ **renv is now implemented in this project!** Simply clone and restore:
+
+```r
+# Clone the repository
+git clone https://github.com/clipo/moai_walking.git
+cd moai_walking
+
+# Open R and restore the exact package environment
+renv::restore()  # This installs all packages with exact versions from renv.lock
+```
+
+**Why renv?**
+- ✅ Already configured with `renv.lock` file
+- ✅ Ensures exact reproducibility across all machines
+- ✅ Faster than packrat with shared global cache
+- ✅ Better RStudio integration
+- ✅ Active development and support
+
+### Option 2: Standard Installation (Quick start without renv)
 
 ```r
 # From R console in project directory
 source("scripts/setup.R")  # Installs all required packages
 ```
 
-### Option 2: Using renv for Full Reproducibility (Recommended)
-
-renv is the modern successor to packrat, providing better performance and features:
-
-```r
-# Initialize renv (first time only)
-source("scripts/init_renv.R")
-
-# Restore packages on a new machine
-renv::restore()
-
-# Update snapshot after installing new packages
-renv::snapshot()
-```
-
-**Why renv over packrat?**
-- Faster package installation and restoration
-- Shared global cache saves disk space
-- Better RStudio integration
-- Active development (packrat is in maintenance mode)
-- Can manage both R and Python dependencies
-
-### Option 2b: Using Packrat (Legacy)
-
-Packrat is still available but renv is recommended:
-
-```r
-# Initialize packrat (legacy option)
-source("scripts/init_packrat.R")
-packrat::restore()
-```
-
 ### Option 3: Manual Package Installation
 
 ```r
-install.packages(c("readxl", "ggplot2", "dplyr", "tidyr", "svglite"))
+install.packages(c("readxl", "ggplot2", "dplyr", "tidyr", "svglite", "cowplot"))
+```
+
+### Option 4: Using Packrat (Legacy - not recommended)
+
+```r
+# Packrat is still available but renv is strongly preferred
+source("scripts/init_packrat.R")
+packrat::restore()
 ```
 
 ## Running the Analyses
@@ -379,9 +382,10 @@ The 3D analysis confirms that moai were designed with inherent stability for upr
 ## Data Files
 
 ### Primary Data Sources
-- **VanTilburgData.xlsx**: Comprehensive moai measurements from Van Tilburg (1986)
-- **Road Moai Data.xlsx**: Specific road moai with GPS coordinates and base angles
-- **MOAI_DATABASE_PUBLIC.xlsx**: Public database with extensive moai information
+- **VanTilburgData.xlsx**: Van Tilburg (1986) moai measurements
+- **MOAI_DATABASE_PUBLIC.xlsx**: Schumacher (2013) MA thesis geospatial database
+- **Road Moai Data.xlsx**: Road moai with GPS coordinates and base angles
+- **DATA_DOCUMENTATION.md**: Complete documentation of all data files with full citations
 - **all_moai_combined.csv**: Merged dataset combining multiple sources
 - **SimplifiedMoai.obj**: 3D mesh model (5,150 vertices, 10,296 faces)
 
@@ -439,9 +443,9 @@ This project follows clean R coding practices:
 
 ### R Environment
 - **R Version**: Tested with R 4.4.0
-- **Package Management**: renv (recommended) or packrat (legacy)
-- **Package Versions**: See `renv.lock` or `packrat.lock` for exact versions
-- **Setup**: Run `source("scripts/init_renv.R")` or `renv::restore()`
+- **Package Management**: ✅ **renv implemented** (see `renv.lock` for exact versions)
+- **Automatic Activation**: `.Rprofile` automatically loads renv when you open the project
+- **To Reproduce**: Simply run `renv::restore()` after cloning
 
 ### Python Environment
 - **Python Version**: 3.10.13 recommended (compatible with 3.7-3.12)
