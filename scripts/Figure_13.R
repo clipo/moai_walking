@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 13: Analysis of moai size in relation to transport distance
+# Figure 13: Analysis of *moai* size in relation to transport distance
 # Creates box plots by transport phase and scatter plot with regression
 
 library(readxl)
@@ -13,7 +13,7 @@ cat("=== FIGURE 13: SIZE VS TRANSPORT DISTANCE ANALYSIS ===\n\n")
 # Load the public database which has size data
 public_db <- read_excel("../data/MOAI_DATABASE_PUBLIC.xlsx")
 
-# Get ROAD and QUARRY NOT BEDROCK moai with size data
+# Get ROAD and QUARRY NOT BEDROCK *moai* with size data
 road_quarry_moai <- public_db %>%
   filter(LOCATION_TYPE %in% c("ROAD", "QUARRY NOT BEDROCK")) %>%
   mutate(
@@ -38,7 +38,7 @@ merged_data <- road_quarry_moai %>%
   ) %>%
   filter(!is.na(distance_from_quarry_km))
 
-# Use ALL moai with size data (not just complete ones) to get better coverage
+# Use ALL *moai* with size data (not just complete ones) to get better coverage
 # This includes fragments but gives us more data points across all distances
 moai_with_size <- merged_data %>%
   filter(!is.na(total_length_cm) & total_length_cm > 0) %>%
@@ -50,8 +50,8 @@ moai_with_size <- merged_data %>%
     is_complete = (n_fragments == "1" | n_fragments == 1)
   )
 
-cat(sprintf("Moai with size and distance data: %d\n", nrow(moai_with_size)))
-cat(sprintf("  Complete moai: %d\n", sum(moai_with_size$is_complete, na.rm = TRUE)))
+cat(sprintf("*Moai* with size and distance data: %d\n", nrow(moai_with_size)))
+cat(sprintf("  Complete *moai*: %d\n", sum(moai_with_size$is_complete, na.rm = TRUE)))
 cat(sprintf("  Fragments: %d\n", sum(!moai_with_size$is_complete, na.rm = TRUE)))
 
 # Use the renamed variable for consistency
@@ -131,7 +131,7 @@ phase_counts <- table(complete_moai$transport_phase)
 medians <- tapply(complete_moai$total_length_cm, complete_moai$transport_phase, median)
 
 boxplot(total_length_cm ~ transport_phase, data = complete_moai,
-        main = "B. Size by Transport Phase (All Moai)",
+        main = expression("B. Size by Transport Phase (All"~italic("Moai")~")"),
         xlab = "Transport Phase",
         ylab = "Total Length (cm)",
         col = c("#e74c3c", "#3498db", "#2ecc71"),
@@ -179,7 +179,7 @@ text(max(complete_moai$distance_from_quarry_km) * 0.7,
 
 # Recreate Panel B for PNG (now box plots)
 boxplot(total_length_cm ~ transport_phase, data = complete_moai,
-        main = "B. Size by Transport Phase (All Moai)",
+        main = expression("B. Size by Transport Phase (All"~italic("Moai")~")"),
         xlab = "Transport Phase",
         ylab = "Total Length (cm)",
         col = c("#e74c3c", "#3498db", "#2ecc71"),
@@ -265,8 +265,8 @@ cat("- Figure_13_analysis_data.csv\n")
 cat("\n=== KEY FINDINGS ===\n")
 if(cor_test$p.value < 0.05) {
   cat("Significant negative correlation between size and distance\n")
-  cat("Larger moai tend to be found closer to the quarry\n")
+  cat("Larger *moai* tend to be found closer to the quarry\n")
 } else {
   cat("No significant correlation between size and distance\n")
-  cat("Moai size does not predict transport distance\n")
+  cat("*Moai* size does not predict transport distance\n")
 }

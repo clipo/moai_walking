@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-# Figure 12: Observed road moai distribution using REAL DATA
+# Figure 12: Observed road *moai* distribution using REAL DATA
 # No random data generation - uses actual distance measurements
 
 library(ggplot2)
@@ -7,14 +7,14 @@ library(dplyr)
 library(tidyr)
 library(svglite)
 
-cat("=== FIGURE 12: OBSERVED ROAD MOAI DISTRIBUTION ===\n\n")
+cat("=== FIGURE 12: OBSERVED ROAD *MOAI* DISTRIBUTION ===\n\n")
 
 # Load the real distance data we created
-cat("Loading road moai distance data...\n")
+cat("Loading road *moai* distance data...\n")
 road_moai <- read.csv("../data/road_moai_distances.csv")
 zones_data <- read.csv("../data/road_moai_zones.csv")
 
-cat(sprintf("Loaded %d road moai with distance measurements\n", nrow(road_moai)))
+cat(sprintf("Loaded %d road *moai* with distance measurements\n", nrow(road_moai)))
 
 # Calculate key statistics
 median_dist <- median(road_moai$distance_from_quarry_km)
@@ -24,7 +24,7 @@ pct_within_2km <- 100 * sum(road_moai$distance_from_quarry_km <= 2) / nrow(road_
 cat(sprintf("\nKey statistics:\n"))
 cat(sprintf("  Median distance: %.2f km\n", median_dist))
 cat(sprintf("  Within 2 km: %.1f%%\n", pct_within_2km))
-cat("\nNote: Distances calculated from geocentroid of 318 bedrock quarry moai\n")
+cat("\nNote: Distances calculated from geocentroid of 318 bedrock quarry *moai*\n")
 cat("      at -27.125175°, -109.288170° (actual center of quarrying activity)\n")
 
 # Define color palette
@@ -49,9 +49,9 @@ create_figure12 <- function() {
   
   # Plot histogram
   plot(hist_data, 
-       main = "A. Observed Road Moai Distribution",
+       main = expression("A. Observed Road"~italic("Moai")~"Distribution"),
        xlab = "Distance from Quarry (km)",
-       ylab = "Number of Moai",
+       ylab = expression("Number of"~italic("Moai")),
        col = moai_colors["observed"],
        border = "white",
        xlim = c(0, 14),
@@ -76,7 +76,7 @@ create_figure12 <- function() {
   
   # Add statistical info in white space on right (moved left to stay in bounds)
   text(9.5, max(hist_data$counts) * 0.9,
-       sprintf("n = %d moai\n\nQ1 = %.2f km\nMedian = %.2f km\nQ3 = %.2f km\n\n%.1f%% within 2 km", 
+       sprintf("n = %d *moai*\n\nQ1 = %.2f km\nMedian = %.2f km\nQ3 = %.2f km\n\n%.1f%% within 2 km", 
                nrow(road_moai), quartiles[1], quartiles[2], quartiles[3], pct_within_2km),
        cex = 0.9, font = 2, adj = 0)
   
@@ -91,7 +91,7 @@ create_figure12 <- function() {
   plot(x, expected, type = "l",
        main = "B. Transport Failure Model Comparison",
        xlab = "Distance from Quarry (km)",
-       ylab = "Expected Number of Moai",
+       ylab = expression("Expected Number of"~italic("Moai")),
        col = moai_colors["model"],
        lwd = 3,
        xlim = c(0, 14),

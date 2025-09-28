@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
-# Figure 5: Base angle vs size for INTACT road moai
-# Using the correct subset: road moai with n of pieces = 1
+# Figure 5: Base angle vs size for INTACT road *moai*
+# Using the correct subset: road *moai* with n of pieces = 1
 
 library(readxl)
 library(ggplot2)
@@ -8,23 +8,23 @@ library(dplyr)
 library(tidyr)
 library(svglite)
 
-cat("=== FIGURE 5: INTACT ROAD MOAI ANALYSIS ===\n\n")
+cat("=== FIGURE 5: INTACT ROAD *MOAI* ANALYSIS ===\n\n")
 
 # Load the combined dataset
 data <- read.csv("../data/all_moai_combined.csv")
 cat(sprintf("Total records loaded: %d\n", nrow(data)))
 
-# Filter for INTACT ROAD MOAI
+# Filter for INTACT ROAD *MOAI*
 # Intact = n of pieces = 1 (not broken)
 # Road = location_type = "ROAD" 
-cat("\nFiltering for intact road moai:\n")
+cat("\nFiltering for intact road *moai*:\n")
 cat("- location_type = 'ROAD'\n")
 cat("- n of pieces = 1 (intact)\n")
 cat("- valid base angle and size measurements\n\n")
 
 # Apply filters
 intact_road_moai <- data %>%
-  # Filter for road moai
+  # Filter for road *moai*
   filter(location_type == "ROAD") %>%
   # Filter for intact (1 piece only)
   filter(n.of.pieces == "1" | n.of.pieces == 1) %>%
@@ -37,24 +37,24 @@ intact_road_moai <- data %>%
   mutate(size_metric = total_length_cm * base_width_cm) %>%
   filter(size_metric > 100)  # Remove unreasonably small values
 
-cat(sprintf("Intact road moai with complete data: %d\n", nrow(intact_road_moai)))
+cat(sprintf("Intact road *moai* with complete data: %d\n", nrow(intact_road_moai)))
 
 # Check if we have enough data
 if(nrow(intact_road_moai) < 3) {
-  cat("\nWARNING: Insufficient intact road moai found.\n")
+  cat("\nWARNING: Insufficient intact road *moai* found.\n")
   cat("Checking data integrity...\n")
   
   # Debug: check the filtering steps
   cat("\nDebug information:\n")
   road_moai <- data %>% filter(location_type == "ROAD")
-  cat(sprintf("- Road moai total: %d\n", nrow(road_moai)))
+  cat(sprintf("- Road *moai* total: %d\n", nrow(road_moai)))
   
   if(nrow(road_moai) > 0) {
     cat("\nChecking 'n of pieces' values:\n")
     print(table(road_moai$`n of pieces`, useNA = "always"))
     
     intact <- road_moai %>% filter(`n of pieces` == "1" | `n of pieces` == 1)
-    cat(sprintf("\n- Intact road moai (1 piece): %d\n", nrow(intact)))
+    cat(sprintf("\n- Intact road *moai* (1 piece): %d\n", nrow(intact)))
     
     with_angles <- intact %>% filter(!is.na(mean_base_angle))
     cat(sprintf("- With base angles: %d\n", nrow(with_angles)))
@@ -80,8 +80,8 @@ r_squared <- summary(lm_model)$r.squared
 p_value <- summary(lm_model)$coefficients[2, 4]
 
 # Print detailed statistics
-cat("\n=== INTACT ROAD MOAI STATISTICS ===\n")
-cat(sprintf("Sample size: n = %d intact road moai\n", nrow(intact_road_moai)))
+cat("\n=== INTACT ROAD *MOAI* STATISTICS ===\n")
+cat(sprintf("Sample size: n = %d intact road *moai*\n", nrow(intact_road_moai)))
 cat(sprintf("\nBase angles:\n"))
 cat(sprintf("  Range: %.1f° to %.1f°\n", angle_range[1], angle_range[2]))
 cat(sprintf("  Total range: %.1f°\n", diff(angle_range)))
@@ -108,11 +108,11 @@ if(abs(correlation) < 0.1) {
   cat("This strongly supports standardized construction for walking transport.\n")
 } else if(correlation < -0.1) {
   cat("SLIGHT NEGATIVE correlation detected.\n")
-  cat("Larger moai tend to have slightly smaller base angles.\n")
+  cat("Larger *moai* tend to have slightly smaller base angles.\n")
   cat("However, the narrow angle range still supports standardized construction.\n")
 } else if(correlation > 0.1) {
   cat("SLIGHT POSITIVE correlation detected.\n")
-  cat("Larger moai tend to have slightly larger base angles.\n")
+  cat("Larger *moai* tend to have slightly larger base angles.\n")
   cat("The narrow angle range still indicates construction constraints.\n")
 }
 
@@ -160,8 +160,8 @@ p <- ggplot(intact_road_moai, aes(x = mean_base_angle, y = size_metric)) +
   
   # Labels
   labs(
-    title = "Base Angle vs Size: Intact Road Moai Only",
-    subtitle = sprintf("n = %d intact moai (1 piece) | Pearson r = %.3f (p = %.3f) | %.0f-fold size variation | Angle range: %.1f°", 
+    title = expression("Base Angle vs Size: Intact Road"~italic("Moai")~"Only"),
+    subtitle = sprintf("n = %d intact *moai* (1 piece) | Pearson r = %.3f (p = %.3f) | %.0f-fold size variation | Angle range: %.1f°", 
                       nrow(intact_road_moai), correlation, p_value, size_fold, diff(angle_range)),
     x = "Mean Base Angle (degrees)",
     y = expression(paste("Size Metric (Length × Width, cm"^"2", ")"))
@@ -245,7 +245,7 @@ cat("optimized for the 'walking' transport method.\n")
 
 # Print individual moai details if n < 20
 if(nrow(intact_road_moai) <= 20) {
-  cat("\n=== INDIVIDUAL INTACT ROAD MOAI ===\n")
+  cat("\n=== INDIVIDUAL INTACT ROAD *MOAI* ===\n")
   display_data <- intact_road_moai %>%
     select(mean_base_angle, total_length_cm, base_width_cm, Position) %>%
     mutate(size_cm2 = total_length_cm * base_width_cm) %>%

@@ -121,7 +121,7 @@ p <- ggplot(plot_data, aes(x = MoaiType, y = ratio, fill = MoaiType)) +
   scale_y_continuous(breaks = seq(0.4, 2.2, by = 0.2)) +
   
   # Customize x-axis labels
-  scale_x_discrete(labels = c("Ahu Moai", "Road Moai"))
+  scale_x_discrete(labels = c(expression(italic("Ahu")~italic("Moai")), expression(italic("Road")~italic("Moai"))))
 
 # Display the plot
 print(p)
@@ -137,8 +137,8 @@ cat(sprintf("Road Moai: mean ratio = %.3f ± %.3f (n = %d)\n",
 
 # Add figure caption information
 caption_text <- paste(
-  "Figure 2. Comparison of the ratio of base width to shoulder width for ahu moai (left) and road moai (right).",
-  sprintf("Using measurement data of moai from Van Tilburg (1986), the figures show that the two types of moai have statistically distinctive ratios (Welch's t-test: t = %.3f, df = %.1f, p = %.3e).",
+  "Figure 2. Comparison of the ratio of base width to shoulder width for *ahu moai* (left) and *road moai* (right).",
+  sprintf("Using measurement data of *moai* from Van Tilburg (1986), the figures show that the two types of *moai* have statistically distinctive ratios (Welch's t-test: t = %.3f, df = %.1f, p = %.3e).",
           t_result$statistic, t_result$parameter, t_result$p.value)
 )
 

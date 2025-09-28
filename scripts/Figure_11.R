@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
-# Standalone R code for Figure 11: Expected distribution of road moai under transport failure hypothesis
-# From: "Transport Failure Analysis of Easter Island Road Moai"
+# Standalone R code for Figure 11: Expected distribution of road *moai* under transport failure hypothesis
+# From: "Transport Failure Analysis of Easter Island Road *Moai*"
 
 # Ensure reproducibility by loading required packages
 # Source the package loader or install packages if needed
@@ -44,7 +44,7 @@ create_transport_failure_figure <- function(observed_pct = 51.6) {
   # Create plot with extra space at top for zone labels
   plot(0, 0, type = "n", xlim = c(0, max_dist), ylim = c(0, 16.5),
        xlab = "Distance from Quarry (km)", 
-       ylab = "Expected Number of Moai",
+       ylab = expression("Expected Number of"~italic("Moai")),
        main = "")
   
   # Add zone backgrounds

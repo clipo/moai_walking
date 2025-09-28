@@ -52,7 +52,9 @@
 <text transform='translate(40.32,85.53) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='13.34px' lengthAdjust='spacingAndGlyphs'>15</text>
 <polygon points='57.60,288.00 547.20,288.00 547.20,57.60 57.60,57.60 ' style='stroke-width: 0.75;' />
 <text x='302.40' y='342.72' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='141.34px' lengthAdjust='spacingAndGlyphs'>Distance from Quarry (km)</text>
-<text transform='translate(11.52,172.80) rotate(-90)' text-anchor='middle' style='font-size: 12.00px; font-family: "Arial";' textLength='138.70px' lengthAdjust='spacingAndGlyphs'>Expected Number of Moai</text>
+<text transform='translate(9.14,241.99) rotate(-90)' style='font-size: 12.00px; font-family: "Arial";' textLength='109.36px' lengthAdjust='spacingAndGlyphs'>Expected Number of</text>
+<text transform='translate(9.14,132.63) rotate(-90)' style='font-size: 12.00px; font-family: "Symbol";' textLength='3.00px' lengthAdjust='spacingAndGlyphs'> </text>
+<text transform='translate(9.14,129.63) rotate(-90)' style='font-size: 12.00px; font-style: italic; font-family: "Arial";' textLength='26.02px' lengthAdjust='spacingAndGlyphs'>Moai</text>
 </g>
 <defs>
   <clipPath id='cpNTcuNjB8NTQ3LjIwfDU3LjYwfDI4OC4wMA=='>

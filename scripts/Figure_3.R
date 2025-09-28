@@ -227,7 +227,7 @@ p_final <- ggplot(road_data_final, aes(x = "Road Moai", y = com_position)) +
   
   # Labels
   labs(
-    title = "Center of Mass Distribution - Road Moai",
+    title = expression("Center of Mass Distribution -"~italic("Road")~italic("Moai")),
     subtitle = sprintf("Estimated from available measurements (n = %d); Mean = %.3f ± %.3f", 
                        summary_stats$n, summary_stats$mean, summary_stats$sd),
     x = "",
@@ -277,17 +277,17 @@ cat("- Figure_3_com_distribution_preview.png (150 dpi for preview)\n")
 
 # Print enhanced caption
 cat("\nFigure 3 Caption:\n")
-cat("Figure 3. Center of Mass Calculation (CoM) for Road Moai (n=", summary_stats$n, "). ", sep="")
+cat("Figure 3. Center of Mass Calculation (CoM) for *road moai* (n=", summary_stats$n, "). ", sep="")
 cat("CoM positions were estimated from Van Tilburg (1986) data using a volumetric sectional ")
 cat("analysis based on available morphometric measurements (total height and base width, ")
-cat("with shoulder width when available). The analysis divided each moai into four anatomical ")
+cat("with shoulder width when available). The analysis divided each *moai* into four anatomical ")
 cat("sections (base: 20%, belly: 35%, chest: 25%, head: 20%) with assumed elliptical ")
 cat("cross-sections and depth estimated at 50% of the width for body sections and 60% for ")
-cat("the head section. Individual moai are represented as points colored by height, with a ")
+cat("the head section. Individual *moai* are represented as points colored by height, with a ")
 cat("box plot indicating the median, quartiles, and range. The mean CoM position (red diamond) ")
 cat("of ", sprintf("%.3f", summary_stats$mean), " ± ", sprintf("%.3f", summary_stats$sd), 
     " (fraction of total height from base) ", sep="")
-cat("indicates all road moai have centers of mass well below the midpoint (0.5), consistent ")
+cat("indicates all *road moai* have centers of mass well below the midpoint (0.5), consistent ")
 cat("with the stability requirements for oscillatory walking transport. ")
 cat("Due to limited measurement data and necessary geometric assumptions, actual CoM positions ")
 cat("may vary by ±5-10% from these estimates. More precise determination would require ")
