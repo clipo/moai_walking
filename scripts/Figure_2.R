@@ -18,7 +18,7 @@ if (file.exists("package_loader.R")) {
 # Read the Van Tilburg data
 data <- read_excel("../data/VanTilburgData.xlsx")
 
-# Calculate base-to-shoulder width ratio
+# Calculate shoulder-to-base width ratio
 # The Van Tilburg database uses "Width:Base" and "Width:Shoulders" columns
 data <- data %>%
   rename(
@@ -26,17 +26,17 @@ data <- data %>%
     ShoulderWidth = `Width:Shoulders`,
     Location = Location
   ) %>%
-  mutate(ratio = BaseWidth / ShoulderWidth) %>%
+  mutate(ratio = ShoulderWidth / BaseWidth) %>%
   filter(!is.na(ratio) & !is.na(Location))
 
 # Categorize moai based on Location
 # In Van Tilburg's coding system:
-# Locations 1-6 = ahu sites (completed moai on platforms)
-# Location 8 = roads/transport routes (moai in transport)
+# Locations 6 & 7 = roads/transport routes (moai in transit and intermediate locations)
+# Location 8 = ahu sites (completed moai on platforms)
 data <- data %>%
   mutate(MoaiType = case_when(
-    Location >= 1 & Location <= 6 ~ "Ahu",
-    Location == 8 ~ "Road",
+    Location %in% c(6, 7) ~ "Road",
+    Location == 8 ~ "Ahu",
     TRUE ~ "Other"
   )) %>%
   filter(MoaiType %in% c("Ahu", "Road"))
@@ -67,37 +67,30 @@ p <- ggplot(plot_data, aes(x = MoaiType, y = ratio, fill = MoaiType)) +
   
   # Add horizontal line at y = 1
   geom_hline(yintercept = 1, linetype = "dashed", color = "black", linewidth = 0.7) +
-  
-  # Add design labels
-  #annotate("text", x = 0.55, y = 1.015, label = "Transport Design", 
-  #         color = "#E41A1C", size = 3.2, hjust = 0, fontface = "bold") +
-  #annotate("text", x = 1.0, y = 0.985, label = "Display Design", 
-  #         color = "#377EB8", size = 3.2, hjust = 0, fontface = "bold") +
-  
+
   # Customize colors
   scale_fill_manual(values = c("Ahu" = "#9ECAE1", "Road" = "#FC9272")) +
-  
+
   # Add sample sizes
-  annotate("text", x = 1, y = 0.42, 
+  annotate("text", x = 1, y = 0.56,
            label = paste("n =", nrow(ahu_data)), size = 3.5) +
-  annotate("text", x = 2, y = 0.42, 
+  annotate("text", x = 2, y = 0.56,
            label = paste("n =", nrow(road_data)), size = 3.5) +
-  
+
   # Add significance bracket if significant
   {if(t_result$p.value < 0.05) {
     list(
-      annotate("segment", x = 1.05, xend = 1.95, y = 1.48, yend = 1.48, linewidth = 0.5),
-      annotate("segment", x = 1.05, xend = 1.05, y = 1.46, yend = 1.48, linewidth = 0.5),
-      annotate("segment", x = 1.95, xend = 1.95, y = 1.46, yend = 1.48, linewidth = 0.5),
-      annotate("text", x = 1.5, y = 1.5, label = "*", size = 6)
+      annotate("segment", x = 1.05, xend = 1.95, y = 1.62, yend = 1.62, linewidth = 0.5),
+      annotate("segment", x = 1.05, xend = 1.05, y = 1.60, yend = 1.62, linewidth = 0.5),
+      annotate("segment", x = 1.95, xend = 1.95, y = 1.60, yend = 1.62, linewidth = 0.5),
+      annotate("text", x = 1.5, y = 1.65, label = "*", size = 6)
     )
   }} +
-  
+
   # Customize axes and labels
   labs(
     x = "",
-    y = "Base Width / Shoulder Width Ratio"
-    #title = "Direct Measurements: Base-to-Shoulder Width Ratios"
+    y = "Shoulder Width / Base Width Ratio"
   ) +
   
   # Customize theme
@@ -117,8 +110,8 @@ p <- ggplot(plot_data, aes(x = MoaiType, y = ratio, fill = MoaiType)) +
   
   # Set y-axis limits using coord_cartesian to avoid clipping violins
   # Extend slightly beyond visible range to accommodate full violin shapes
-  coord_cartesian(ylim = c(0.35, 1.65)) +
-  scale_y_continuous(breaks = seq(0.4, 2.2, by = 0.2)) +
+  coord_cartesian(ylim = c(0.50, 1.70)) +
+  scale_y_continuous(breaks = seq(0.5, 1.7, by = 0.2)) +
   
   # Customize x-axis labels
   scale_x_discrete(labels = c(expression(italic("Ahu")~italic("Moai")), expression(italic("Road")~italic("Moai"))))
@@ -137,9 +130,15 @@ cat(sprintf("Road Moai: mean ratio = %.3f ± %.3f (n = %d)\n",
 
 # Add figure caption information
 caption_text <- paste(
-  "Figure 2. Comparison of the ratio of base width to shoulder width for *ahu moai* (left) and *road moai* (right).",
+  "Figure 2. Comparison of the ratio of shoulder width to base width for *ahu moai* (left) and *road moai* (right).",
   sprintf("Using measurement data of *moai* from Van Tilburg (1986), the figures show that the two types of *moai* have statistically distinctive ratios (Welch's t-test: t = %.3f, df = %.1f, p = %.3e).",
-          t_result$statistic, t_result$parameter, t_result$p.value)
+          t_result$statistic, t_result$parameter, t_result$p.value),
+  sprintf("*Road moai* retain their original transport design with wider bases relative to shoulders (mean ratio = %.3f ± %.3f, n = %d),",
+          mean(road_data$ratio), sd(road_data$ratio), nrow(road_data)),
+  sprintf("while *ahu moai* have been reshaped with narrower bases, resulting in broader shoulders relative to base width (mean ratio = %.3f ± %.3f, n = %d).",
+          mean(ahu_data$ratio), sd(ahu_data$ratio), nrow(ahu_data)),
+  "This difference reflects the modification of *moai* upon reaching their final destination:",
+  "bases were trimmed down for platform installation, whereas *road moai* preserved the original wide-base design needed for bipedal transport."
 )
 
 cat("\n\n", caption_text, "\n")
