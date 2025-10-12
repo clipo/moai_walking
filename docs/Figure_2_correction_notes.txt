@@ -2,6 +2,11 @@ Figure 2 Correction Notes
 =========================
 Date: 2025-10-11
 
+ACKNOWLEDGMENT:
+These corrections were suggested by Dr. Florian Hindenlang, Staff Scientist at
+the Max-Planck Institute for Plasma Physics. His careful review and helpful
+guidance were instrumental in identifying and resolving the issues in this figure.
+
 SUMMARY:
 Figure 2 has been corrected to properly show the morphological differences between
 road moai (in transport) and ahu moai (on platforms). The figure now correctly
