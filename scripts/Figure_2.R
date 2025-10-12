@@ -27,7 +27,7 @@ data <- data %>%
     Location = Location
   ) %>%
   mutate(ratio = ShoulderWidth / BaseWidth) %>%
-  filter(!is.na(ratio) & !is.na(Location))
+  filter(!is.na(ratio) & !is.na(Location) & ratio > 1e-12)
 
 # Categorize moai based on Location
 # In Van Tilburg's coding system:
