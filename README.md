@@ -20,6 +20,14 @@ The Walking Moai Hypothesis proposes that the famous Easter Island statues (moai
 - ✅ Enhanced documentation and project structure
 - ✅ Integrated 33 additional road moai IDs (total: 84)
 - ✅ Corrected quarry center to geocentroid (-27.125175°, -109.288170°)
+- ✅ **Fixed Figure 2** - Corrected location coding and ratio interpretation (October 2025)
+
+### Important Note: Figure 2 Correction (October 2025)
+**The original Figure 2 published in the paper contained errors in location coding and ratio interpretation.** These issues have been corrected in this codebase. The corrected figure properly demonstrates that:
+- Road moai (Locations 6 & 7) have wider bases relative to shoulders (ratio ≈ 1.0) - original transport design
+- Ahu moai (Location 8) have narrower bases (ratio > 1.0) - reshaped for platform installation
+
+The statistical significance remains robust (p = 0.002), but the interpretation now correctly supports the walking hypothesis. See `docs/Figure_2_correction_notes.txt` for complete details. We thank Dr. Florian Hindenlang (Max-Planck Institute for Plasma Physics) for identifying these issues.
 
 ## Quick Start
 
@@ -361,7 +369,7 @@ The 3D analysis confirms that moai were designed with inherent stability for upr
 
 | Figure | Description | Key Finding |
 |--------|-------------|-------------|
-| **Figure 2** | Base-to-shoulder width ratio comparison between ahu and road moai | Statistically significant difference (t=2.474, p=0.015) supports different design purposes |
+| **Figure 2** | Shoulder-to-base width ratio comparison between ahu and road moai | ⚠️ **Corrected (Oct 2025)**: Road moai have wider bases (ratio=1.025), ahu moai have narrower bases (ratio=1.132). Statistically significant difference (t=3.181, p=0.002) supports walking hypothesis |
 | **Figure 3** | Center of mass distribution for road moai | Consistent CoM (0.392±0.006) indicates standardized construction |
 | **Figure 5** | Base angle vs size for intact road moai | Negligible correlation despite 20-fold size variation shows standardized angles (5-14°) |
 | **Figure 11** | Transport failure hypothesis model | Expected concentration near quarry under failure hypothesis |
